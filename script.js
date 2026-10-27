@@ -181,3 +181,24 @@ if (lb) {
         e.clientY < r.top  || e.clientY > r.bottom) lb.close();
   });
 }
+
+/* ---------- Polaroid carousel: seamless loop ---------- */
+(function initPolaroidCarousel() {
+  const wrap = document.querySelector('.hero-polaroids');
+  const track = document.querySelector('.polaroid-track');
+  if (!wrap || !track) return;
+
+  /* Duplicate the existing children once so the -50% keyframe loops seamlessly */
+  const originals = [...track.children];
+  originals.forEach(node => {
+    const clone = node.cloneNode(true);
+    clone.setAttribute('aria-hidden', 'true');
+    clone.querySelectorAll('img').forEach(img => img.setAttribute('alt', ''));
+    track.appendChild(clone);
+  });
+
+  /* Respect reduced-motion preference */
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    track.style.animation = 'none';
+  }
+})();

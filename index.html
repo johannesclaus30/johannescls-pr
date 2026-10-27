@@ -60,7 +60,7 @@
         </div>
       </div>
 
-      <div class="hero-polaroids">
+            <div class="hero-polaroids" aria-label="Scattered polaroids — hover to pause">
         <div class="hero-sticker" aria-hidden="true">
           <svg viewBox="0 0 100 100">
             <defs>
@@ -74,19 +74,78 @@
           </svg>
         </div>
 
-        <div class="polaroid polaroid-1">
-          <img src="assets/photos/nyc-day.jpg" alt="New York during the day" loading="lazy">
-          <span class="caption">Daylight</span>
-          <span class="stamp">NYC '26</span>
-        </div>
-        <div class="polaroid polaroid-2">
-          <img src="assets/photos/nyc-night.jpg" alt="New York at night" loading="lazy">
-          <span class="caption">Night shift</span>
-          <span class="stamp">NYC '26</span>
-        </div>
-        <div class="polaroid polaroid-3">
-          <img src="assets/photos/johannes.jpg" alt="Portrait of Johannes" loading="lazy">
-          <span class="caption">me, in between</span>
+        <div class="polaroid-track">
+          <!-- Set 1 -->
+          <div class="polaroid">
+            <img src="assets/photos/nyc-day.jpg" alt="New York during the day" loading="lazy">
+            <span class="caption">Daylight</span>
+            <span class="stamp">NYC '26</span>
+          </div>
+          <div class="polaroid">
+            <img src="assets/photos/johannes.jpg" alt="Portrait of Johannes" loading="lazy">
+            <span class="caption">me, in between</span>
+          </div>
+          <div class="polaroid">
+            <img src="assets/photos/nyc-night.jpg" alt="New York at night" loading="lazy">
+            <span class="caption">Night shift</span>
+            <span class="stamp">NYC '26</span>
+          </div>
+          <div class="polaroid">
+            <img src="assets/photos/nyc-street.jpg" alt="New York street" loading="lazy">
+            <span class="caption">the walk home</span>
+            <span class="stamp">NYC '26</span>
+          </div>
+          <div class="polaroid">
+            <img src="assets/photos/johannes.jpg" alt="Johannes, working" loading="lazy">
+            <span class="caption">3am, still coding</span>
+          </div>
+          <div class="polaroid">
+            <img src="assets/photos/nyc-day.jpg" alt="New York skyline" loading="lazy">
+            <span class="caption">first morning</span>
+            <span class="stamp">NYC '26</span>
+          </div>
+
+          <!-- Set 2 (duplicate for seamless loop) -->
+          <div class="polaroid" aria-hidden="true">
+            <img src="assets/photos/nyc-day.jpg" alt="" loading="lazy">
+            <span class="caption">Daylight</span>
+            <span class="stamp">NYC '26</span>
+          </div>
+          <div class="polaroid" aria-hidden="true">
+            <img src="assets/photos/johannes.jpg" alt="" loading="lazy">
+            <span class="caption">me, in between</span>
+          </div>
+          <div class="polaroid" aria-hidden="true">
+            <img src="assets/photos/nyc-night.jpg" alt="" loading="lazy">
+            <span class="caption">Night shift</span>
+            <span class="stamp">NYC '26</span>
+          </div>
+          <div class="polaroid" aria-hidden="true">
+            <img src="assets/photos/nyc-street.jpg" alt="" loading="lazy">
+            <span class="caption">the walk home</span>
+            <span class="stamp">NYC '26</span>
+          </div>
+          <div class="polaroid" aria-hidden="true">
+            <img src="assets/photos/johannes.jpg" alt="" loading="lazy">
+            <span class="caption">3am, still coding</span>
+          </div>
+          <div class="polaroid" aria-hidden="true">
+            <img src="assets/photos/nyc-day.jpg" alt="" loading="lazy">
+            <span class="caption">first morning</span>
+            <span class="stamp">NYC '26</span>
+          </div>
+          <div class="polaroid" aria-hidden="true">
+            <img src="assets/photos/johannes.jpg" alt="" loading="lazy">
+            <span class="caption">3am, still coding</span>
+          </div>
+          <div class="polaroid" aria-hidden="true">
+            <img src="assets/photos/johannes.jpg" alt="" loading="lazy">
+            <span class="caption">3am, still coding</span>
+          </div>
+          <div class="polaroid" aria-hidden="true">
+            <img src="assets/photos/johannes.jpg" alt="" loading="lazy">
+            <span class="caption">3am, still coding</span>
+          </div>
         </div>
       </div>
 
@@ -132,7 +191,6 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section class="section" id="experience">
       <div class="section-head reveal">
         <div class="left">
@@ -145,40 +203,56 @@
       <div class="exp-list">
         <article class="exp-row reveal">
           <span class="year">2026</span>
-          <div>
-            <h3 class="role">Creative Director</h3>
-            <p class="org">SACE Student Council · NU Lipa</p>
-            <p class="desc">Lead the Creatives Committee in digital media, event publicity, and publication materials.</p>
+          <div class="exp-content">
+            <!-- Add your SACE logo here -->
+            <img src="assets/logos/SACE.png" alt="SACE Logo" class="org-logo" loading="lazy">
+            <div>
+              <h3 class="role">Creative Director</h3>
+              <p class="org">SACE Student Council · NU Lipa</p>
+              <p class="desc">Lead the Creatives Committee in digital media, event publicity, and publication materials.</p>
+            </div>
           </div>
           <span class="arrow">↗</span>
         </article>
 
         <article class="exp-row reveal">
           <span class="year">2025 — now</span>
-          <div>
-            <h3 class="role">Student Graphic Designer</h3>
-            <p class="org">NU Lipa Marketing Office</p>
-            <p class="desc">Design print and digital materials with Photoshop and Canva, write campaign content, manage multiple deliverables since March 2025.</p>
+          <div class="exp-content">
+            <!-- Add your NU Lipa Marketing logo here -->
+            <img src="assets/logos/NU.png" alt="NU Lipa Marketing Logo" class="org-logo" loading="lazy">
+            <div>
+              <h3 class="role">Student Graphic Designer</h3>
+              <p class="org">NU Lipa Marketing Office</p>
+              <p class="desc">Design print and digital materials with Photoshop and Canva, write campaign content, manage multiple deliverables since March 2025.</p>
+            </div>
           </div>
           <span class="arrow">↗</span>
         </article>
 
         <article class="exp-row reveal">
           <span class="year">2024 — 2026</span>
-          <div>
-            <h3 class="role">Section Editor &amp; Chief Photojournalist</h3>
-            <p class="org">The Synergy · NU Lipa SACE</p>
-            <p class="desc">Led editorial and photo coverage for IT — event photography, layout production, and story organization.</p>
+          <div class="exp-content">
+            <!-- Add your Synergy logo here -->
+            <img src="assets/logos/Synergy.png" alt="The Synergy Logo" class="org-logo" loading="lazy">
+            <div>
+              <h3 class="role">Section Editor &amp; Chief Photojournalist</h3>
+              <p class="org">The Synergy · NU Lipa SACE</p>
+              <p class="desc">Led editorial and photo coverage for IT — event photography, layout production, and story organization.</p>
+            </div>
           </div>
           <span class="arrow">↗</span>
         </article>
 
         <article class="exp-row reveal">
           <span class="year">2021 — 2023</span>
-          <div>
-            <h3 class="role">Public Information Officer / Auditor</h3>
-            <p class="org">YES-O · Alangilan Senior High School</p>
-            <p class="desc">Managed organizational communications and social media; supported financial transparency as Auditor.</p>
+          <div class="exp-content">
+            <!-- Add your YES-O logo here -->
+            <img src="assets/logos/ASHS.png" alt="YES-O Logo" class="org-logo" loading="lazy">
+            <div>
+              <h3 class="role">Public Information Officer / Auditor</h3>
+              <p class="org">YES-O · Alangilan Senior High School</p>
+              <p class="desc">Managed organizational communications and social media; supported financial transparency as Auditor.</p>
+            </div>
           </div>
           <span class="arrow">↗</span>
         </article>
