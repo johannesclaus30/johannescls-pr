@@ -1,36 +1,43 @@
-# Johannes Claus — A city of possibilities
+# Johannes Claus — After Hours / Daylight
 
-A static, three-page portfolio with an illustrated New York-inspired day/night identity. No installation or build is needed for viewing or deployment.
+A complete photographic redesign: four static pages, real New York photographs, scroll-driven transitions, a résumé homepage, an organization-based creative archive, and a focused IT showcase.
+
+## Open
+Open index.html directly. No build, package manager, backend, or server is required.
+Google Fonts are optional; system fallbacks work offline. Photos and artwork are stored locally in assets/.
 
 ## Pages
-- index.html: résumé-led homepage with experience, education, skills, certifications, recognition, and contact details.
-- it.html: night-themed gallery, grouped into web experiences, apps/interfaces, and systems.
-- creative.html: day-themed gallery, grouped into brands/identities, editorial/posters, and photography/motion.
-- styles.css and script.js: shared presentation and interactions.
+- index.html — résumé and experience, with a night/day perspective switch.
+- creative.html — 28 mock publication materials across NU Lipa, SACE Student Council, The Synergy, and YES-O. Each organization has its own colors, typography, and image-wall arrangement.
+- it.html — three clearly labeled mock systems, with two large screens per system and space for the concept.
+- credits.html — photo attribution, original source links, license explanation, and mock artwork disclosure.
 
-Open index.html in a browser. Google Fonts load when online; system fallbacks work offline. All illustrations are HTML/CSS, with no remote image dependencies.
+## Replace the creative mocks
+The actual gallery uses ordinary image elements. Replace an image file or change its src in creative.html. Also update the surrounding button's data-image, data-title, data-description, and the image's alt, width, and height.
+- data-group keeps lightbox navigation inside one organization.
+- Use full-resolution images for data-image and optimized thumbnails for src if needed.
+- PNG, JPG, and WebP are suitable for your actual pubmats.
+- Remove mock labels only when you insert real work.
+- Add more tiles inside the appropriate image-wall container.
+- The gallery is designed to show whole publication materials without cropping.
 
-## Personal information
-The homepage uses the supplied résumé: Johannes Emmanuel A. Claus, NU Lipa studies, work and leadership experience, skills, education, certifications, awards, email, GitHub, and LinkedIn. New York is an aesthetic inspiration; the site identifies Batangas as the actual location.
+## Replace the IT mocks
+Each system has its own section with two images, description, and theme. Replace the screens in it.html and update the concept copy with your actual system's purpose and contribution. Avoid making claims based on the sample dashboard data.
 
-## Replace the mocks
-All ten gallery projects are explicitly labeled concepts or placeholders. They are not presented as actual client work. You can edit the HTML files directly. Alternatively, edit tools/build_galleries.py and run "python tools/build_galleries.py" to regenerate both gallery pages. That optional helper is not needed on GitHub Pages.
+## Optional source generator
+tools/build_site.py creates the HTML pages and original SVG mock artwork. It uses only Python's standard library.
+Run "python tools/build_site.py" only if you want to regenerate those pages. It overwrites direct edits to the generated HTML and mock SVGs. Edit the generator instead if you use it as your source of truth. It is not required for deployment.
 
-Each project button carries data-title, data-type, data-description, and data-approach for the detail dialog. Replace its artwork with your own images using descriptive alt text. Keep category names and filter identifiers aligned.
+## Motion and accessibility
+The homepage has a sticky photographic opening, scroll-linked zoom and typography transitions, and a moving photographic interlude. Section reveals follow normal scrolling; no scroll interception is used.
+Reduced-motion settings disable decorative motion. A footer control also lets visitors turn motion off, and the choice persists. The image viewer supports previous/next buttons, left/right arrow keys, Escape, focus trapping, and focus restoration.
 
-## Interactions
-- Homepage day/night switch remembers the preference.
-- Gallery pages always open in their appropriate theme; returning home keeps that theme.
-- Category filters show matching gallery sections.
-- Project dialogs support keyboard focus and Escape to close.
-- Scroll reveals, skyline parallax, a moving taxi, and a reading-progress line follow native scrolling.
-- Reduced-motion preferences disable decorative animation and show content immediately.
-- The résumé and gallery cards remain readable if JavaScript is unavailable; filters and popups need JavaScript.
+## Licenses
+See PHOTO-LICENSES.md and credits.html. These are free-to-use licensed photographs, not public-domain claims. Original city photography is credited to its actual photographers. It is not presented as Johannes's work.
+Original vector mock pubmats and system screens are placeholders, not official organization materials.
 
 ## GitHub Pages
-Upload these files together at the repository root:
-index.html, it.html, creative.html, styles.css, script.js, favicon.svg, and .nojekyll.
-
-In repository Settings → Pages, select Deploy from a branch, choose the default branch and / (root), then save. No package manager, server, or build command is required. Relative asset and page links support a repository subpath or custom domain.
-
-The tools folder is optional and tmp contains local verification artifacts; neither needs uploading.
+Upload the four HTML files, styles.css, script.js, favicon.svg, .nojekyll, and the complete assets folder to your repository root.
+In repository Settings → Pages, use Deploy from a branch, your default branch, and / (root).
+The portfolio-github-pages.zip file contains the deployment files and license notes. Extract it before uploading the contents.
+All internal links and asset paths are relative and support a GitHub Pages repository subpath.

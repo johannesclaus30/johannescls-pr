@@ -1,95 +1,128 @@
 const root = document.documentElement;
 const page = document.body.dataset.page;
-const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-function setMode(mode, animate = false) {
-  if (!['it', 'creative'].includes(mode)) mode = 'it';
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+let mode = 'it';
+let motionPreference = true;
+try {
+  mode = localStorage.getItem('jc-portfolio-mode') || 'it';
+  motionPreference = localStorage.getItem('jc-motion') !== 'off';
+} catch {}
+function setMode(next) {
+  mode = next === 'creative' ? 'creative' : 'it';
   root.dataset.mode = mode;
-  document.querySelector('meta[name="theme-color"]').content = mode === 'it' ? '#101820' : '#f5f0e6';
-  document.querySelectorAll('[data-switch]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.switch === mode)));
+  document.querySelector('meta[name="theme-color"]').content = mode === 'creative' ? '#eeeae1' : '#111111';
+  document.querySelectorAll('[data-switch]').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.switch === mode)));
   if (page === 'home') {
-    document.querySelector('#hero-word').textContent = mode === 'it' ? 'possibilities.' : 'inspiration.';
-    document.querySelector('#hero-description').textContent = mode === 'it' ? 'I’m Johannes. An IT student building for the web, with a creative eye that doesn’t clock out.' : 'I’m Johannes. A designer, visual storyteller, and IT student finding inspiration on every corner.';
-    const link = document.querySelector('#hero-work-link');
-    link.href = mode === 'it' ? 'it.html' : 'creative.html';
-    link.innerHTML = mode === 'it' ? 'Explore my IT work <span>↗</span>' : 'Explore my creative work <span>↗</span>';
-    document.querySelector('#city-time').textContent = mode === 'it' ? 'AFTER HOURS / THE IT PERSPECTIVE' : 'DAY SHIFT / THE CREATIVE PERSPECTIVE';
-    if (animate) {
-      const copy = document.querySelector('.hero-copy');
-      copy.classList.remove('mode-enter');
-      void copy.offsetWidth;
-      copy.classList.add('mode-enter');
-    }
+    const creative = mode === 'creative';
+    document.querySelector('.hero-title h1').innerHTML = creative ? 'MADE FOR<br><em id="hero-last">DAYLIGHT.</em>' : 'BUILT AFTER<br><em id="hero-last">HOURS.</em>';
+    document.querySelector('#hero-description').innerHTML = creative ? 'Design, storytelling, and a different way of seeing.<br>I’m Johannes. Let’s make a little noise.' : 'Code, curiosity, and a little restless ambition.<br>I’m Johannes. Welcome to my side of the city.';
+    const link = document.querySelector('#hero-link');
+    link.href = creative ? 'creative.html' : 'it.html';
+    link.setAttribute('aria-label',creative ? 'Explore Creative archive' : 'Explore IT work');
   }
-  try { localStorage.setItem('jc-portfolio-mode', mode); } catch {}
+  if (page !== 'credits') try { localStorage.setItem('jc-portfolio-mode',mode); } catch {}
 }
-let storedMode;
-try { storedMode = localStorage.getItem('jc-portfolio-mode'); } catch {}
-setMode(page === 'home' ? storedMode : page);
-document.querySelectorAll('[data-switch]').forEach(button => button.addEventListener('click', () => setMode(button.dataset.switch, true)));
-document.querySelectorAll('[data-year]').forEach(element => element.textContent = new Date().getFullYear());
+setMode(page === 'home' ? mode : page);
+document.querySelectorAll('[data-switch]').forEach(button => button.addEventListener('click',()=>setMode(button.dataset.switch)));
+document.querySelectorAll('[data-year]').forEach(element=>element.textContent=new Date().getFullYear());
 
-// Native scrolling stays in control. Motion follows it, with a reduced-motion fallback.
-let frameRequested = false;
-function updateScroll() {
-  frameRequested = false;
-  const maxScroll = root.scrollHeight - innerHeight;
-  root.style.setProperty('--page-progress', maxScroll > 0 ? scrollY / maxScroll : 0);
-  if (!reducedMotion.matches) {
-    root.style.setProperty('--scene-progress', Math.min(1, Math.max(0, scrollY / 800)));
-    const ticker = document.querySelector('.ticker>div');
-    if (ticker) ticker.style.transform = 'translateX(' + (-Math.min(scrollY * .12, 350)) + 'px)';
-  }
-}
-function requestScrollUpdate() {
-  if (!frameRequested) { frameRequested = true; requestAnimationFrame(updateScroll); }
-}
-addEventListener('scroll', requestScrollUpdate, {passive:true});
-addEventListener('resize', requestScrollUpdate);
-reducedMotion.addEventListener('change', () => {
-  const ticker = document.querySelector('.ticker>div');
-  if (ticker) ticker.style.transform = '';
+function motionEnabled() { return motionPreference && !reduceMotion.matches; }
+function applyMotion() {
+  const enabled = motionEnabled();
+  root.dataset.motion = enabled ? 'on' : 'off';
+  document.querySelectorAll('.motion-toggle').forEach(button=>{
+    button.textContent = enabled ? 'Motion: on' : 'Motion: off';
+    button.setAttribute('aria-pressed',String(!enabled));
+    button.setAttribute('aria-label',enabled ? 'Turn off decorative motion' : 'Turn on decorative motion');
+    button.disabled = reduceMotion.matches;
+    button.title = reduceMotion.matches ? 'Reduced motion is enabled in your device settings.' : '';
+  });
   updateScroll();
-});
-updateScroll();
-if ('IntersectionObserver' in window && !reducedMotion.matches) {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+}
+document.querySelectorAll('.motion-toggle').forEach(button=>button.addEventListener('click',()=>{
+  motionPreference = !motionPreference;
+  try {localStorage.setItem('jc-motion',motionPreference?'on':'off');}catch{}
+  applyMotion();
+}));
+reduceMotion.addEventListener('change',applyMotion);
+const cinema=document.querySelector('.cinema');
+const interlude=document.querySelector('.photo-interlude');
+const galleryHero=document.querySelector('.archive-hero, .system-hero');
+let framePending=false;
+const clamp=(value,min=0,max=1)=>Math.min(max,Math.max(min,value));
+function updateScroll() {
+  framePending=false;
+  const height=root.scrollHeight-innerHeight;
+  root.style.setProperty('--page-progress',height>0?clamp(scrollY/height):0);
+  if (!motionEnabled()) return;
+  if(cinema){
+    const rect=cinema.getBoundingClientRect();
+    root.style.setProperty('--hero-progress',clamp(-rect.top/Math.max(1,rect.height-innerHeight)));
+  }
+  if(interlude){
+    const rect=interlude.getBoundingClientRect();
+    root.style.setProperty('--interlude-progress',clamp((innerHeight-rect.top)/(innerHeight+rect.height),0,1)*2-1);
+  }
+  if(galleryHero){
+    const rect=galleryHero.getBoundingClientRect();
+    root.style.setProperty('--gallery-progress',clamp(-rect.top/rect.height));
+  }
+}
+function requestFrame(){if(!framePending){framePending=true;requestAnimationFrame(updateScroll);}}
+addEventListener('scroll',requestFrame,{passive:true});
+addEventListener('resize',requestFrame);
+addEventListener('load',requestFrame);
+applyMotion();
+
+if('IntersectionObserver' in window){
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}});
+  },{threshold:.05});
+  if(motionEnabled())document.body.classList.add('motion-ready');
+  document.querySelectorAll('.reveal').forEach(element=>observer.observe(element));
+  const links=[...document.querySelectorAll('.archive-nav a')];
+  const sections=[...document.querySelectorAll('.organization, .system-case')];
+  const sectionObserver=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting)links.forEach(link=>{
+        const active=link.hash==='#'+entry.target.id;
+        link.classList.toggle('active',active);
+        if(active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');
+      });
     });
-  }, {threshold:.08});
-  document.body.classList.add('motion-ready');
-  document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+  },{rootMargin:'-15% 0px -65% 0px',threshold:0});
+  sections.forEach(section=>sectionObserver.observe(section));
 }
 
-// Gallery categories filter whole sections, keeping project groupings intact.
-const filters = document.querySelectorAll('[data-filter]');
-filters.forEach(button => button.addEventListener('click', () => {
-  const category = button.dataset.filter;
-  filters.forEach(filter => filter.setAttribute('aria-pressed', String(filter === button)));
-  let visibleCount = 0;
-  document.querySelectorAll('[data-category]').forEach(section => {
-    section.hidden = category !== 'all' && section.dataset.category !== category;
-    if (!section.hidden) {
-      visibleCount += section.querySelectorAll('[data-project]').length;
-      section.querySelectorAll('.reveal').forEach(element => element.classList.add('visible'));
-    }
-  });
-  document.querySelector('#filter-status').textContent = visibleCount + ' concepts shown';
-  requestScrollUpdate();
-}));
-const dialog = document.querySelector('#project-dialog');
-if (dialog) {
-  document.querySelectorAll('[data-project]').forEach(card => card.addEventListener('click', () => {
-    document.querySelector('#dialog-title').textContent = card.dataset.title;
-    document.querySelector('#dialog-tag').textContent = card.dataset.type;
-    document.querySelector('#dialog-description').textContent = card.dataset.description;
-    document.querySelector('#dialog-approach').textContent = card.dataset.approach;
-    dialog.showModal();
-  }));
-  dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
-  dialog.addEventListener('click', event => {
-    if (event.target !== dialog) return;
-    const rect = dialog.getBoundingClientRect();
-    if(event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
-  });
+// A native modal keeps focus in the viewer, supports Escape, and restores the opener.
+const viewer=document.querySelector('#lightbox');
+const image=document.querySelector('#lightbox-image');
+const cards=[...document.querySelectorAll('[data-image]')];
+let group=[],currentIndex=0;
+function showImage(index){
+  if(!group.length)return;
+  currentIndex=(index+group.length)%group.length;
+  const card=group[currentIndex];
+  image.src=card.dataset.image;
+  image.alt=card.querySelector('img').alt;
+  document.querySelector('#lightbox-title').textContent=card.dataset.title;
+  document.querySelector('#lightbox-description').textContent=card.dataset.description;
+  document.querySelector('#lightbox-count').textContent=String(currentIndex+1).padStart(2,'0')+' / '+String(group.length).padStart(2,'0');
 }
+cards.forEach(card=>card.addEventListener('click',()=>{
+  group=cards.filter(item=>item.dataset.group===card.dataset.group);
+  showImage(group.indexOf(card));
+  viewer.showModal();
+}));
+viewer.querySelector('[data-close]').addEventListener('click',()=>viewer.close());
+viewer.querySelector('[data-prev]').addEventListener('click',()=>showImage(currentIndex-1));
+viewer.querySelector('[data-next]').addEventListener('click',()=>showImage(currentIndex+1));
+viewer.addEventListener('keydown',event=>{
+  if(event.key==='ArrowLeft'){event.preventDefault();showImage(currentIndex-1);}
+  if(event.key==='ArrowRight'){event.preventDefault();showImage(currentIndex+1);}
+});
+viewer.addEventListener('click',event=>{
+  if(event.target!==viewer)return;
+  const rect=viewer.getBoundingClientRect();
+  if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)viewer.close();
+});
