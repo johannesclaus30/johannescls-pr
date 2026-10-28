@@ -1070,6 +1070,70 @@ details.certs li::before {
 }
 
 /* ============================================================
+   SOCIAL LINKS
+   ============================================================ */
+.social-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.social-card {
+  display: grid;
+  grid-template-columns: 42px 1fr auto;
+  gap: 6px 24px;
+  align-items: end;
+  padding: 28px;
+  border: 1px solid var(--line-hard);
+  border-radius: 14px;
+  background: var(--bg);
+  transition: border-color 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+.social-card:hover {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+  transform: translateY(-4px);
+}
+.social-icon {
+  grid-row: 1 / span 2;
+  width: 42px;
+  height: 42px;
+  align-self: center;
+  fill: var(--accent);
+  stroke: none;
+}
+.social-icon-cutout {
+  fill: var(--bg);
+  stroke: var(--bg);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.social-platform {
+  grid-column: 2 / -1;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg-mute);
+}
+.social-handle {
+  grid-column: 2;
+  font-family: var(--f-serif);
+  font-size: clamp(20px, 2.5vw, 30px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.social-arrow {
+  color: var(--accent);
+  font-family: var(--f-hand);
+  font-size: 30px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+.social-card:hover .social-arrow { transform: translate(4px, -4px); }
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .footer {
@@ -1613,6 +1677,7 @@ html[data-motion="off"] *::after {
   .about-grid { grid-template-columns: 1fr; }
   .about-photo { max-width: 420px; }
   .toolkit-grid { grid-template-columns: 1fr; }
+  .social-list { grid-template-columns: 1fr; }
   .doors { grid-template-columns: 1fr; }
   .door { min-height: 60vh; }
   .case-head { grid-template-columns: 1fr; }
