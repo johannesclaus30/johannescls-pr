@@ -33,14 +33,14 @@ function setMode(next) {
     const cta = document.querySelector('[data-hero-cta]');
     const ctaLabel = document.querySelector('[data-hero-cta-label]');
 
-    if (eyebrow) eyebrow.textContent = isDay ? 'The daylight studio' : 'The night shift';
+    if (eyebrow) eyebrow.textContent = isDay ? 'The daylight studio' : 'What I do at night';
     if (title) title.innerHTML = isDay
       ? 'Design is a<br><span class="italic">love letter</span><br><span class="hand">to the world.</span>'
       : 'Building<br><span class="italic">systems</span><br>with soul.';
     if (lead) lead.textContent = isDay
-      ? 'Visual identities, publication materials, and stories in color. Created slowly, with intention — from Batangas with New York in mind.'
-      : 'Full-stack development, interfaces, and digital products. Clean logic, thoughtful engineering — built on NYC frequency.';
-    if (ctaLabel) ctaLabel.textContent = isDay ? 'View creative archive' : 'Explore IT work';
+      ? 'Visual identities, publication materials, and stories in color. Created slowly, with intention.'
+      : 'Full-stack development, interfaces, and digital products. Clean logic, thoughtful engineering.';
+    if (ctaLabel) ctaLabel.textContent = isDay ? 'View My Designs' : 'Explore my IT Portfolio';
     if (cta) cta.href = isDay ? 'creative.html' : 'it.html';
   }
 
