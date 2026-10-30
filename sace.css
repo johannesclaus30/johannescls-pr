@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+/* SACE branding is scoped to its collection on both pages. */
+#sace {
+  --sace-blue: #10264d;
+  --sace-accent: #a9d5ff;
+  background: #fff;
+  padding-bottom: 0;
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  border-top: 8px solid var(--sace-accent);
+}
+#sace .org-head {
+  color: var(--sace-blue);
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgb(16 38 77 / 20%);
+}
+#sace .org-index {
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--sace-blue);
+  transform: none;
+  margin-bottom: 18px;
+}
+#sace .org-head h2 {
+  font-family: inherit;
+  font-weight: 900;
+  font-size: clamp(36px, 5vw, 72px);
+  line-height: 1.15;
+}
+#sace .org-head h2 em {
+  font-style: normal;
+  font-weight: 700;
+  color: #345a8a;
+}
+#sace .org-sub {
+  font-family: inherit;
+  color: var(--sace-blue);
+  line-height: 1.7;
+  margin-top: 14px;
+}
+#sace .count {
+  font-family: inherit;
+  background: var(--sace-accent);
+  color: var(--sace-blue);
+  border: 0;
+  border-radius: 2px;
+  font-weight: 700;
+  padding: 10px 14px;
+}
+#sace .tile-btn, #sace .tile-btn .cap {
+  font-family: inherit;
+  color: #fff;
+}
+#sace .tile-btn .cap {
+  background: var(--sace-blue);
+  padding: 10px 12px;
+  box-sizing: border-box;
+}
+#sace .tile-btn:focus-visible {
+  outline: 3px solid var(--sace-accent);
+  outline-offset: 5px;
+}
+#sace .sace-gallery-link { margin-bottom: 32px; }
+#sace .sace-gallery-link .btn {
+  background: var(--sace-accent);
+  color: var(--sace-blue);
+  border-color: var(--sace-accent);
+  font-family: inherit;
+}
+.sace-page-nav { padding: 28px clamp(16px, 5vw, 72px); }
+.sace-identity-feature {
+  margin: 0 0 48px;
+  padding: clamp(24px, 4vw, 56px) 0 0;
+  text-align: center;
+  color: var(--sace-blue);
+  background: transparent;
+}
+.sace-feature-label {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 100px;
+  background: #eaf0f8;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.sace-identity-feature h3 {
+  font-family: inherit;
+  font-size: clamp(32px, 4.5vw, 64px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -.045em;
+  margin: 22px 0 16px;
+}
+.sace-identity-feature h3 span { color: #345a8a; }
+.sace-identity-feature p { max-width: 46ch; margin: 0 auto; padding: 0 16px; line-height: 1.7; }
+.sace-logo-feature {
+  display: block;
+  width: min(100%, 560px);
+  margin: 28px auto;
+  padding: 0 16px;
+  border: 0;
+  background: transparent;
+  color: var(--sace-blue);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+.sace-logo-feature img { display: block; width: 100%; height: auto; max-height: 500px; object-fit: contain; margin-bottom: 18px; }
+.sace-logo-feature:focus-visible { outline: 3px solid #345a8a; outline-offset: 6px; }
+.sace-identity-credit {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px 0;
+  border-top: 1px solid #dce5f1;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+/* Start the fade after the logo, regardless of screen or content height. */
+#sace .sace-outputs {
+  margin-inline: calc(-1 * clamp(16px, 5vw, 72px));
+  padding: 16px clamp(16px, 5vw, 72px) clamp(50px, 7vw, 100px);
+  background: linear-gradient(to bottom, #fff 0, #dce5f1 120px, #10264d 360px);
+}
+@media (min-width: 1200px) {
+  #sace .polaroid-wall { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}

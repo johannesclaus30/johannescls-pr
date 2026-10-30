@@ -1,4 +1,22 @@
 /* Creative page galleries. NU branding overrides live in nu-lipa.css. */
+#more-work { background: var(--bg-alt); }
+.more-work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.more-work-preview {
+  aspect-ratio: 1;
+  padding: clamp(20px, 3vw, 36px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--accent-bg);
+  border: 1px dashed var(--line-hard);
+  color: var(--fg);
+}
+.more-work-preview span:first-child { font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
+.more-work-preview span:last-child { font-family: var(--f-serif); font-size: clamp(24px, 3vw, 42px); line-height: 1.15; opacity: .65; }
+.more-work-card h3 { font-family: var(--f-serif); font-size: 26px; margin: 20px 0 10px; }
+.more-work-card p { color: var(--fg-mute); font-size: 14px; line-height: 1.7; }
+@media (max-width: 700px) { .more-work-grid { grid-template-columns: 1fr; } }
+
 .gallery-org {
   padding: clamp(50px, 7vw, 100px) clamp(16px, 5vw, 72px);
   border-bottom: 1px solid var(--line);
