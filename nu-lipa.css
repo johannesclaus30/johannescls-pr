@@ -1,0 +1,134 @@
+/* NU Lipa section: fonts, branding, and gallery frames.
+   Edit the brand colors in #nu below. Loaded after styles.css. */
+
+@font-face {
+  font-family: 'ClanPro';
+  src: url('assets/fonts/ClanPro/FFClanProRegular.TTF') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ClanPro';
+  src: url('assets/fonts/ClanPro/FFClanProMedium.TTF') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ClanPro';
+  src: url('assets/fonts/ClanPro/FFClanProBold.TTF') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ClanPro';
+  src: url('assets/fonts/ClanPro/FFClanProBlk.TTF') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+/* National University branding — confined to the NU Lipa collection. */
+#nu {
+  --nu-blue: #32418d;
+  --nu-gold: #fbd117;
+  font-family: 'ClanPro', Arial, sans-serif;
+  background: var(--nu-blue);
+  color: #fff;
+  border-top: 8px solid var(--nu-gold);
+  border-bottom: 0;
+}
+#nu .org-head {
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgb(255 255 255 / 25%);
+}
+#nu .org-index {
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--nu-gold);
+  transform: none;
+  margin-bottom: 18px;
+}
+#nu .org-head h2 {
+  font-family: inherit;
+  font-weight: 900;
+  font-size: clamp(40px, 6vw, 80px);
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+#nu .org-head h2 em {
+  font-style: normal;
+  font-weight: 900;
+  color: var(--nu-gold);
+}
+#nu .org-sub {
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #fff;
+  margin-top: 14px;
+}
+#nu .count {
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--nu-blue);
+  background: var(--nu-gold);
+  border: 0;
+  border-radius: 2px;
+  padding: 10px 14px;
+  text-transform: uppercase;
+}
+#nu .polaroid-wall {
+  gap: clamp(16px, 2.5vw, 30px);
+  align-items: start;
+}
+#nu .tile-btn {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  font-family: inherit;
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  transform: none;
+  box-shadow: none;
+}
+#nu .tile-btn:hover {
+  transform: translateY(-6px);
+  box-shadow: none;
+}
+#nu .tile-btn img {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  border: clamp(5px, 0.6vw, 8px) solid #fff;
+  border-radius: 1px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 14%);
+}
+#nu .tile-btn:focus-visible {
+  outline: 3px solid var(--nu-gold);
+  outline-offset: 5px;
+}
+#nu .tile-btn .cap {
+  position: static;
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 0 0 4px;
+  font-family: inherit;
+  font-size: clamp(11px, 1.1vw, 13px);
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+

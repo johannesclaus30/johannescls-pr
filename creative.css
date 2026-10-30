@@ -1,0 +1,131 @@
+/* Creative page galleries. NU branding overrides live in nu-lipa.css. */
+.gallery-org {
+  padding: clamp(50px, 7vw, 100px) clamp(16px, 5vw, 72px);
+  border-bottom: 1px solid var(--line);
+}
+.gallery-org:nth-child(even) { background: var(--bg-alt); }
+
+.org-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.org-head .org-index {
+  font-family: var(--f-hand);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--accent);
+  transform: rotate(-3deg);
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.org-head h2 {
+  font-family: var(--f-serif);
+  font-weight: 900;
+  font-size: clamp(40px, 6vw, 84px);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+.org-head h2 em { font-style: italic; font-weight: 400; color: var(--accent); }
+.org-head .org-sub {
+  font-family: var(--f-sans);
+  font-size: 13px;
+  color: var(--fg-mute);
+  margin-top: 6px;
+  font-weight: 500;
+}
+.org-head .count {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  padding: 6px 12px;
+  border: 1px dashed var(--line-hard);
+  border-radius: 100px;
+  color: var(--fg-mute);
+}
+
+.polaroid-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: clamp(20px, 3vw, 36px);
+  align-items: start;
+}
+
+.tile-btn {
+  display: block;
+  position: relative;
+  background: #fff;
+  padding: 10px 10px 44px;
+  border-radius: 3px;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.06),
+    0 8px 22px -6px rgba(0,0,0,0.15);
+  transition: all 0.4s cubic-bezier(.2,.8,.2,1);
+  cursor: pointer;
+}
+.tile-btn:nth-child(4n+1) { transform: rotate(-2deg); }
+.tile-btn:nth-child(4n+2) { transform: rotate(1.5deg) translateY(8px); }
+.tile-btn:nth-child(4n+3) { transform: rotate(-1deg) translateY(-4px); }
+.tile-btn:nth-child(4n+4) { transform: rotate(2.5deg) translateY(12px); }
+
+.tile-btn:hover {
+  transform: rotate(0deg) translateY(-6px) scale(1.03);
+  box-shadow:
+    0 4px 8px rgba(0,0,0,0.08),
+    0 20px 48px -12px rgba(0,0,0,0.25);
+  z-index: 2;
+}
+.tile-btn img {
+  width: 100%;
+  height: auto;
+  border-radius: 1px;
+  display: block;
+}
+.tile-btn .cap {
+  position: absolute;
+  bottom: 12px;
+  left: 12px; right: 12px;
+  font-family: var(--f-hand);
+  font-size: 17px;
+  font-weight: 600;
+  color: #444;
+  text-align: center;
+  line-height: 1.15;
+}
+
+
+/* Simple artwork frames preserve each image's original proportions. */
+body[data-page="creative"] .polaroid-wall { align-items: start; gap: clamp(16px, 2.5vw, 30px); }
+body[data-page="creative"] .tile-btn {
+  min-width: 0; display: flex; flex-direction: column; padding: 0;
+  background: transparent; border: 0; border-radius: 0; transform: none; box-shadow: none;
+}
+body[data-page="creative"] .tile-btn:hover { transform: translateY(-6px); box-shadow: none; }
+body[data-page="creative"] .tile-btn img {
+  box-sizing: border-box; width: 100%; height: auto;
+  border: clamp(5px, 0.6vw, 8px) solid #fff; border-radius: 1px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 14%);
+}
+body[data-page="creative"] .tile-btn .cap {
+  position: static; width: 100%; margin-top: 12px; padding: 0 0 4px;
+  font-family: var(--f-sans); font-size: clamp(11px, 1.1vw, 13px);
+  font-weight: 500; line-height: 1.5; color: var(--fg);
+  text-align: left; text-transform: uppercase; letter-spacing: 0.025em;
+}
+.org-identity { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; min-width: 0; }
+.org-identity > div { min-width: 0; }
+.org-logo { height: clamp(64px, 9vw, 112px); }
+.org-logo img { display: block; height: 100%; width: auto; }
+
+.org-logo-nulipa {
+  height: clamp(64px, 9vw, 112px);
+}
+.org-logo-nulipa img { display: block; height: 100%; width: auto; }
+
+@media (max-width: 700px) {
+  .polaroid-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .org-identity { align-items: flex-start; }
+}
