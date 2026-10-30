@@ -4,6 +4,16 @@
 
 const root = document.documentElement;
 const page = document.body.dataset.page || 'home';
+// Temporary home-page welcome; dismiss once per tab session.
+const constructionNotice = document.querySelector('#construction-notice');
+if (constructionNotice) {
+  let dismissed = false;
+  try { dismissed = sessionStorage.getItem('jc-construction-dismissed') === 'yes'; } catch {}
+  constructionNotice.addEventListener('close', () => {
+    try { sessionStorage.setItem('jc-construction-dismissed', 'yes'); } catch {}
+  });
+  if (!dismissed) constructionNotice.showModal();
+}
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 
 let motionPreference = true;

@@ -1108,6 +1108,15 @@ details.certs li::before {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+.social-icon-placeholder {
+  display: block;
+  box-sizing: border-box;
+  border: 1px dashed var(--accent);
+  background: var(--accent-bg);
+  border-radius: 4px;
+}
+img.social-icon { object-fit: contain; }
+.social-handle { min-width: 0; overflow-wrap: anywhere; }
 .social-platform {
   grid-column: 2 / -1;
   font-family: var(--f-mono);
@@ -1637,3 +1646,51 @@ html[data-motion="off"] *::after {
     transition: none !important;
   }
 }
+
+/* Temporary home-page construction welcome. */
+#construction-notice {
+  box-sizing: border-box;
+  margin: auto;
+  width: min(560px, calc(100vw - 32px));
+  padding: clamp(28px, 6vw, 48px);
+  background: var(--bg);
+  color: var(--fg);
+  border: 1px solid var(--line);
+  text-align: center;
+  overflow-y: auto;
+}
+#construction-notice::before {
+  content: '';
+  display: block;
+  height: 8px;
+  position: absolute;
+  inset: 0 0 auto;
+  background: repeating-linear-gradient(135deg, #ffd86b 0 14px, #172440 14px 28px);
+}
+.construction-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  background: transparent;
+  color: inherit;
+  font-size: 28px;
+  border: 0;
+  cursor: pointer;
+}
+.construction-icon { font-size: 52px; margin-bottom: 16px; }
+.construction-label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--accent);
+}
+#construction-title {
+  font-family: var(--f-serif);
+  font-size: clamp(30px, 7vw, 44px);
+  line-height: 1.1;
+  margin: 18px 0;
+}
+#construction-description { color: var(--fg-mute); line-height: 1.7; }
+.construction-note { margin: 18px 0 26px; font-size: 13px; }
+html:has(#construction-notice[open]) { overflow: hidden; }

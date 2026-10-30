@@ -32,6 +32,17 @@
 }
 
 /* National University branding — confined to the NU Lipa collection. */
+.nu-page-nav {
+  padding: 28px clamp(16px, 5vw, 72px);
+}
+#nu .nu-gallery-link {
+  margin-bottom: 32px;
+}
+#nu .nu-gallery-link .btn {
+  background: var(--nu-gold);
+  color: var(--nu-blue);
+  border-color: var(--nu-gold);
+}
 #nu {
   --nu-blue: #32418d;
   --nu-gold: #fbd117;
@@ -87,6 +98,12 @@
 #nu .polaroid-wall {
   gap: clamp(16px, 2.5vw, 30px);
   align-items: start;
+}
+/* Cap desktop rows at five outputs; retain the responsive grid below. */
+@media (min-width: 1200px) {
+  #nu .polaroid-wall {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
 }
 #nu .tile-btn {
   min-width: 0;
