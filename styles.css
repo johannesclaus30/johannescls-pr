@@ -458,6 +458,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
    POLAROID CAROUSEL (Hero)
    ============================================================ */
 .hero-polaroids {
+  /* Increase this value to move the fade boundary farther toward the text. */
+  --carousel-left-extension: clamp(40px, 5vw, 80px);
+  margin-left: calc(-1 * var(--carousel-left-extension));
+  min-width: 0;
   position: relative;
   z-index: 2;
   height: min(640px, 78vh);
@@ -894,6 +898,22 @@ html[data-motion="off"] .polaroid-track {
   line-height: 1.55;
 }
 
+.foundation-group-head { margin-bottom: 24px; }
+.foundation-group-head h3 {
+  font-family: var(--f-sans);
+  font-size: clamp(22px, 2.5vw, 30px);
+  font-weight: 700;
+  color: var(--fg);
+  margin-bottom: 8px;
+}
+.foundation-group-head p { color: var(--fg-mute); font-size: 14px; line-height: 1.6; }
+.foundation-skills {
+  margin-top: clamp(40px, 5vw, 72px);
+  padding-top: clamp(32px, 4vw, 48px);
+  border-top: 1px solid var(--line-hard);
+}
+#foundations .foundation-group .edu-list { margin-bottom: 0; }
+#foundations .foundation-group .toolkit-grid { margin-top: 0; }
 .toolkit-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1514,6 +1534,7 @@ dialog::backdrop {
 }
 .credit-card {
   background: #fff;
+  color: #10264d;
   padding: 12px 12px 20px;
   border-radius: 4px;
   box-shadow: 0 8px 24px -8px rgba(0,0,0,0.15);
@@ -1535,16 +1556,18 @@ dialog::backdrop {
   font-weight: 800;
   margin-bottom: 4px;
 }
-.credit-card p { font-size: 13px; color: var(--fg-soft); margin-bottom: 10px; }
+.credit-card p { font-size: 13px; color: #46556b; line-height: 1.65; margin-bottom: 14px; }
 .credit-card a {
   font-family: var(--f-mono);
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #205b7a;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+.credit-card a:hover { color: #10264d; }
+.credit-card a:focus-visible { outline: 2px solid #205b7a; outline-offset: 4px; }
 
 /* ============================================================
    ANIMATIONS
@@ -1585,7 +1608,13 @@ html[data-motion="off"] *::after {
     padding-top: 100px;
     min-height: auto;
   }
-  .hero-polaroids { height: 420px; margin-top: 24px; }
+  .hero-polaroids {
+    --carousel-left-extension: 0px;
+    height: 420px;
+    margin-top: 24px;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+            mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
   .about-grid { grid-template-columns: 1fr; }
   .about-photo { max-width: 420px; }
   .toolkit-grid { grid-template-columns: 1fr; }
