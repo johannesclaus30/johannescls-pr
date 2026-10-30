@@ -22,7 +22,7 @@
   gap: clamp(24px, 5vw, 80px);
   padding: 20px 0 60px;
 }
-.synergy-kicker, .synergy-feature-credit, .synergy-desk span {
+.synergy-kicker, .synergy-feature-credit, .synergy-kit-status {
   font-family: var(--f-mono);
   font-size: 11px;
   text-transform: uppercase;
@@ -49,11 +49,31 @@
 }
 .synergy-logo-feature img { display: block; width: 100%; max-height: 620px; object-fit: contain; }
 .synergy-logo-feature:focus-visible { outline: 2px solid #f5d963; outline-offset: 6px; }
-.synergy-desk { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 16px; border-top: 3px double #8293ac; padding: 24px 0; }
-.synergy-desk h3 { font-family: var(--f-serif); font-size: 28px; }
-#synergy .tile-btn img { border: 0; box-shadow: none; border-radius: 0; }
-#synergy .tile-btn .cap { color: #f7f2e8; font-family: var(--f-serif); text-transform: none; font-size: 20px; }
+.synergy-brand-kit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  border-top: 3px double #8293ac;
+  padding: 36px 0 12px;
+}
+.synergy-brand-kit h3 {
+  font-family: var(--f-serif);
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  margin: 16px 0;
+}
+.synergy-brand-kit p { max-width: 54ch; line-height: 1.8; color: #c4cfe0; }
+.synergy-kit-status {
+  flex-shrink: 0;
+  max-width: 100%;
+  border: 1px dashed #8293ac;
+  padding: 14px 18px;
+  line-height: 1.6;
+}
 @media (max-width: 700px) {
   .synergy-feature { grid-template-columns: 1fr; }
+  .synergy-brand-kit { flex-direction: column; align-items: flex-start; gap: 24px; }
   .synergy-logo-feature img { max-height: 440px; }
 }
