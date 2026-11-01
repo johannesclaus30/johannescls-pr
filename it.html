@@ -8,6 +8,7 @@
   <title>Night Shift — @johannescls</title>
   <link rel="icon" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="luminus.css">
   <script defer src="script.js"></script>
 </head>
 <body data-page="it">
@@ -90,36 +91,48 @@
     </section>
 
     <nav class="tab-bar" aria-label="Sections">
-      <a href="#campus">01 — CampusOS</a>
+      <a href="#luminus">01 — LumiNUs</a>
       <a href="#editorial">02 — The Newsroom</a>
       <a href="#personal">03 — Daybook</a>
     </nav>
 
-    <section class="case" id="campus" data-section>
-      <div class="case-head reveal">
-        <div>
-          <span class="case-num">01 — NU Lipa / academic concept</span>
-          <h2>Campus<em>OS.</em></h2>
-          <p class="case-desc">A calmer way to manage a busy campus — schedules, announcements, and student info in one clear view.</p>
+    <section class="case luminus-case" id="luminus" data-section aria-labelledby="luminus-title">
+      <div class="luminus-intro reveal">
+        <div class="luminus-identity">
+          <span class="luminus-eyebrow">01 / Capstone project · Mobile &amp; web</span>
+          <h2 id="luminus-title"><span class="sr-only">LumiNUs</span><img src="assets/tech/LumiNUs/logos/LumiNUs_Logo_Landscape_White.png" alt="" loading="lazy" decoding="async"></h2>
+          <p class="luminus-lead">Connecting alumni.<br><span>Strengthening a lifelong community.</span></p>
+          <p class="luminus-summary">An alumni management system for the NU Lipa Alumni Affairs Office, bringing alumni information, digital identification, and community engagement together across mobile and web.</p>
         </div>
-        <span class="case-badge">Mock concept</span>
+        <div class="luminus-partnership">
+          <img src="assets/tech/LumiNUs/logos/NULIPA_AAO_White.png" alt="" loading="lazy" decoding="async">
+          <p>In partnership with<br><span>NU Lipa Alumni Affairs Office (AAO)</span></p>
+        </div>
       </div>
 
-      <div class="case-shots reveal">
-        <button class="case-shot" data-image="assets/work/campus-screen-1.svg" data-group="campus" data-title="CampusOS — overview" data-description="Illustrative dashboard mock.">
-          <img src="assets/work/campus-screen-1.svg" alt="CampusOS dashboard mock" loading="lazy">
-          <span class="shot-label"><span>01 / overview</span><span>click ↗</span></span>
-        </button>
-        <button class="case-shot" data-image="assets/work/campus-screen-2.svg" data-group="campus" data-title="CampusOS — workspace" data-description="Illustrative workspace mock.">
-          <img src="assets/work/campus-screen-2.svg" alt="CampusOS workspace mock" loading="lazy">
-          <span class="shot-label"><span>02 / workspace</span><span>click ↗</span></span>
-        </button>
+      <div class="luminus-research reveal">
+        <span class="luminus-eyebrow">The capstone title</span>
+        <h3>A Centralized Mobile and Web-Based Alumni Management System With Geolocation Mapping, Virtual Alumni Identification, and Community Engagement for Institutional Tracer Studies</h3>
       </div>
 
-      <div class="case-meta reveal">
-        <div><span class="label">The concept</span><p>A mock academic dashboard bringing schedules, announcements, and student information into one clear view.</p></div>
-        <div><span class="label">The focus</span><p>Information hierarchy, thoughtful navigation, and an interface that gives the next action room to breathe.</p></div>
-        <div><span class="label">Status</span><p>Mock project · ready for your real system.</p></div>
+      <div class="luminus-resources reveal" aria-label="LumiNUs project resources">
+        <!-- Replace each pending status with a link when the resource is supplied. -->
+        <article class="luminus-resource">
+          <span class="luminus-eyebrow">01 / Documentation</span>
+          <h3>User manual</h3>
+          <p>A guide to navigating and using the LumiNUs system.</p>
+          <span class="luminus-resource-status">Manual coming soon</span>
+        </article>
+        <article class="luminus-resource">
+          <span class="luminus-eyebrow">02 / Source code</span>
+          <h3>GitHub repository</h3>
+          <p>Explore the project’s source code on GitHub.</p>
+          <span class="luminus-resource-status">Repository link coming soon</span>
+        </article>
+      </div>
+      <div class="luminus-project-note reveal">
+        <span>Built as a team capstone project</span>
+        <span>For the NU Lipa alumni community</span>
       </div>
     </section>
 

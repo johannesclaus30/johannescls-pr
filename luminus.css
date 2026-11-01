@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* LumiNUs identity is confined to this capstone section. */
+#luminus {
+  --luminus-blue: #32418c;
+  --luminus-gold: #fbd117;
+  --f-sans: 'Poppins', Arial, sans-serif;
+  font-family: var(--f-sans);
+  background: var(--luminus-blue);
+  color: #fff;
+  border-top: 7px solid var(--luminus-gold);
+  border-bottom: 0;
+}
+.luminus-intro { display: grid; gap: 32px; }
+.luminus-eyebrow { display: block; color: var(--luminus-gold); font-size: 10px; font-weight: 600; line-height: 1.8; letter-spacing: .13em; text-transform: uppercase; }
+.luminus-identity h2 { margin: 28px 0; }
+.luminus-identity h2 img { width: min(100%, 540px); height: auto; }
+.luminus-lead { font-size: clamp(24px, 3vw, 42px); font-weight: 700; line-height: 1.3; letter-spacing: -.035em; }
+.luminus-lead span { color: var(--luminus-gold); }
+.luminus-summary { margin-top: 20px; max-width: 62ch; font-size: 14px; line-height: 1.9; color: #edf0ff; }
+.luminus-research { margin-top: clamp(36px, 5vw, 64px); padding: clamp(24px, 3vw, 40px); background: #253474; border-left: 4px solid var(--luminus-gold); }
+.luminus-research h3 { max-width: 85ch; font-size: clamp(17px, 2.1vw, 27px); line-height: 1.65; font-weight: 500; margin-top: 14px; }
+.luminus-project-note { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ffffff40; color: #dce2ff; font-size: 11px; }
+
+#luminus .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+.luminus-partnership { display: flex; align-items: center; gap: 18px; padding-top: 24px; border-top: 1px solid #ffffff30; }
+.luminus-partnership img { width: 120px; height: auto; flex-shrink: 0; }
+.luminus-partnership p { font-size: 11px; line-height: 1.8; color: #dce2ff; }
+.luminus-partnership p span { font-weight: 500; }
+.luminus-resources { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 36px; }
+.luminus-resource { padding: clamp(24px, 3vw, 36px); border: 1px solid #ffffff40; border-radius: 8px; background: #ffffff08; }
+.luminus-resource h3 { margin: 18px 0 12px; font-size: 22px; font-weight: 600; }
+.luminus-resource p { color: #edf0ff; font-size: 13px; line-height: 1.8; }
+.luminus-resource-status { display: inline-block; margin-top: 24px; padding: 8px 12px; border: 1px dashed #ffffff55; border-radius: 4px; color: #dce2ff; font-size: 11px; }
+@media (max-width: 700px) { .luminus-resources { grid-template-columns: 1fr; } .luminus-partnership { gap: 12px; } .luminus-partnership img { width: 90px; } }

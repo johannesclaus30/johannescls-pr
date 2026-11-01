@@ -1833,3 +1833,5 @@ html:has(#construction-notice[open]) { overflow: hidden; }
   html:not([data-motion="off"]) .tool-card:hover .tool-mark,
   html:not([data-motion="off"]) .tool-card:hover .tool-mark img { transform: none; animation: none; }
 }
+
+.home-project-luminus { background: #32418c; padding: clamp(24px, 4vw, 48px); }
