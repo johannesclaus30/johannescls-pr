@@ -9,6 +9,7 @@
   <link rel="icon" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="luminus.css">
+  <link rel="stylesheet" href="e-reklamo.css">
   <script defer src="script.js"></script>
 </head>
 <body data-page="it">
@@ -92,7 +93,7 @@
 
     <nav class="tab-bar" aria-label="Sections">
       <a href="#luminus">01 — LumiNUs</a>
-      <a href="#editorial">02 — The Newsroom</a>
+      <a href="#e-reklamo">02 — E-Reklamo</a>
       <a href="#personal">03 — Daybook</a>
     </nav>
 
@@ -136,32 +137,45 @@
       </div>
     </section>
 
-    <section class="case" id="editorial" data-section>
-      <div class="case-head reveal">
-        <div>
-          <span class="case-num">02 — student publication / workflow concept</span>
-          <h2>The News<em>room.</em></h2>
-          <p class="case-desc">Give every story a place to start — assignment, photo coverage, and release, tracked from idea to publish.</p>
+    <section class="case e-reklamo-case" id="e-reklamo" data-section aria-labelledby="e-reklamo-title">
+      <div class="e-reklamo-heading reveal">
+        <span class="e-reklamo-eyebrow">02 / Web application · Team project</span>
+        <span class="e-reklamo-category">Community complaint management</span>
+      </div>
+      <div class="e-reklamo-feature reveal">
+        <div class="e-reklamo-copy">
+          <h2 id="e-reklamo-title"><span class="e-reklamo-sr-only">eReklamo</span><img class="e-reklamo-logo" src="assets/tech/E-Reklamo/logos/eReklamo_White.png" alt="" width="2000" height="600" loading="lazy" decoding="async"></h2>
+          <p class="e-reklamo-lead">A voice for concerns.<br><span>A way forward for communities.</span></p>
+          <p class="e-reklamo-summary">A community complaint management website we built to help people submit concerns and track their resolution in one place.</p>
+          <div class="e-reklamo-tags" aria-label="Project focus">
+            <span>Submit concerns</span><span>Track complaints</span><span>Community engagement</span>
+          </div>
         </div>
-        <span class="case-badge">Mock concept</span>
+        <figure class="e-reklamo-preview">
+          <div class="e-reklamo-browser" aria-hidden="true"><img src="assets/tech/E-Reklamo/logos/eReklamo_Icon.png" alt="" width="24" height="24" loading="lazy" decoding="async"><span>eReklamo / Web application</span></div>
+          <button class="e-reklamo-screen" data-image="assets/tech/E-Reklamo/screens/e-reklamo-home.png" data-group="e-reklamo" data-title="E-Reklamo — Homepage" data-description="Homepage preview of our community complaint management website. Figures shown are part of the supplied interface preview." aria-label="Enlarge the E-Reklamo homepage screenshot">
+            <img src="assets/tech/E-Reklamo/screens/e-reklamo-home.png" alt="E-Reklamo orange homepage with options to submit and track a complaint" width="500" height="284" loading="lazy" decoding="async">
+            <span class="e-reklamo-enlarge">View screen <span aria-hidden="true">↗</span></span>
+          </button>
+          <figcaption>A first look at the website’s homepage.</figcaption>
+        </figure>
       </div>
-
-      <div class="case-shots reveal">
-        <button class="case-shot" data-image="assets/work/editorial-screen-1.svg" data-group="editorial" data-title="The Newsroom — overview" data-description="Illustrative dashboard mock.">
-          <img src="assets/work/editorial-screen-1.svg" alt="The Newsroom dashboard mock" loading="lazy">
-          <span class="shot-label"><span>01 / overview</span><span>click ↗</span></span>
-        </button>
-        <button class="case-shot" data-image="assets/work/editorial-screen-2.svg" data-group="editorial" data-title="The Newsroom — workspace" data-description="Illustrative workspace mock.">
-          <img src="assets/work/editorial-screen-2.svg" alt="The Newsroom workspace mock" loading="lazy">
-          <span class="shot-label"><span>02 / workspace</span><span>click ↗</span></span>
-        </button>
+      <div class="e-reklamo-resources reveal" aria-label="eReklamo project resources">
+        <!-- Replace each pending status with a link when the resource is supplied. -->
+        <article class="e-reklamo-resource">
+          <span class="e-reklamo-eyebrow">01 / Documentation</span>
+          <h3>User manual</h3>
+          <p>A guide to navigating and using the eReklamo system.</p>
+          <span class="e-reklamo-resource-status">Manual coming soon</span>
+        </article>
+        <article class="e-reklamo-resource">
+          <span class="e-reklamo-eyebrow">02 / Source code</span>
+          <h3>GitHub repository</h3>
+          <p>Explore the project’s source code on GitHub.</p>
+          <span class="e-reklamo-resource-status">Repository link coming soon</span>
+        </article>
       </div>
-
-      <div class="case-meta reveal">
-        <div><span class="label">The concept</span><p>A workspace for assigning stories, organizing photo coverage, and tracking a publication from idea to release.</p></div>
-        <div><span class="label">The focus</span><p>Clear state, fast scanning, and an editor-friendly flow that respects the deadline.</p></div>
-        <div><span class="label">Status</span><p>Mock project · ready for your real system.</p></div>
-      </div>
+      <div class="e-reklamo-note reveal"><span>Designed around community voices.</span><span>Built as a team.</span></div>
     </section>
 
     <section class="case" id="personal" data-section>

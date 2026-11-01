@@ -8,6 +8,7 @@
   <title>@johannescls — Two Timezones</title>
   <link rel="icon" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home-work.css">
   <script defer src="script.js"></script>
 </head>
 <body data-page="home">
@@ -138,52 +139,62 @@
     </section>
 
     <!-- SELECTED WORK -->
-    <section class="section home-work" id="selected-work" aria-labelledby="selected-work-title">
-      <div class="section-head">
-        <div class="left">
-          <span class="section-num">01 — selected work</span>
-          <h2 class="section-title" id="selected-work-title">Two sides.<br><em>One creative mind.</em></h2>
-          <p class="section-desc">A little design. A little code. A closer look at what I make.</p>
+    <section class="section work-showcase" id="selected-work" aria-labelledby="selected-work-title">
+      <div class="work-heading reveal">
+        <div>
+          <span class="section-num">01 — Selected work</span>
+          <h2 id="selected-work-title">Made to connect.<br><em>Built to matter.</em></h2>
         </div>
+        <p>Through systems, stories, and a little creative instinct.<br>Here’s a glimpse of both sides of my work.</p>
       </div>
-      <div class="home-work-grid">
-        <a class="home-project home-project-featured" href="nu-lipa.html">
-          <div class="home-project-image home-project-print">
-            <img width="640" height="640" src="assets/optimized/640/creative/NULipaMarketing/SMAffiliates.jpg" alt="NU Lipa senior high school promotional design" loading="lazy" decoding="async">
-            <span class="home-project-tag">Creative / marketing</span>
+
+      <a class="work-feature reveal" href="it.html#luminus" aria-labelledby="work-luminus-title">
+        <div class="work-feature-copy">
+          <span class="work-kicker">01 / Technology · Team capstone</span>
+          <h3 id="work-luminus-title">The connection<br>doesn’t end at<br><em>graduation.</em></h3>
+          <p>LumiNUs brings alumni information, identity, and community together across mobile and web.</p>
+          <span class="work-cta">Explore LumiNUs <span aria-hidden="true">↗</span></span>
+        </div>
+        <div class="work-feature-art">
+          <span class="work-orbit work-orbit--outer" aria-hidden="true"></span>
+          <span class="work-orbit work-orbit--inner" aria-hidden="true"></span>
+          <img src="assets/tech/LumiNUs/logos/LumiNUs_Logo_Landscape_White.png" alt="LumiNUs alumni management system" loading="lazy" decoding="async">
+          <span class="work-partner">In partnership with<br><strong>NU Lipa Alumni Affairs Office</strong></span>
+        </div>
+      </a>
+
+      <div class="work-creative-grid">
+        <a class="work-collection work-collection--nu reveal" href="nu-lipa.html" aria-labelledby="work-nu-title">
+          <div class="work-art work-art--nu">
+            <span class="work-art-label">02 / Visual communication</span>
+            <div class="work-print work-print--back"><img src="assets/optimized/640/creative/NULipaMarketing/ArawNgKagitingan.jpg" alt="NU Lipa Araw ng Kagitingan publication material" width="640" height="640" loading="lazy" decoding="async"></div>
+            <div class="work-print work-print--front"><img src="assets/optimized/640/creative/NULipaMarketing/SMAffiliates.jpg" alt="NU Lipa tuition discount for SM employees and affiliates" width="640" height="640" loading="lazy" decoding="async"></div>
+            <span class="work-art-footnote">NU Lipa / Marketing Office</span>
           </div>
-          <div class="home-project-caption">
-            <div><h3>Ideas made visible.</h3><p>Publication materials for NU Lipa Marketing Office.</p></div>
-            <span class="home-project-arrow" aria-hidden="true">↗</span>
+          <div class="work-collection-caption">
+            <div><h3 id="work-nu-title">Campus energy.<br>In full color.</h3><p>Publication materials for the NU Lipa Marketing Office.</p></div>
+            <span class="work-round-arrow" aria-hidden="true">↗</span>
           </div>
-          <span class="home-project-link">Explore the NU Lipa collection</span>
+          <span class="work-text-link">View the NU Lipa collection</span>
         </a>
-        <a class="home-project" href="it.html#luminus">
-          <div class="home-project-image home-project-screen home-project-luminus">
-            <img src="assets/tech/LumiNUs/logos/LumiNUs_Logo_Landscape_White.png" alt="LumiNUs alumni management system logo" loading="lazy" decoding="async">
-            <span class="home-project-tag">Tech / capstone project</span>
+
+        <a class="work-collection work-collection--sace reveal" href="sace.html" aria-labelledby="work-sace-title">
+          <div class="work-art work-art--sace">
+            <span class="work-art-label">03 / Student community</span>
+            <span class="work-anniversary" aria-hidden="true">04</span>
+            <div class="work-anniversary-print"><img src="assets/optimized/640/creative/SACE_SC/NULipa_4th.jpg" alt="NU Lipa 4th Anniversary — Gold and Blue design for SACE Student Council" width="640" height="640" loading="lazy" decoding="async"></div>
+            <span class="work-art-footnote">Four years of gold &amp; blue</span>
           </div>
-          <div class="home-project-caption">
-            <div><h3>Connected beyond graduation.</h3><p>LumiNUs — alumni management for NU Lipa.</p></div>
-            <span class="home-project-arrow" aria-hidden="true">↗</span>
+          <div class="work-collection-caption">
+            <div><h3 id="work-sace-title">A shared identity.<br>A reason to celebrate.</h3><p>Anniversary artwork and student council stories.</p></div>
+            <span class="work-round-arrow" aria-hidden="true">↗</span>
           </div>
-          <span class="home-project-link">Explore LumiNUs</span>
-        </a>
-        <a class="home-project" href="sace.html">
-          <div class="home-project-image home-project-event">
-            <img width="512" height="640" src="assets/optimized/640/creative/SACE_SC/NULPlay_Launch.jpg" alt="NULPlay launch publication material for SACE Student Council" loading="lazy" decoding="async">
-            <span class="home-project-tag">Creative / student council</span>
-          </div>
-          <div class="home-project-caption">
-            <div><h3>Built for the moment.</h3><p>Event publicity and visuals for SACE Student Council.</p></div>
-            <span class="home-project-arrow" aria-hidden="true">↗</span>
-          </div>
-          <span class="home-project-link">Explore the SACE collection</span>
+          <span class="work-text-link">View the SACE collection</span>
         </a>
       </div>
-      <div class="home-work-footer">
-        <span>There’s more on both sides.</span>
-        <div><a href="creative.html">Creative archive ↗</a><a href="it.html">IT portfolio ↗</a></div>
+      <div class="work-explore">
+        <span>One portfolio. Two perspectives.</span>
+        <div><a href="it.html">Explore IT work <span aria-hidden="true">↗</span></a><a href="creative.html">Explore creative work <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
 

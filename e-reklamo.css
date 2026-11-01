@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* E-Reklamo: an orange identity scoped to its project section. */
+#e-reklamo { --reklamo-orange: #ff7517; --reklamo-ink: #48220d; --f-sans: 'Poppins', Arial, sans-serif; --f-mono: 'Poppins', Arial, sans-serif; font-family: var(--f-sans); background: var(--reklamo-orange); color: var(--reklamo-ink); border-top: 7px solid #e45b0a; border-bottom: 0; }
+.e-reklamo-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 40px; }
+.e-reklamo-eyebrow { font: 11px var(--f-mono); color: #54250d; text-transform: uppercase; letter-spacing: .1em; line-height: 1.7; }
+.e-reklamo-category { border: 1px solid #602e1660; border-radius: 100px; padding: 8px 12px; font-size: 10px; color: #54250d; }
+.e-reklamo-feature { display: grid; grid-template-columns: 1fr 1.25fr; align-items: center; gap: clamp(32px, 5vw, 72px); }
+.e-reklamo-copy h2 { font-family: var(--f-sans); font-size: clamp(36px, 4.5vw, 68px); font-weight: 800; letter-spacing: -.05em; line-height: 1.1; overflow-wrap: anywhere; }
+.e-reklamo-logo { display: block; width: min(100%, 500px); height: auto; }
+.e-reklamo-lead { font-size: clamp(20px, 2.4vw, 32px); font-weight: 700; line-height: 1.4; letter-spacing: -.025em; margin-top: 26px; }
+.e-reklamo-lead > span { color: #48220d; }
+.e-reklamo-summary { font-size: 14px; line-height: 1.85; max-width: 52ch; color: #48220d; margin-top: 20px; }
+.e-reklamo-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.e-reklamo-tags > span { padding: 7px 10px; font-size: 10px; line-height: 1.5; color: #54250d; background: #ffffffb8; border-radius: 4px; }
+.e-reklamo-preview { margin: 0; min-width: 0; padding: clamp(16px, 2.5vw, 32px); background: #ffffff26; border: 1px solid #ffffff55; border-radius: 12px; }
+.e-reklamo-browser { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px; background: #fff; color: #9c7765; border-bottom: 1px solid #f2ded1; border-radius: 6px 6px 0 0; font-size: 9px; }
+.e-reklamo-browser img { width: 24px; height: 24px; object-fit: contain; }
+.e-reklamo-screen { display: block; width: 100%; padding: 0; border: 0; border-radius: 0 0 6px 6px; overflow: hidden; background: #fff; cursor: zoom-in; box-shadow: 0 20px 32px #9a491d22; }
+.e-reklamo-screen img { display: block; width: 100%; height: auto; }
+.e-reklamo-enlarge { display: flex; justify-content: space-between; padding: 12px 16px; border-top: 1px solid #f2ded1; color: #54250d; font: 10px var(--f-mono); text-transform: uppercase; letter-spacing: .06em; }
+.e-reklamo-preview figcaption { font-size: 11px; color: #54250d; margin-top: 16px; line-height: 1.6; }
+.e-reklamo-screen:focus-visible { outline: 3px solid #97401d; outline-offset: 5px; }
+.e-reklamo-note { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #602e1655; color: #54250d; font-size: 11px; }
+@media (max-width: 800px) { .e-reklamo-feature { grid-template-columns: 1fr; } .e-reklamo-preview { width: 100%; max-width: 680px; } }
+
+#e-reklamo button { font-family: var(--f-sans); }
+.e-reklamo-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+.e-reklamo-resources { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 36px; }
+.e-reklamo-resource { padding: clamp(24px, 3vw, 36px); border: 1px solid #ffffff60; border-radius: 8px; background: #ffffffb8; }
+.e-reklamo-resource h3 { margin: 18px 0 12px; font-size: 22px; font-weight: 600; }
+.e-reklamo-resource p { color: var(--reklamo-ink); font-size: 13px; line-height: 1.8; }
+.e-reklamo-resource-status { display: inline-block; margin-top: 24px; padding: 8px 12px; border: 1px dashed #602e1660; border-radius: 4px; color: #54250d; font-size: 11px; }
+@media (max-width: 700px) { .e-reklamo-resources { grid-template-columns: 1fr; } }

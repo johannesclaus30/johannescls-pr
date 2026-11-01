@@ -13,7 +13,7 @@ Open `index.html` in your browser. Photos, artwork, and tool logos are stored lo
 | Page | Content |
 | --- | --- |
 | `index.html` | Résumé, experience, selected work, and a night/day perspective switch. |
-| `it.html` | Development toolkit, LumiNUs capstone project, and two illustrative concepts: The Newsroom and Daybook. |
+| `it.html` | Development toolkit, LumiNUs capstone project, E-Reklamo team website, and the illustrative Daybook concept. |
 | `creative.html` | Creative toolkit and organization-based collections for NU Lipa, SACE Student Council, The Synergy, and YES-O. |
 | `nu-lipa.html` | Dedicated NU Lipa Marketing Office gallery and interactive tri-fold brochure. |
 | `sace.html` | Dedicated SACE Student Council logo and publication-material gallery. |
@@ -49,7 +49,7 @@ tools/
   build_galleries.py Legacy gallery generator
 ```
 
-`styles.css` and `script.js` provide shared layout and interactions. Section-specific styling lives in `creative.css`, `nu-lipa.css`, `sace.css`, and `synergy.css`. The brochure has its own `brochure.css` and `brochure.js`.
+`styles.css` and `script.js` provide shared layout and interactions. `home-work.css` styles the homepage’s selected-work showcase, led by LumiNUs with NU Lipa and SACE collection previews. Section-specific styling lives in `creative.css`, `nu-lipa.css`, `sace.css`, and `synergy.css`. The brochure has its own `brochure.css` and `brochure.js`.
 
 ## Updating artwork
 
@@ -94,7 +94,9 @@ The helper uses Windows `System.Drawing` and reads `tools/image-plan.json`. It s
 
 LumiNUs is a team capstone project in partnership with the NU Lipa Alumni Affairs Office (AAO): a centralized mobile and web-based alumni management system with geolocation mapping, virtual alumni identification, and community engagement for institutional tracer studies. Its section uses NU blue (`#32418c`), gold (`#fbd117`), and Poppins, with dedicated styling in `luminus.css`. The section reserves spaces for the system user manual and GitHub repository; links will be added when supplied.
 
-The Newsroom and Daybook are explicitly labeled mock concepts, with illustrative SVG screens and sample data. When replacing them with completed projects, update the screenshots, descriptions, contribution details, and viewer text together. Keep concept disclosures until the content represents actual work.
+E-Reklamo is a team-built community complaint management website with its own orange styling in `e-reklamo.css` and an actual supplied homepage preview in `assets/tech/E-Reklamo/screens/`. The section uses a full orange background, Poppins typography, and the supplied white wordmark and app icon from `assets/tech/E-Reklamo/logos/`. Dedicated User Manual and GitHub repository spaces are marked coming soon until the resources are supplied.
+
+Daybook is explicitly labeled a mock concept, with illustrative SVG screens and sample data. When replacing them with completed projects, update the screenshots, descriptions, contribution details, and viewer text together. Keep concept disclosures until the content represents actual work.
 
 ## Motion and accessibility
 
