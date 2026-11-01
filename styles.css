@@ -1798,3 +1798,38 @@ html:has(#construction-notice[open]) { overflow: hidden; }
   .home-project-print { aspect-ratio: 1; }
   .home-project-screen, .home-project-event { aspect-ratio: 16 / 9; }
 }
+
+/* Local brand artwork keeps toolkit cards readable in either color mode. */
+.tool-mark--logos { background: #f4f6fa; box-sizing: border-box; padding: 8px; }
+.tool-mark--logos img { display: block; width: 32px; height: 32px; object-fit: contain; }
+.tool-mark--pair { display: flex; align-items: center; justify-content: center; gap: 2px; padding: 4px; }
+.tool-mark--pair img { width: 19px; height: 30px; }
+
+/* A little personality for both toolkits; artwork stays in its brand colors. */
+.tool-card { transition: transform .32s cubic-bezier(.22, 1, .36, 1), box-shadow .32s ease, border-color .32s ease; }
+.tool-card .tool-mark { transition: box-shadow .32s ease; }
+@media (hover: hover) and (pointer: fine) {
+  .tool-card:hover { border-color: var(--accent); box-shadow: 0 12px 28px rgb(0 0 0 / 14%); }
+  html:not([data-motion="off"]) .tool-card:hover { transform: translateY(-6px); }
+  html:not([data-motion="off"]) .tool-card:hover .tool-mark { animation: tool-badge-pop .65s cubic-bezier(.22, 1, .36, 1) both; box-shadow: 0 6px 16px rgb(0 0 0 / 12%); }
+  html:not([data-motion="off"]) .tool-card:hover .tool-mark img { animation: tool-logo-wiggle .75s ease both; }
+  html:not([data-motion="off"]) .tool-card:hover .tool-mark--pair img:last-child { animation-delay: .1s; }
+}
+@keyframes tool-badge-pop {
+  0% { transform: translateY(0) scale(1); }
+  40% { transform: translateY(-5px) scale(1.12) rotate(-6deg); }
+  70% { transform: translateY(1px) scale(1.04) rotate(3deg); }
+  100% { transform: translateY(-2px) scale(1.06); }
+}
+@keyframes tool-logo-wiggle {
+  0%, 100% { transform: rotate(0); }
+  30% { transform: rotate(12deg); }
+  55% { transform: rotate(-9deg); }
+  78% { transform: rotate(4deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tool-card, .tool-card .tool-mark { transition: none; }
+  html:not([data-motion="off"]) .tool-card:hover,
+  html:not([data-motion="off"]) .tool-card:hover .tool-mark,
+  html:not([data-motion="off"]) .tool-card:hover .tool-mark img { transform: none; animation: none; }
+}

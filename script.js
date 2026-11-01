@@ -212,3 +212,87 @@ if (lb) {
     track.style.animation = 'none';
   }
 })();
+
+
+/* ---------- Synergy guidelines reader ---------- */
+(function initGuidelineReader() {
+  const carousel = document.querySelector('.synergy-carousel');
+  const gallery = document.querySelector('#synergy-gallery');
+  if (!carousel || !gallery) return;
+  const pages = [...gallery.querySelectorAll('[data-image]')];
+  if (!pages.length) return;
+  const slide = carousel.querySelector('.synergy-slide');
+  const image = slide.querySelector('img');
+  const count = carousel.querySelector('[data-guideline-count]');
+  let current = 0;
+  let request = 0;
+  let animations = [];
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  async function show(next) {
+    const direction = next >= current ? 1 : -1;
+    current = (next + pages.length) % pages.length;
+    const target = current;
+    const version = ++request;
+    const preload = new Image();
+    preload.src = pages[target].dataset.image;
+    try { await preload.decode(); } catch { return; }
+    if (version !== request) return;
+    animations.forEach(animation => animation.cancel());
+    slide.querySelector('.synergy-slide-outgoing')?.remove();
+    const outgoing = image.cloneNode();
+    outgoing.className = 'synergy-slide-outgoing';
+    outgoing.alt = '';
+    outgoing.setAttribute('aria-hidden', 'true');
+    image.src = pages[target].dataset.image;
+    image.alt = pages[current].querySelector('img').alt;
+    slide.setAttribute('aria-label', `Enlarge brand guidelines page ${current + 1}`);
+    count.textContent = `${String(current + 1).padStart(2, '0')} / ${pages.length}`;
+    if (!reducedMotion.matches && image.animate) {
+      slide.appendChild(outgoing);
+      const timing = { duration: 580, easing: 'cubic-bezier(.22, 1, .36, 1)' };
+      animations = [
+        outgoing.animate([{ opacity: 1, transform: 'translateX(0) scale(1)' }, { opacity: 0, transform: `translateX(${-direction * 8}%) scale(.98)` }], timing),
+        image.animate([{ opacity: 0, transform: `translateX(${direction * 8}%) scale(1.02)` }, { opacity: 1, transform: 'translateX(0) scale(1)' }], timing)
+      ];
+      Promise.allSettled(animations.map(animation => animation.finished)).then(() => outgoing.remove());
+    }
+  }
+  carousel.querySelector('[data-guideline-prev]').addEventListener('click', () => show(current - 1));
+  carousel.querySelector('[data-guideline-next]').addEventListener('click', () => show(current + 1));
+  carousel.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      show(current + (e.key === 'ArrowRight' ? 1 : -1));
+    }
+  });
+  let touchStart = null;
+  let swiped = false;
+  slide.addEventListener('touchstart', e => {
+    if (e.touches.length !== 1) { touchStart = null; return; }
+    touchStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    swiped = false;
+  }, { passive: true });
+  slide.addEventListener('touchend', e => {
+    if (!touchStart) return;
+    const dx = e.changedTouches[0].clientX - touchStart.x;
+    const dy = e.changedTouches[0].clientY - touchStart.y;
+    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.3) {
+      swiped = true;
+      show(current + (dx < 0 ? 1 : -1));
+    }
+    touchStart = null;
+  }, { passive: true });
+  slide.addEventListener('touchcancel', () => { touchStart = null; });
+  slide.addEventListener('click', e => {
+    if (swiped) { swiped = false; e.preventDefault(); return; }
+    const visible = pages.find(page => page.dataset.image === image.getAttribute('src'));
+    visible?.click();
+  });
+  carousel.querySelector('[data-guideline-all]').addEventListener('click', () => gallery.showModal());
+  gallery.querySelector('[data-gallery-close]').addEventListener('click', () => gallery.close());
+  gallery.addEventListener('click', e => {
+    if (e.target !== gallery) return;
+    const bounds = gallery.getBoundingClientRect();
+    if (e.clientX < bounds.left || e.clientX > bounds.right || e.clientY < bounds.top || e.clientY > bounds.bottom) gallery.close();
+  });
+})();

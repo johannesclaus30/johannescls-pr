@@ -147,3 +147,19 @@ body[data-page="creative"] .tile-btn .cap {
   .polaroid-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
   .org-identity { align-items: flex-start; }
 }
+
+/* An honest holding space while the YES-O collection is being compiled. */
+#yeso { background: #eaf0df; color: #244b38; }
+#yeso .org-index, #yeso .org-head h2 em { color: #386b4b; }
+#yeso .org-sub, #yeso .count { color: #40604a; }
+#yeso .count { border-color: #52734c66; }
+.yeso-coming-soon { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: clamp(24px, 6vw, 88px); padding: clamp(24px, 4vw, 56px); border: 1px solid #52734c40; border-radius: 8px; background: #f6f8ef; }
+.yeso-growth { position: relative; display: grid; place-items: center; max-width: 280px; width: 100%; margin: auto; aspect-ratio: 1; color: #527b45; }
+.yeso-growth svg { width: 78%; }
+.yeso-orbit { position: absolute; inset: 8%; border: 1px dashed #52734c55; border-radius: 50%; }
+.yeso-growth-label { position: absolute; bottom: 3%; padding: 6px 12px; background: #f6f8ef; font: 10px var(--f-mono); text-transform: uppercase; letter-spacing: .15em; }
+.yeso-status { display: inline-block; font: 10px var(--f-mono); text-transform: uppercase; letter-spacing: .12em; padding: 8px 12px; border: 1px solid #52734c55; border-radius: 100px; }
+.yeso-coming-soon h3 { font-family: var(--f-serif); font-size: clamp(30px, 4vw, 56px); line-height: 1.1; letter-spacing: -.035em; margin: 22px 0 18px; }
+.yeso-coming-soon p { max-width: 52ch; font-size: 14px; line-height: 1.8; color: #40604a; }
+.yeso-note { display: block; margin-top: 24px; font: 10px var(--f-mono); text-transform: uppercase; letter-spacing: .1em; color: #52734c; }
+@media (max-width: 700px) { .yeso-coming-soon { grid-template-columns: 1fr; } .yeso-growth { max-width: 180px; } }

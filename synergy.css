@@ -77,3 +77,75 @@
   .synergy-brand-kit { flex-direction: column; align-items: flex-start; gap: 24px; }
   .synergy-logo-feature img { max-height: 440px; }
 }
+
+/* Keep the guidelines in reading order and preserve each page's proportions. */
+.synergy-guidelines {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 36px);
+  margin-top: 32px;
+}
+.synergy-guideline-page {
+  min-width: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  gap: 12px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #c4cfe0;
+  text-align: left;
+  cursor: zoom-in;
+}
+.synergy-guideline-page img { display: block; width: 100%; height: auto; }
+.synergy-guideline-page span {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.synergy-guideline-page:hover span { color: #f5d963; }
+.synergy-guideline-page:focus-visible { outline: 2px solid #f5d963; outline-offset: 6px; }
+@media (max-width: 700px) {
+  .synergy-guidelines { grid-template-columns: 1fr; }
+}
+
+/* A wide reader, with the full collection available on demand. */
+.synergy-carousel { width: 100%; max-width: 1100px; margin: 32px auto 0; }
+.synergy-slide { position: relative; overflow: hidden; display: block; width: 100%; padding: 0; border: 1px solid #8293ac55; border-radius: 8px; background: #071226; cursor: zoom-in; touch-action: pan-y; box-shadow: 0 24px 64px #0005; }
+.synergy-slide img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; }
+.synergy-carousel-controls, .synergy-page-controls { display: flex; align-items: center; gap: 16px; }
+.synergy-carousel-controls { justify-content: space-between; flex-wrap: wrap; padding-top: 18px; }
+.synergy-carousel-controls button, .synergy-gallery-toolbar button {
+  border: 1px solid #8293ac; background: transparent; color: #f7f2e8;
+  padding: 10px 16px; min-height: 44px; cursor: pointer; font: inherit;
+}
+.synergy-carousel-controls button:hover, .synergy-gallery-toolbar button:hover { background: #243858; }
+.synergy-page-controls span { color: #c4cfe0; font: 12px var(--f-mono); }
+.synergy-carousel :focus-visible, .synergy-carousel:focus-visible, .synergy-gallery-toolbar button:focus-visible {
+  outline: 2px solid #f5d963; outline-offset: 4px;
+}
+#synergy-gallery { width: min(1100px, 94vw); max-width: 94vw; max-height: 90dvh; padding: 0 24px 24px; background: #0b1933; color: #f7f2e8; overflow-y: auto; }
+.synergy-gallery-toolbar { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0; background: #0b1933; border-bottom: 1px solid #8293ac; }
+.synergy-gallery-toolbar h2 { font-family: var(--f-serif); font-size: clamp(18px, 3vw, 28px); }
+.synergy-gallery-toolbar button { flex-shrink: 0; }
+@media (max-width: 700px) { #synergy-gallery { padding: 0 16px 16px; } }
+
+.synergy-slide img { user-select: none; -webkit-user-drag: none; }
+.synergy-slide .synergy-slide-outgoing { position: absolute; inset: 0; height: 100%; pointer-events: none; }
+.synergy-carousel-controls button { transition: background .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease; border-radius: 4px; }
+.synergy-carousel-controls button:hover { transform: translateY(-3px); border-color: #f5d963; box-shadow: 0 8px 22px #0003; }
+.synergy-carousel-controls button:active { transform: translateY(0) scale(.96); }
+.synergy-slide { transition: border-color .3s ease, box-shadow .3s ease; }
+.synergy-slide:hover { border-color: #b7c8df; box-shadow: 0 28px 72px #0007; }
+#synergy-gallery[open] { animation: synergy-gallery-enter .35s cubic-bezier(.22, 1, .36, 1); }
+#synergy-gallery[open]::backdrop { animation: synergy-backdrop-enter .35s ease; }
+@keyframes synergy-gallery-enter { from { opacity: 0; transform: translateY(24px) scale(.97); } to { opacity: 1; transform: none; } }
+@keyframes synergy-backdrop-enter { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .synergy-slide, .synergy-carousel-controls button { transition: none; }
+  .synergy-carousel-controls button:hover, .synergy-carousel-controls button:active { transform: none; }
+  #synergy-gallery[open], #synergy-gallery[open]::backdrop { animation: none; }
+}
