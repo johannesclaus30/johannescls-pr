@@ -1,0 +1,898 @@
+[
+  {
+    "source": "assets/contact_icons/Behance.png",
+    "size": 640,
+    "output": "assets/optimized/640/contact_icons/Behance.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/contact_icons/Behance.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/contact_icons/Behance.png",
+    "width": 2000,
+    "height": 2000,
+    "bytes": 140773
+  },
+  {
+    "source": "assets/contact_icons/Facebook.png",
+    "size": 640,
+    "output": "assets/optimized/640/contact_icons/Facebook.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/contact_icons/Facebook.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/contact_icons/Facebook.png",
+    "width": 2000,
+    "height": 2000,
+    "bytes": 46916
+  },
+  {
+    "source": "assets/contact_icons/GitHub.png",
+    "size": 640,
+    "output": "assets/optimized/640/contact_icons/GitHub.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/contact_icons/GitHub.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/contact_icons/GitHub.png",
+    "width": 2000,
+    "height": 2000,
+    "bytes": 101880
+  },
+  {
+    "source": "assets/contact_icons/Instagram.png",
+    "size": 640,
+    "output": "assets/optimized/640/contact_icons/Instagram.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/contact_icons/Instagram.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/contact_icons/Instagram.png",
+    "width": 2000,
+    "height": 2000,
+    "bytes": 97908
+  },
+  {
+    "source": "assets/contact_icons/LinkedIn.png",
+    "size": 640,
+    "output": "assets/optimized/640/contact_icons/LinkedIn.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/contact_icons/LinkedIn.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/contact_icons/LinkedIn.png",
+    "width": 2000,
+    "height": 2000,
+    "bytes": 70938
+  },
+  {
+    "source": "assets/contact_icons/Pinterest.png",
+    "size": 640,
+    "output": "assets/optimized/640/contact_icons/Pinterest.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/contact_icons/Pinterest.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/contact_icons/Pinterest.png",
+    "width": 2000,
+    "height": 2000,
+    "bytes": 87649
+  },
+  {
+    "source": "assets/contact_icons/TikTok.png",
+    "size": 640,
+    "output": "assets/optimized/640/contact_icons/TikTok.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/contact_icons/TikTok.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/contact_icons/TikTok.png",
+    "width": 2000,
+    "height": 2000,
+    "bytes": 94319
+  },
+  {
+    "source": "assets/contact_icons/WhatsApp.png",
+    "size": 640,
+    "output": "assets/optimized/640/contact_icons/WhatsApp.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/contact_icons/WhatsApp.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/contact_icons/WhatsApp.png",
+    "width": 2000,
+    "height": 2000,
+    "bytes": 89456
+  },
+  {
+    "source": "assets/contact_icons/X_Twitter.png",
+    "size": 640,
+    "output": "assets/optimized/640/contact_icons/X_Twitter.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/contact_icons/X_Twitter.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/contact_icons/X_Twitter.png",
+    "width": 2000,
+    "height": 2000,
+    "bytes": 93224
+  },
+  {
+    "source": "assets/contact_icons/YouTube.png",
+    "size": 640,
+    "output": "assets/optimized/640/contact_icons/YouTube.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/contact_icons/YouTube.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/contact_icons/YouTube.png",
+    "width": 2000,
+    "height": 2000,
+    "bytes": 97966
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/ArawNgKagitingan.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/ArawNgKagitingan.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/ArawNgKagitingan.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/ArawNgKagitingan.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/Enrollment Freebies_December_Pubmat.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/Enrollment Freebies_December_Pubmat.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/Enrollment Freebies_December_Pubmat.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/Enrollment Freebies_December_Pubmat.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/ExperienceETWSHS.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/ExperienceETWSHS.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/ExperienceETWSHS.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/ExperienceETWSHS.jpg",
+    "width": 3000,
+    "height": 3000,
+    "bytes": 930463
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/July13-Classes.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/July13-Classes.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 632
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/July13-Classes.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/July13-Classes.jpg",
+    "width": 2000,
+    "height": 2000,
+    "bytes": 407269
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/MeetAndGreetPoster.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/MeetAndGreetPoster.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/MeetAndGreetPoster.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/MeetAndGreetPoster.jpg",
+    "width": 1080,
+    "height": 1350,
+    "bytes": 225621
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/OwnTheCourt.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/OwnTheCourt.jpg",
+    "width": 512,
+    "height": 640,
+    "bytes": 52758
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/OwnTheCourt.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/OwnTheCourt.jpg",
+    "width": 512,
+    "height": 640,
+    "bytes": 52758
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/ProgramAssessment_Poster.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/ProgramAssessment_Poster.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/ProgramAssessment_Poster.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/ProgramAssessment_Poster.jpg",
+    "width": 1080,
+    "height": 1350,
+    "bytes": 197036
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/SMAffiliates.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/SMAffiliates.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/SMAffiliates.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/SMAffiliates.jpg",
+    "width": 3000,
+    "height": 3000,
+    "bytes": 628940
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/T2_Enrollment.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/T2_Enrollment.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/T2_Enrollment.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/T2_Enrollment.jpg",
+    "width": 1080,
+    "height": 1350,
+    "bytes": 198771
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_01.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_01.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_01.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_01.jpg",
+    "width": 2150,
+    "height": 2600,
+    "bytes": 536259
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_02.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_02.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_02.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_02.jpg",
+    "width": 2150,
+    "height": 2600,
+    "bytes": 712896
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_03.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_03.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 632
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_03.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_03.jpg",
+    "width": 2150,
+    "height": 2600,
+    "bytes": 515776
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_04.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_04.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_04.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_04.jpg",
+    "width": 2150,
+    "height": 2600,
+    "bytes": 572293
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_05.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_05.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 633
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_05.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_05.jpg",
+    "width": 2150,
+    "height": 2600,
+    "bytes": 729933
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_06.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_06.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_06.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/TriFold_Brochure/New-2026-NULP-Brochure_06.jpg",
+    "width": 2150,
+    "height": 2600,
+    "bytes": 641663
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/WelcomeHome.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/WelcomeHome.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 632
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/WelcomeHome.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/WelcomeHome.jpg",
+    "width": 1080,
+    "height": 1350,
+    "bytes": 174767
+  },
+  {
+    "source": "assets/creative/SACE_SC/Advisory.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/SACE_SC/Advisory.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 633
+  },
+  {
+    "source": "assets/creative/SACE_SC/Advisory.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/SACE_SC/Advisory.jpg",
+    "width": 1440,
+    "height": 1440,
+    "bytes": 121360
+  },
+  {
+    "source": "assets/creative/SACE_SC/HBD-Dean.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/SACE_SC/HBD-Dean.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/SACE_SC/HBD-Dean.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/SACE_SC/HBD-Dean.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/SACE_SC/NULPlay_Launch.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/SACE_SC/NULPlay_Launch.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 632
+  },
+  {
+    "source": "assets/creative/SACE_SC/NULPlay_Launch.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/SACE_SC/NULPlay_Launch.jpg",
+    "width": 1638,
+    "height": 2048,
+    "bytes": 396819
+  },
+  {
+    "source": "assets/creative/SACE_SC/NULPlay_ThankYou.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/SACE_SC/NULPlay_ThankYou.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 632
+  },
+  {
+    "source": "assets/creative/SACE_SC/NULPlay_ThankYou.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/SACE_SC/NULPlay_ThankYou.jpg",
+    "width": 2048,
+    "height": 2048,
+    "bytes": 271662
+  },
+  {
+    "source": "assets/creative/SACE_SC/NULipa_4th.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/SACE_SC/NULipa_4th.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/SACE_SC/NULipa_4th.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/SACE_SC/NULipa_4th.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page1.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page1.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 632
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page1.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page1.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 104964
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page10.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page10.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 633
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page10.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page10.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 88125
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page2.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page2.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 633
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page2.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page2.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 171367
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page3.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page3.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 633
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page3.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page3.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 155011
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page4.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page4.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 633
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page4.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page4.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 176554
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page5.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page5.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 633
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page5.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page5.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 121780
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page6.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page6.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 633
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page6.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page6.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 131579
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page7.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page7.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 633
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page7.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page7.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 107732
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page8.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page8.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 633
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page8.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page8.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 190930
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page9.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page9.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 633
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page9.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page9.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 86008
+  },
+  {
+    "source": "assets/highlights/city.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/highlights/city.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 632
+  },
+  {
+    "source": "assets/highlights/city.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/highlights/city.jpg",
+    "width": 1620,
+    "height": 2025,
+    "bytes": 301999
+  },
+  {
+    "source": "assets/highlights/code.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/highlights/code.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/highlights/code.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/highlights/code.jpg",
+    "width": 1620,
+    "height": 2025,
+    "bytes": 373894
+  },
+  {
+    "source": "assets/highlights/quote1.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/highlights/quote1.jpg",
+    "width": 736,
+    "height": 917,
+    "bytes": 130639
+  },
+  {
+    "source": "assets/highlights/quote1.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/highlights/quote1.jpg",
+    "width": 736,
+    "height": 917,
+    "bytes": 130639
+  },
+  {
+    "source": "assets/highlights/quote2.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/highlights/quote2.jpg",
+    "width": 736,
+    "height": 1104,
+    "bytes": 108110
+  },
+  {
+    "source": "assets/highlights/quote2.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/highlights/quote2.jpg",
+    "width": 736,
+    "height": 1104,
+    "bytes": 108110
+  },
+  {
+    "source": "assets/highlights/quote3.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/highlights/quote3.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/highlights/quote3.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/highlights/quote3.jpg",
+    "width": 736,
+    "height": 1308,
+    "bytes": 223982
+  },
+  {
+    "source": "assets/highlights/uni.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/highlights/uni.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 633
+  },
+  {
+    "source": "assets/highlights/uni.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/highlights/uni.jpg",
+    "width": 1620,
+    "height": 2025,
+    "bytes": 578298
+  },
+  {
+    "source": "assets/logos/ASHS.png",
+    "size": 320,
+    "output": "assets/optimized/320/logos/ASHS.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/logos/NU.png",
+    "size": 320,
+    "output": "assets/optimized/320/logos/NU.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/logos/NULipa.png",
+    "size": 320,
+    "output": "assets/optimized/320/logos/NULipa.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/logos/SACE.png",
+    "size": 320,
+    "output": "assets/optimized/320/logos/SACE.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/logos/Synergy.png",
+    "size": 320,
+    "output": "assets/optimized/320/logos/Synergy.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/logos/TheSynergy.png",
+    "size": 320,
+    "output": "assets/optimized/320/logos/TheSynergy.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/photos/johannes.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/photos/johannes.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 632
+  },
+  {
+    "source": "assets/photos/johannes.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/photos/johannes.jpg",
+    "width": 2001,
+    "height": 2001,
+    "bytes": 209304
+  },
+  {
+    "source": "assets/photos/johannes.jpg",
+    "size": 96,
+    "output": "assets/optimized/96/photos/johannes.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 632
+  },
+  {
+    "source": "assets/photos/nyc-day.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/photos/nyc-day.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/photos/nyc-day.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/photos/nyc-day.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/photos/nyc-night.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/photos/nyc-night.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/photos/nyc-night.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/photos/nyc-night.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/photos/nyc-street.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/photos/nyc-street.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/photos/nyc-street.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/photos/nyc-street.jpg",
+    "width": 1,
+    "height": 1,
+    "bytes": 631
+  },
+  {
+    "source": "assets/tool-logos/Affinity.png",
+    "size": 320,
+    "output": "assets/optimized/320/tool-logos/Affinity.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/tool-logos/Canva.png",
+    "size": 320,
+    "output": "assets/optimized/320/tool-logos/Canva.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 120
+  },
+  {
+    "source": "assets/tool-logos/capcut.png",
+    "size": 320,
+    "output": "assets/optimized/320/tool-logos/capcut.png",
+    "width": 512,
+    "height": 512,
+    "bytes": 10203
+  }
+]
