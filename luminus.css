@@ -6,26 +6,25 @@
   --luminus-gold: #fbd117;
   --f-sans: 'Poppins', Arial, sans-serif;
   font-family: var(--f-sans);
-  background: var(--luminus-blue);
+  background: radial-gradient(ellipse at 90% 3%, #5266bd66, transparent 32%), var(--luminus-blue);
   color: #fff;
   border-top: 7px solid var(--luminus-gold);
   border-bottom: 0;
 }
-.luminus-intro { display: grid; gap: 32px; }
+.luminus-intro { display: grid; grid-template-columns: 1fr 1.08fr; gap: clamp(24px, 4vw, 64px); align-items: center; padding: 48px 0 56px; }
 .luminus-eyebrow { display: block; color: var(--luminus-gold); font-size: 10px; font-weight: 600; line-height: 1.8; letter-spacing: .13em; text-transform: uppercase; }
-.luminus-identity h2 { margin: 28px 0; }
-.luminus-identity h2 img { width: min(100%, 540px); height: auto; }
-.luminus-lead { font-size: clamp(24px, 3vw, 42px); font-weight: 700; line-height: 1.3; letter-spacing: -.035em; }
+.luminus-identity { min-width: 0; }
+.luminus-identity h2 { margin: 0 0 30px; }
+.luminus-identity h2 img { width: min(100%, 230px); height: auto; }
+.luminus-lead { font-size: clamp(42px, 5.6vw, 80px); font-weight: 700; line-height: 1.04; letter-spacing: -.055em; }
 .luminus-lead span { color: var(--luminus-gold); }
-.luminus-summary { margin-top: 20px; max-width: 62ch; font-size: 14px; line-height: 1.9; color: #edf0ff; }
-.luminus-research { margin-top: clamp(36px, 5vw, 64px); padding: clamp(24px, 3vw, 40px); background: #253474; border-left: 4px solid var(--luminus-gold); }
-.luminus-research h3 { max-width: 85ch; font-size: clamp(17px, 2.1vw, 27px); line-height: 1.65; font-weight: 500; margin-top: 14px; }
+.luminus-summary { margin-top: 24px; max-width: 46ch; font-size: 13px; line-height: 1.9; color: #edf0ff; }
 .luminus-project-note { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ffffff40; color: #dce2ff; font-size: 11px; }
 
 #luminus .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 
-.luminus-partnership { display: flex; align-items: center; gap: 18px; padding-top: 24px; border-top: 1px solid #ffffff30; }
-.luminus-partnership img { width: 120px; height: auto; flex-shrink: 0; }
+.luminus-partnership { display: flex; align-items: center; gap: 18px; }
+.luminus-partnership img { width: 100px; height: auto; flex-shrink: 0; }
 .luminus-partnership p { font-size: 11px; line-height: 1.8; color: #dce2ff; }
 .luminus-partnership p span { font-weight: 500; }
 .luminus-resources { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 36px; }
@@ -102,3 +101,132 @@
 }
 html[data-motion='off'] .luminus-showcase * { transition: none !important; }
 html[data-motion='off'] .luminus-device { transform: none !important; }
+/* Project opening: identity, product, partnership, then purpose. */
+.luminus-masthead { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding-bottom: 22px; border-bottom: 1px solid #ffffff30; }
+.luminus-edition { display: flex; align-items: center; gap: 14px; color: #dce2ff; font-size: 10px; }
+.luminus-edition > span { color: var(--luminus-gold); font-size: 17px; }
+.luminus-hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-top: 30px; }
+.luminus-primary-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; padding: 15px 20px; border-radius: 7px; background: var(--luminus-gold); color: #202c65; font-size: 12px; font-weight: 600; transition: background .2s, box-shadow .2s; }
+.luminus-primary-link:hover { background: #ffe36b; box-shadow: 0 6px 25px #111b3b40; }
+.luminus-secondary-link { display: inline-flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid #ffffff65; color: #edf0ff; font-size: 11px; }
+.luminus-hero-visual { min-width: 0; isolation: isolate; }
+.luminus-hero-composition { position: relative; height: clamp(420px, 40vw, 570px); }
+.luminus-hero-halo { position: absolute; width: 95%; aspect-ratio: 1; border-radius: 50%; border: 1px solid #ffffff26; top: 50%; left: 50%; transform: translate(-50%, -50%); background: radial-gradient(circle, #7c91e833, transparent 70%); z-index: -1; }
+.luminus-hero-halo::before { content: ''; position: absolute; inset: 12%; border: 1px dashed #ffffff25; border-radius: 50%; }
+.luminus-hero-spark { position: absolute; top: 6%; right: 8%; color: var(--luminus-gold); font-size: 52px; line-height: 1; }
+.luminus-hero-caption { position: absolute; top: 3%; left: 2%; max-width: 150px; color: #dce2ff; font-size: 9px; line-height: 1.8; letter-spacing: .18em; }
+.luminus-hero-browser { position: absolute; top: 23%; left: 0; width: 96%; display: block; overflow: hidden; border: 5px solid #e2e8ff; border-top: 0; border-radius: 11px; box-shadow: 0 28px 55px #101b5559; transition: translate .3s; }
+.luminus-hero-browser:hover, .luminus-hero-phone:hover { translate: 0 -6px; }
+.luminus-hero-chrome { display: flex; align-items: center; gap: 5px; height: 30px; padding: 0 8px; background: #e2e8ff; color: #425181; font-size: 8px; }
+.luminus-hero-chrome i { width: 6px; height: 6px; border-radius: 50%; background: #91a0cb; }
+.luminus-hero-chrome i:first-child { background: #ed8b82; }
+.luminus-hero-chrome i:nth-child(2) { background: #e7c35b; }
+.luminus-hero-chrome i:nth-child(3) { background: #7cbe9a; }
+.luminus-hero-chrome > span { margin: auto; }
+.luminus-hero-chrome b { font-size: 13px; }
+.luminus-hero-browser > img { display: block; width: 100%; height: auto; }
+.luminus-hero-phone { position: absolute; display: block; width: clamp(140px, 14vw, 180px); bottom: 1%; right: 0; border: 5px solid #17224f; border-radius: 24px; overflow: hidden; box-shadow: 0 24px 50px #0c164c80, 0 0 0 1px #8fa0e0; transition: translate .3s; }
+.luminus-hero-phone img { display: block; width: 100%; height: auto; }
+.luminus-hero-label { display: flex; align-items: center; gap: 14px; margin-top: 26px; font-size: 13px; line-height: 1.8; color: #dce2ff; }
+.luminus-hero-label > span:first-child { flex-shrink: 0; color: var(--luminus-gold); font-size: 25px; }
+.luminus-context { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 26px 0; border-block: 1px solid #ffffff30; }
+.luminus-context-note { font-size: 12px; line-height: 1.8; text-align: right; }
+.luminus-context-note > span { color: #dce2ff; font-size: 10px; }
+.luminus-overview { margin-top: clamp(44px, 6vw, 80px); scroll-margin-top: 100px; }
+.luminus-overview-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; margin-bottom: 26px; }
+.luminus-overview-heading h3 { font-size: clamp(24px, 3vw, 36px); line-height: 1.2; letter-spacing: -.04em; }
+.luminus-pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-block: 1px solid #ffffff30; }
+.luminus-pillars article { padding: 30px 28px; border-right: 1px solid #ffffff30; }
+.luminus-pillars article:first-child { padding-left: 0; }
+.luminus-pillars article:last-child { border-right: 0; padding-right: 0; }
+.luminus-pillar-number { font-size: 10px; color: var(--luminus-gold); letter-spacing: .1em; }
+.luminus-pillars h4 { margin: 22px 0 12px; font-size: 19px; line-height: 1.4; letter-spacing: -.025em; }
+.luminus-pillars p { max-width: 34ch; font-size: 12px; line-height: 1.9; color: #dce2ff; }
+#luminus-mobile, #luminus-web { scroll-margin-top: 100px; }
+.luminus-research { margin-top: 64px; border-block: 1px solid #ffffff30; }
+.luminus-research summary { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 0; list-style: none; cursor: pointer; }
+.luminus-research summary::-webkit-details-marker { display: none; }
+.luminus-research summary:focus-visible { outline: 2px solid var(--luminus-gold); outline-offset: 5px; }
+.luminus-research-label { display: block; margin-top: 6px; font-size: 20px; font-weight: 500; }
+.luminus-research-toggle { display: grid; place-items: center; flex-shrink: 0; width: 38px; height: 38px; border: 1px solid #ffffff40; border-radius: 50%; color: var(--luminus-gold); font-size: 23px; }
+.luminus-research[open] .luminus-research-toggle { transform: rotate(45deg); }
+.luminus-research-body { padding: 8px 0 28px; max-width: 900px; }
+.luminus-research h3 { font-size: clamp(16px, 2vw, 23px); font-weight: 500; line-height: 1.7; margin-top: 12px; color: #edf0ff; }
+@media (min-width: 1600px) {
+  .luminus-intro { grid-template-columns: 1fr 1fr; }
+  .luminus-hero-visual { max-width: 760px; width: 100%; justify-self: center; }
+}
+@media (max-width: 1000px) and (min-width: 801px) {
+  .luminus-lead { font-size: 52px; }
+}
+@media (max-width: 800px) {
+  .luminus-intro { grid-template-columns: 1fr; padding-top: 34px; gap: 30px; }
+  .luminus-identity h2 { margin-bottom: 24px; }
+  .luminus-lead { font-size: clamp(48px, 9vw, 72px); }
+  .luminus-lead span br { display: none; }
+  .luminus-summary { max-width: 56ch; }
+  .luminus-hero-visual { width: min(100%, 580px); justify-self: center; }
+  .luminus-hero-composition { height: 450px; }
+  .luminus-hero-phone { width: 155px; }
+  .luminus-hero-browser { top: 20%; width: 94%; }
+  .luminus-context { align-items: flex-start; }
+  .luminus-context-note { max-width: 190px; }
+  .luminus-overview-heading { display: block; }
+  .luminus-overview-heading h3 { margin-top: 12px; }
+  .luminus-pillars article { padding: 24px 16px; }
+  .luminus-pillars h4 { font-size: 17px; }
+}
+@media (max-width: 540px) {
+  .luminus-masthead { align-items: flex-start; }
+  .luminus-edition { font-size: 9px; gap: 7px; flex-wrap: wrap; justify-content: flex-end; max-width: 150px; }
+  .luminus-identity h2 img { width: 200px; }
+  .luminus-hero-actions { gap: 16px; }
+  .luminus-hero-composition { height: 360px; }
+  .luminus-hero-phone { width: 132px; border-radius: 20px; bottom: 0; }
+  .luminus-hero-caption { top: 0; font-size: 8px; }
+  .luminus-hero-spark { top: 0; right: 5%; font-size: 36px; }
+  .luminus-hero-browser { top: 19%; }
+  .luminus-context { flex-direction: column; gap: 20px; padding-block: 24px; }
+  .luminus-context-note { max-width: none; text-align: left; padding-left: 0; }
+  .luminus-pillars { grid-template-columns: 1fr; }
+  .luminus-pillars article, .luminus-pillars article:first-child, .luminus-pillars article:last-child { padding: 24px 0; border-right: 0; border-bottom: 1px solid #ffffff30; }
+  .luminus-pillars article:last-child { border-bottom: 0; }
+  .luminus-pillars h4 { margin-top: 12px; font-size: 20px; }
+  .luminus-pillars p { max-width: 45ch; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .luminus-hero-browser, .luminus-hero-phone { transition: none; }
+}
+
+/* Comfortable reading sizes throughout the project story and controls. */
+#luminus .luminus-summary { font-size: 16px; line-height: 1.85; }
+#luminus .luminus-eyebrow { font-size: 12px; letter-spacing: .1em; }
+#luminus .luminus-edition { font-size: 12px; }
+#luminus .luminus-primary-link, #luminus .luminus-secondary-link { font-size: 14px; }
+#luminus .luminus-partnership p { font-size: 14px; }
+#luminus .luminus-context-note { font-size: 15px; }
+#luminus .luminus-context-note > span { font-size: 13px; }
+#luminus .luminus-pillar-number { font-size: 12px; }
+#luminus .luminus-pillars h4 { font-size: 22px; }
+#luminus .luminus-pillars p { font-size: 15px; line-height: 1.85; }
+#luminus .luminus-showcase-heading p { font-size: 16px; }
+#luminus .luminus-now > span { font-size: 12px; }
+#luminus .luminus-now p { font-size: 15px; }
+#luminus .luminus-route button { font-size: 13px; padding: 12px 15px; }
+#luminus .luminus-route button > span { font-size: 11px; }
+#luminus .luminus-resource p { font-size: 15px; }
+#luminus .luminus-resource-status { font-size: 13px; }
+#luminus .luminus-project-note { font-size: 13px; line-height: 1.8; }
+#luminus .luminus-stage-hint { font-size: 11px; letter-spacing: .06em; }
+#luminus .luminus-hero-label { font-size: 13px; }
+#luminus .luminus-hero-caption { font-size: 10px; }
+@media (max-width: 800px) {
+  #luminus .luminus-context-note { max-width: 245px; }
+}
+@media (max-width: 540px) {
+  #luminus .luminus-context-note { max-width: none; }
+  #luminus .luminus-hero-label { font-size: 13px; }
+  #luminus .luminus-hero-caption { max-width: 155px; }
+  #luminus .luminus-edition { max-width: 170px; font-size: 11px; }
+  #luminus .luminus-route button { font-size: 12px; padding: 11px 13px; }
+}

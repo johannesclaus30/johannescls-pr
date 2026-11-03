@@ -1,6 +1,6 @@
 # Johannes Claus — After Hours / Daylight
 
-A personal portfolio bringing together IT projects, creative work, and experience. The site pairs a photographic night/day homepage with dedicated showcases for development and design.
+A personal portfolio bringing together IT projects, creative work, and experience. The site pairs an interactive night/day homepage with dedicated showcases for development and design.
 
 Built with HTML, CSS, and JavaScript. No package manager, backend, or build step is required to view or deploy it.
 
@@ -13,7 +13,7 @@ Open `index.html` in your browser. Photos, artwork, and tool logos are stored lo
 | Page | Content |
 | --- | --- |
 | `index.html` | Résumé, experience, selected work, and a night/day perspective switch. |
-| `it.html` | Development toolkit, LumiNUs capstone project, E-Reklamo team website, and the illustrative Daybook concept. |
+| `it.html` | Development toolkit, LumiNUs capstone project, E-Reklamo team website, Internship Tracker, and an upcoming-projects section. |
 | `creative.html` | Creative toolkit and organization-based collections for NU Lipa, SACE Student Council, The Synergy, and YES-O. |
 | `nu-lipa.html` | Dedicated NU Lipa Marketing Office gallery and interactive tri-fold brochure. |
 | `sace.html` | Dedicated SACE Student Council logo and publication-material gallery. |
@@ -49,7 +49,7 @@ tools/
   build_galleries.py Legacy gallery generator
 ```
 
-`styles.css` and `script.js` provide shared layout and interactions. `home-work.css` styles the homepage’s selected-work showcase, led by LumiNUs with NU Lipa and SACE collection previews. Section-specific styling lives in `creative.css`, `nu-lipa.css`, `sace.css`, and `synergy.css`. The brochure has its own `brochure.css` and `brochure.js`.
+`styles.css` and `script.js` provide shared layout and interactions. home.css and home.js add the homepage’s day/night photo scene, sun/moon transition, synchronized project spotlight, and perspective controls. Explicit mode choices persist across visits without being overwritten by the fixed themes on project pages. The homepage opens directly, with a small in-progress note in place of the former welcome dialog. `home-work.css` styles the homepage’s selected-work showcase, led by LumiNUs with NU Lipa and SACE collection previews. Section-specific styling lives in `creative.css`, `nu-lipa.css`, `sace.css`, and `synergy.css`. The brochure has its own `brochure.css` and `brochure.js`.
 
 ## Updating artwork
 
@@ -90,7 +90,9 @@ To regenerate existing display copies on Windows, run this from the repository r
 
 The helper uses Windows `System.Drawing` and reads `tools/image-plan.json`. It saves display copies and updates `assets/optimized/manifest.json`. For new or renamed artwork, update the plan first, regenerate the images, and then update the HTML paths and dimensions. The helper does not rewrite the HTML automatically.
 
-## IT project concepts
+## IT projects
+
+The LumiNUs opening pairs a concise project introduction with overlapping mobile/web previews, direct links to each experience, a partnership strip, and three highlights for identity, community, and insight. The full academic title appears in an expandable research section after the showcases.
 
 LumiNUs presents seven mobile alumni screens in a fanned phone deck and nine web screens in a floating browser showcase. Both journeys begin with the initial/sign-in screens, with screen selectors, arrow controls, touch swipes, keyboard navigation, and click-to-zoom. Pointer tilt and transitions respect the site’s motion setting and reduced-motion preferences. Selected screens load responsive, higher-quality previews (up to 1,920 pixels on the longest edge); background cards retain small previews, and visited screens reuse cached images. Devices sit straight when idle to keep interface text crisp. Dedicated styling and interactions live in luminus.css and luminus.js.
 
@@ -98,11 +100,15 @@ LumiNUs is a team capstone project in partnership with the NU Lipa Alumni Affair
 
 E-Reklamo is a team-built community complaint management website with its own orange styling in `e-reklamo.css` and an actual supplied homepage preview in `assets/tech/E-Reklamo/screens/`. The section uses a full orange background, Poppins typography, and the supplied white wordmark and app icon from `assets/tech/E-Reklamo/logos/`. Dedicated User Manual and GitHub repository spaces are marked coming soon until the resources are supplied.
 
-Daybook is explicitly labeled a mock concept, with illustrative SVG screens and sample data. When replacing them with completed projects, update the screenshots, descriptions, contribution details, and viewer text together. Keep concept disclosures until the content represents actual work.
+Internship Tracker is a .NET MAUI project with a blue identity and Montserrat typography in tech-projects.css. Its section introduces the actual project while screenshots, feature details, and the project story await supplied content. The former Daybook mock screens are no longer displayed. A separate upcoming-projects section follows it.
+
+The homepage skills workbench has Build, Create, and Connect tabs with logo chips and links to relevant work. Arrow keys, Home, and End navigate the tabs. All three panels remain visible without JavaScript. Certification provider cards and a separate recognition list preserve the supplied credentials without invented dates, scores, or verification links.
 
 ## Motion and accessibility
 
-The site includes scroll reveals, photographic transitions, playful toolkit hover effects, and brochure folding animations. Toolkit effects respect reduced-motion preferences and the footer’s persistent motion setting. The brochure and guideline reader also include reduced-motion handling.
+The shared script adds scroll entrances across all six pages: headings sweep in, cards cascade in short groups, and artwork settles into place. Decorative accents also follow scroll progress in browsers that support scroll timelines. Entrances run once and preserve existing artwork transforms; switching motion off cancels active entrances. Content stays visible if scripting or animation APIs are unavailable.
+
+The site includes photographic transitions, playful toolkit hover effects, and brochure folding animations. Toolkit effects respect reduced-motion preferences and the footer’s persistent motion setting. The brochure and guideline reader also include reduced-motion handling.
 
 Image viewers offer previous/next buttons, arrow-key navigation, and Escape to close. Native modal dialogs contain keyboard focus while open. The guideline carousel supports keyboard arrows and touch swipes. Images have descriptive alternative text, while decorative logos beside tool names use empty alternatives.
 

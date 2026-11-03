@@ -1,5 +1,5 @@
 /* ============================================================
-   @johannescls — NYC Polaroid Studio
+   @johannescls â€” NYC Polaroid Studio
    Palette: cream, butter yellow, sky blue, ink navy
    Fonts: Fraunces / Space Grotesk / Caveat / JetBrains Mono
    ============================================================ */
@@ -15,7 +15,7 @@
   --ink-soft:   #445069;
   --ink-muted:  #8a8fa0;
 
-  /* Accent duo — butter + sky */
+  /* Accent duo â€” butter + sky */
   --butter:     #ffd86b;
   --butter-2:   #ffe8a3;
   --butter-ink: #8a6400;
@@ -43,7 +43,7 @@
   color-scheme: light;
 }
 
-/* NIGHT MODE — code mode */
+/* NIGHT MODE â€” code mode */
 html[data-mode="it"] {
   --bg:        #0f1a2e;
   --bg-alt:    #172440;
@@ -57,7 +57,7 @@ html[data-mode="it"] {
   color-scheme: dark;
 }
 
-/* DAY MODE — design mode */
+/* DAY MODE â€” design mode */
 html[data-mode="creative"] {
   --bg:        #fbf7ee;
   --bg-alt:    #f4eddf;
@@ -320,7 +320,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 }
 
 /* ============================================================
-   HERO — Editorial split w/ Polaroids
+   HERO â€” Editorial split w/ Polaroids
    ============================================================ */
 .hero {
   position: relative;
@@ -996,7 +996,7 @@ details.certs li {
   border-bottom: 1px dashed var(--line);
 }
 details.certs li::before {
-  content: '✳';
+  content: '\2713';
   position: absolute;
   left: 0;
   color: var(--accent);
@@ -1577,14 +1577,9 @@ dialog::backdrop {
 /* ============================================================
    ANIMATIONS
    ============================================================ */
-.reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.8s cubic-bezier(.2,.8,.2,1), transform 0.8s cubic-bezier(.2,.8,.2,1);
-}
-.reveal.in { opacity: 1; transform: translateY(0); }
-
-html[data-motion="off"] .reveal { opacity: 1; transform: none; transition: none; }
+/* Content stays readable without scripting; entrances are progressively enhanced. */
+.reveal { opacity: 1; }
+html[data-motion="off"] .reveal { opacity: 1; }
 html[data-motion="off"] *,
 html[data-motion="off"] *::before,
 html[data-motion="off"] *::after {
@@ -1801,4 +1796,32 @@ html:has(#construction-notice[open]) { overflow: hidden; }
   html:not([data-motion="off"]) .tool-card:hover,
   html:not([data-motion="off"]) .tool-card:hover .tool-mark,
   html:not([data-motion="off"]) .tool-card:hover .tool-mark img { transform: none; animation: none; }
+}
+
+/* Larger reading text, without changing the scale of the display headings. */
+.label, .section-num, .case-num { font-size: 12px; }
+.tool-card p { font-size: 15px; line-height: 1.75; }
+.credit-card p { font-size: 15px; line-height: 1.8; }
+.lb-caption p { font-size: 15px; line-height: 1.8; }
+.footer-meta { font-size: 13px; }
+
+/* Decorative accents follow the scroll; unsupported browsers keep them still. */
+@supports (animation-timeline: view()) {
+  html[data-motion="on"] .luminus-hero-spark,
+  html[data-motion="on"] .projects-coming-mark,
+  html[data-motion="on"] .internship-orbit {
+    animation: scroll-turn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% exit 100%;
+  }
+  html[data-motion="on"] .luminus-hero-halo {
+    animation: scroll-halo linear both;
+    animation-timeline: view();
+    animation-range: entry 0% exit 100%;
+  }
+}
+@keyframes scroll-turn { from { rotate: -30deg; } to { rotate: 85deg; } }
+@keyframes scroll-halo { from { scale: .86; opacity: .5; } to { scale: 1.08; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .luminus-hero-spark, .projects-coming-mark, .internship-orbit, .luminus-hero-halo { animation: none !important; }
 }

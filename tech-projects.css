@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* Internship Tracker: a blue project identity until its case study is supplied. */
+#internship-tracker { --f-sans: 'Montserrat', Arial, sans-serif; font-family: var(--f-sans); background: #293979; color: #fff; border-top: 1px solid #ffffff30; scroll-margin-top: 80px; }
+.internship-masthead { display: flex; justify-content: space-between; gap: 20px; border-bottom: 1px solid #ffffff35; padding-bottom: 22px; font-size: 13px; }
+.internship-feature { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(24px, 5vw, 80px); align-items: center; padding-block: 52px; }
+.internship-copy { min-width: 0; }
+.internship-kicker { font-size: 15px; color: #c8d5ff; }
+.internship-copy h2 { font-family: var(--f-sans); font-size: clamp(44px, 6.4vw, 90px); line-height: 1.05; letter-spacing: -.06em; margin: 22px 0; }
+.internship-copy h2 em { font-style: normal; color: #b7d5ff; }
+.internship-copy > p { max-width: 43ch; font-size: 17px; line-height: 1.8; color: #e1e8ff; }
+.internship-tags { display: flex; flex-wrap: wrap; gap: 10px; margin: 25px 0; }
+.internship-tags > span { border: 1px solid #ffffff50; border-radius: 24px; padding: 9px 15px; font-size: 13px; }
+.internship-copy .internship-pending { display: flex; gap: 12px; padding-top: 24px; border-top: 1px solid #ffffff30; font-size: 14px; color: #c8d5ff; }
+.internship-pending > span { font-size: 25px; line-height: 1.1; }
+.internship-art { position: relative; display: grid; place-items: center; min-width: 0; min-height: 390px; overflow: hidden; border: 1px solid #8ca5eb60; border-radius: 24px; background: radial-gradient(ellipse at 50% 30%, #647ee866, transparent 70%), #20306b; }
+.internship-art::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(#ffffff0b 1px, transparent 1px), linear-gradient(90deg, #ffffff0b 1px, transparent 1px); background-size: 32px 32px; }
+.internship-orbit { position: absolute; width: 300px; height: 300px; border: 1px solid #9cb9ff40; border-radius: 50%; }
+.internship-orbit::after { content: ''; position: absolute; inset: 25px; border: 1px dashed #9cb9ff40; border-radius: 50%; }
+.internship-monogram { position: relative; display: flex; align-items: baseline; font-size: clamp(110px, 16vw, 210px); line-height: 1; font-weight: 700; letter-spacing: -.12em; padding-right: .13em; }
+.internship-monogram > span:last-of-type { color: #a8cbff; }
+.internship-monogram i { position: absolute; top: -20px; right: -15px; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; font-style: normal; font-size: 25px; letter-spacing: 0; background: #b8d5ff; color: #20306b; }
+.internship-art-label { position: absolute; left: 24px; top: 24px; color: #a9bce9; font-family: var(--f-mono); font-size: 12px; letter-spacing: .08em; }
+.internship-art-foot { position: absolute; bottom: 24px; left: 24px; right: 24px; display: flex; justify-content: space-between; gap: 20px; font-size: 13px; }
+.internship-art-foot b { font-weight: 400; color: #b3c8ff; }
+.internship-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-top: 1px solid #ffffff35; padding-top: 24px; color: #d9e3ff; font-size: 14px; }
+.projects-coming { display: grid; grid-template-columns: .65fr 1fr; align-items: center; gap: 40px; overflow: hidden; scroll-margin-top: 80px; }
+.projects-coming-mark { font-size: clamp(120px, 24vw, 310px); line-height: 1; text-align: center; color: var(--accent); }
+.projects-coming h2 { font-family: var(--f-serif); font-size: clamp(40px, 6vw, 82px); letter-spacing: -.05em; line-height: 1.08; margin: 22px 0; }
+.projects-coming h2 em { color: var(--accent); }
+.projects-coming p { font-size: 17px; line-height: 1.85; color: var(--fg-soft); }
+.projects-coming-note { display: inline-flex; gap: 28px; margin-top: 28px; border-bottom: 1px solid var(--line-hard); padding-bottom: 12px; font-size: 14px; }
+@media (max-width: 750px) {
+  .internship-feature { grid-template-columns: 1fr; padding-block: 34px; }
+  .internship-art { min-height: 330px; }
+  .internship-masthead { flex-wrap: wrap; font-size: 12px; }
+  .projects-coming { grid-template-columns: 1fr; gap: 30px; }
+  .projects-coming-mark { text-align: left; font-size: 100px; }
+}

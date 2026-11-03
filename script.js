@@ -1,5 +1,5 @@
 /* ============================================================
-   @johannescls — Portfolio Engine v2
+   @johannescls â€” Portfolio Engine v2
    ============================================================ */
 
 const root = document.documentElement;
@@ -24,7 +24,7 @@ try {
 } catch {}
 
 /* ---------- Theme ---------- */
-function setMode(next) {
+function setMode(next, persist = false) {
   mode = next === 'creative' ? 'creative' : 'it';
   root.dataset.mode = mode;
 
@@ -43,20 +43,21 @@ function setMode(next) {
     const cta = document.querySelector('[data-hero-cta]');
     const ctaLabel = document.querySelector('[data-hero-cta-label]');
 
-    if (eyebrow) eyebrow.textContent = isDay ? 'The daylight studio' : 'What I do at night';
+    if (eyebrow) eyebrow.textContent = isDay ? 'The daylight studio' : 'The after-hours workspace';
     if (title) title.innerHTML = isDay
-      ? 'Design is a<br><span class="italic">love letter</span><br><span class="hand">to the world.</span>'
+      ? 'Making<br><span class="italic">stories</span><br>in color.'
       : 'Building<br><span class="italic">systems</span><br>with soul.';
     if (lead) lead.textContent = isDay
-      ? 'Visual identities, publication materials, and stories in color. Created slowly, with intention.'
-      : 'Full-stack development, interfaces, and digital products. Clean logic, thoughtful engineering.';
-    if (ctaLabel) ctaLabel.textContent = isDay ? 'View My Designs' : 'Explore my IT Portfolio';
+      ? 'Visual identities, campus campaigns, and stories worth sharing. Made with a developer’s attention to detail.'
+      : 'Mobile and web applications, thoughtful interfaces, and the logic that brings them to life. Made with a designer’s eye.';
+    if (ctaLabel) ctaLabel.textContent = isDay ? 'Explore creative work' : 'Explore IT work';
     if (cta) cta.href = isDay ? 'creative.html' : 'it.html';
   }
 
-  if (page !== 'credits') {
+  if (persist) {
     try { localStorage.setItem('jc-mode', mode); } catch {}
   }
+  document.dispatchEvent(new Event('portfolio-mode-change'));
 }
 
 /* Initialize theme */
@@ -69,7 +70,7 @@ if (page === 'home') {
 }
 
 document.querySelectorAll('[data-switch]').forEach(btn =>
-  btn.addEventListener('click', () => setMode(btn.dataset.switch))
+  btn.addEventListener('click', () => setMode(btn.dataset.switch, true))
 );
 
 /* ---------- Year ---------- */
@@ -83,6 +84,7 @@ function motionEnabled() {
 }
 function applyMotion() {
   root.dataset.motion = motionEnabled() ? 'on' : 'off';
+  document.dispatchEvent(new Event('portfolio-motion-change'));
   document.querySelectorAll('.motion-toggle').forEach(btn => {
     btn.textContent = motionEnabled() ? 'Motion: on' : 'Motion: off';
     btn.setAttribute('aria-pressed', String(!motionEnabled()));
@@ -113,18 +115,57 @@ addEventListener('scroll', () => {
 }, { passive: true });
 addEventListener('load', onScroll);
 
-/* ---------- Reveal on scroll ---------- */
+/* ---------- Scroll choreography: headings sweep, artwork lands, cards cascade. ---------- */
 if ('IntersectionObserver' in window) {
+  const activeEntrances = new Set();
+  const cardSelector = '.tool-card, .credit-card, .tile-btn, .exp-row, .luminus-pillars > article';
+  const targets = [...document.querySelectorAll([
+    '.reveal', '.page-hero-inner', '.section-head', cardSelector,
+    '.footer > .label', '.footer-cta', '.footer-meta', '.brochure-heading',
+    '.luminus-showcase-heading', '.luminus-hero-browser', '.luminus-hero-phone',
+    '.credential-card', '.recognition-item', '.skill-heading', '.internship-monogram', '.home-scene', '.home-intro-strip > a', '.home-growing-note'
+  ].join(', '))];
+  const order = new Map();
+  targets.forEach(el => {
+    const siblings = [...el.parentElement.children].filter(child => child.matches(cardSelector));
+    order.set(el, Math.max(0, siblings.indexOf(el)) % 4);
+  });
   const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('in');
-        io.unobserve(e.target);
-      }
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      el.classList.add('in');
+      io.unobserve(el);
+      if (!motionEnabled() || !el.animate) return;
+      const heading = el.matches('.page-hero-inner, .section-head, .org-head, .luminus-showcase-heading, .footer-cta');
+      const artwork = el.matches('.tile-btn, .about-photo, .luminus-hero-browser, .luminus-hero-phone');
+      const group = el.querySelector(cardSelector) !== null;
+      const frames = group
+        ? [{ opacity: .6 }, { opacity: 1 }]
+        : artwork
+          ? [{ opacity: 0, translate: '0 38px', rotate: '-2deg', scale: '.96' }, { opacity: 1, translate: '0 0', rotate: '0deg', scale: '1' }]
+          : heading
+            ? [{ opacity: 0, translate: '-26px 18px' }, { opacity: 1, translate: '0 0' }]
+            : [{ opacity: 0, translate: '0 30px', scale: '.98' }, { opacity: 1, translate: '0 0', scale: '1' }];
+      const animation = el.animate(frames, {
+        duration: artwork ? 850 : 720,
+        delay: el.matches(cardSelector) ? order.get(el) * 65 : 0,
+        easing: 'cubic-bezier(.16, 1, .3, 1)',
+        fill: 'backwards'
+      });
+      activeEntrances.add(animation);
+      const release = () => activeEntrances.delete(animation);
+      animation.addEventListener('finish', release, { once: true });
+      animation.addEventListener('cancel', release, { once: true });
     });
-  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  }, { threshold: 0, rootMargin: '0px 0px -24px 0px' });
+  targets.forEach(el => io.observe(el));
+  document.addEventListener('portfolio-motion-change', () => {
+    if (!motionEnabled()) {
+      activeEntrances.forEach(animation => animation.cancel());
+      activeEntrances.clear();
+    }
+  });
 
   /* Active tab for sub-nav */
   const tabs = [...document.querySelectorAll('.tab-bar a[href^="#"]')];

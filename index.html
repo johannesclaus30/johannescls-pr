@@ -4,12 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0f1a2e">
-  <meta name="description" content="@johannescls — developer by night, designer by day. A portfolio in two timezones. Batangas → New York.">
-  <title>@johannescls — Two Timezones</title>
+  <meta name="description" content="Johannes Emmanuel A. Claus — IT student, developer, and graphic designer based in Batangas City. Explore mobile and web projects, visual identities, and campus creative work.">
+  <title>Johannes Claus — Code after hours. Color by daylight.</title>
   <link rel="icon" href="favicon.svg">
+  <script>
+    // Restore the chosen perspective before the first paint.
+    try {
+      document.documentElement.dataset.mode = localStorage.getItem('jc-mode') === 'creative' ? 'creative' : 'it';
+    } catch {}
+  </script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="home-work.css">
+  <link rel="stylesheet" href="home.css">
   <script defer src="script.js"></script>
+  <script defer src="home.js"></script>
 </head>
 <body data-page="home">
   <a class="skip" href="#main">Skip to content</a>
@@ -22,8 +30,8 @@
     </a>
 
     <div class="mode-toggle" role="group" aria-label="Switch portfolio mode">
-      <button data-switch="it" aria-pressed="true">Night</button>
-      <button data-switch="creative" aria-pressed="false">Day</button>
+      <button data-switch="it" aria-pressed="true"><span aria-hidden="true">☾</span> Night</button>
+      <button data-switch="creative" aria-pressed="false"><span aria-hidden="true">☀</span> Day</button>
     </div>
 
     <nav class="nav-links" aria-label="Main">
@@ -37,106 +45,49 @@
 
   <main id="main">
 
-    <!-- HERO -->
-    <section class="hero">
+    <!-- Two perspectives, one person. -->
+    <section class="hero home-hero" aria-labelledby="home-title">
       <div class="hero-copy reveal">
-        <div class="hero-eyebrow" data-hero-eyebrow>What I do at night</div>
-
-        <h1 data-hero-title>
-          Building<br>
-          <span class="italic">systems</span><br>
-          with soul.
-        </h1>
-
-        <p class="hero-lead" data-hero-lead>
-          Full-stack development, interfaces, and digital products.
-          Clean logic, thoughtful engineering — built on NYC frequency.
-        </p>
-
+        <p class="home-intro">Johannes Claus <span>Developer &amp; designer</span></p>
+        <div class="hero-eyebrow" data-hero-eyebrow>The after-hours workspace</div>
+        <h1 id="home-title" data-hero-title>Building<br><span class="italic">systems</span><br>with soul.</h1>
+        <p class="hero-lead" data-hero-lead>Mobile and web applications, thoughtful interfaces, and the logic that brings them to life. Made with a designer’s eye.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="it.html" data-hero-cta>
-            <span data-hero-cta-label>Explore my IT Portfolio</span>
-            <span class="arrow">↗</span>
-          </a>
-          <a class="btn btn-ghost" href="#selected-work">View selected work ↓</a>
+          <a class="btn btn-primary" href="it.html" data-hero-cta><span data-hero-cta-label>Explore IT work</span><span class="arrow">↗</span></a>
+          <a class="btn btn-ghost" href="#selected-work">Selected work ↓</a>
         </div>
+        <div class="home-mode-invite"><span aria-hidden="true">↳</span><span>One person. Two perspectives.<br><button type="button" data-other-mode>Step into the daylight <span aria-hidden="true">↗</span></button></span></div>
       </div>
 
-            <div class="hero-polaroids" aria-label="Scattered polaroids — hover to pause">
-        <div class="hero-sticker" aria-hidden="true">
-          <svg viewBox="0 0 100 100">
-            <defs>
-              <path id="circlePath" d="M 50,50 m -36,0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0"/>
-            </defs>
-            <text>
-              <textPath href="#circlePath">
-                @johannescls ✳ @johannescls ✳ @johannescls ✳
-              </textPath>
-            </text>
-          </svg>
+      <div class="home-scene reveal" aria-label="An interactive day and night moodboard">
+        <div class="home-scene-window">
+          <img class="home-scene-photo home-scene-photo--night" src="assets/optimized/1600/photos/nyc-night.jpg" alt="" width="1600" height="1067" fetchpriority="high" decoding="async">
+          <img class="home-scene-photo home-scene-photo--day" src="assets/optimized/1600/photos/nyc-day.jpg" alt="" width="1600" height="1067" decoding="async">
+          <div class="home-scene-shade" aria-hidden="true"></div>
+          <span class="home-scene-coordinates">A LITTLE CITY ENERGY.<br>A LOT OF MY OWN CURIOSITY.</span>
+          <div class="home-sky-object" aria-hidden="true"><span class="home-moon"></span><span class="home-sun"></span></div>
+          <div class="home-scene-stars" aria-hidden="true">✦<span>✧</span><i>·</i></div>
+          <div class="home-scene-caption"><span data-scene-period>AFTER HOURS / THE DEVELOPER</span><strong data-scene-word>Logic.<br>With a little magic.</strong></div>
+          <button class="home-scene-switch" type="button" data-other-mode aria-label="Switch to day mode"><span class="home-switch-icon" aria-hidden="true">☀</span><span data-scene-switch-label>Let the light in</span><span aria-hidden="true">↗</span></button>
+          <span class="home-photo-credit">NYC mood photography · <a href="credits.html">Credits ↗</a></span>
         </div>
-
-        <div class="polaroid-track">
-          <!-- Set 1 -->
-          <div class="polaroid">
-            <img decoding="async" width="427" height="640" src="assets/optimized/640/highlights/quote2.jpg" alt="Follow that Dream" loading="lazy">
-            <span class="caption">Follow that Dream</span>
-            <span class="stamp">Day 01</span>
-          </div>
-          <div class="polaroid">
-            <img decoding="async" width="512" height="640" src="assets/optimized/640/highlights/uni.jpg" alt="Uni" loading="lazy">
-            <span class="caption">uni</span>
-          </div>
-          <div class="polaroid">
-            <img decoding="async" width="360" height="640" src="assets/optimized/640/highlights/quote3.jpg" alt="Daily Reminder" loading="lazy">
-            <span class="caption">Daily Reminder</span>
-          </div>
-          <div class="polaroid">
-            <img decoding="async" width="514" height="640" src="assets/optimized/640/highlights/quote1.jpg" alt="motto" loading="lazy">
-            <span class="caption">motto</span>
-          </div>
-          <div class="polaroid">
-            <img decoding="async" width="512" height="640" src="assets/optimized/640/highlights/code.jpg" alt="Behind the scenes" loading="lazy">
-            <span class="caption">behind the scenes</span>
-          </div>
-          <div class="polaroid">
-            <img decoding="async" width="512" height="640" src="assets/optimized/640/highlights/city.jpg" alt="the city" loading="lazy">
-            <span class="caption">the city</span>
-            <span class="stamp">Manila '26</span>
-          </div>
-
-          <!-- Set 2 (duplicate for seamless loop) -->
-          <div class="polaroid">
-            <img decoding="async" width="427" height="640" src="assets/optimized/640/highlights/quote2.jpg" alt="Follow that Dream" loading="lazy">
-            <span class="caption">Follow that Dream</span>
-            <span class="stamp">Day 01</span>
-          </div>
-          <div class="polaroid">
-            <img decoding="async" width="512" height="640" src="assets/optimized/640/highlights/uni.jpg" alt="Uni" loading="lazy">
-            <span class="caption">uni</span>
-          </div>
-          <div class="polaroid">
-            <img decoding="async" width="360" height="640" src="assets/optimized/640/highlights/quote3.jpg" alt="Daily Reminder" loading="lazy">
-            <span class="caption">Daily Reminder</span>
-          </div>
-          <div class="polaroid">
-            <img decoding="async" width="514" height="640" src="assets/optimized/640/highlights/quote1.jpg" alt="motto" loading="lazy">
-            <span class="caption">motto</span>
-          </div>
-          <div class="polaroid">
-            <img decoding="async" width="512" height="640" src="assets/optimized/640/highlights/code.jpg" alt="Behind the scenes" loading="lazy">
-            <span class="caption">behind the scenes</span>
-          </div>
-          <div class="polaroid">
-            <img decoding="async" width="512" height="640" src="assets/optimized/640/highlights/city.jpg" alt="the city" loading="lazy">
-            <span class="caption">the city</span>
-            <span class="stamp">Manila '26</span>
-          </div>
-        </div>
+        <a class="home-spotlight" data-home-spotlight href="it.html#luminus">
+          <span class="home-spotlight-thumb">
+            <img class="home-spotlight-image--night" src="assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_LandingPage.jpg" alt="" width="640" height="368" decoding="async">
+            <img class="home-spotlight-image--day" src="assets/optimized/640/creative/NULipaMarketing/ArawNgKagitingan.jpg" alt="" width="640" height="640" decoding="async">
+          </span>
+          <span class="home-spotlight-copy"><small data-spotlight-label>On the workbench / Team capstone</small><strong data-spotlight-title>LumiNUs</strong><span data-spotlight-description>A community, connected through code.</span></span>
+          <span class="home-spotlight-arrow" aria-hidden="true">↗</span>
+        </a>
+        <span class="home-scene-note" aria-hidden="true">same curiosity. different light.</span>
       </div>
-
-      <div class="scroll-cue">scroll</div>
     </section>
+
+    <div class="home-intro-strip" aria-label="A little about Johannes">
+      <a href="#about"><span>01 / Home base</span><strong>Batangas City, PH <i aria-hidden="true">↗</i></strong></a>
+      <a href="#foundations"><span>02 / Learning</span><strong>BSIT · NU Lipa <i aria-hidden="true">↗</i></strong></a>
+      <a href="#experience"><span>03 / Bringing together</span><strong>Development &amp; design <i aria-hidden="true">↗</i></strong></a>
+    </div>
 
     <!-- SELECTED WORK -->
     <section class="section work-showcase" id="selected-work" aria-labelledby="selected-work-title">
@@ -217,15 +168,10 @@
         </div>
 
         <div class="about-text reveal">
-          <p class="lead">I build things that work — then make them mean something.</p>
-          
-          <p>
-            I am Johannes Emmanuel A. Claus, a BS Information Technology student at National University (NU) Lipa, specializing in Mobile & Web Applications. I have worked on full-stack development and UI/UX design principles through the Web Systems and mobile applications I have created throughout my IT journey at the university. I am also skilled in project management, as I led my group in completing our Capstone Project courses in previous terms. My tech side taught me how things work, and it helped me understand that backend processes are the most important of all; without proper processes, a system won’t work or will fail.
-          </p>
-
-          <p>
-            More than just an IT student, I tend to explore beyond my chosen career path and skills. I also served as a Graphic Design Artist with the NU Lipa Marketing Office for more than two years. I created various marketing and promotional materials for my university. I had a versatile role where I handled both printed and digital materials for every university marketing campaign. This experience opened doors to new opportunities, including my appointment as Creative Director of the NU Lipa School of Architecture, Computing and Engineering Student Council.
-          </p>
+          <p class="lead">Curious about how it works.<br>Careful about how it feels.</p>
+          <p>I’m Johannes Emmanuel A. Claus, a BS Information Technology student at NU Lipa, specializing in Mobile &amp; Web Applications. I build mobile and web systems, explore UI/UX, and enjoy making the logic behind an interface work as well as the interface looks.</p>
+          <p>As our capstone team’s project lead, I helped organize the work and guide the team through our Capstone Project courses. That experience shaped how I approach a build: understand the process, connect the pieces, and keep the people using it in mind.</p>
+          <p>My creative work runs alongside my technical work. As a Student Graphic Designer with the NU Lipa Marketing Office, I create print and digital campaign materials. I also serve as Creative Director of the SACE Student Council, bringing visual identity and student stories to life.</p>
 
           <div class="about-facts">
             <div><span>Based in</span><strong>Batangas City, PH</strong></div>
@@ -333,43 +279,43 @@
 
       </section>
 
-      <section class="foundation-group foundation-skills" aria-labelledby="skills-heading">
-        <div class="foundation-group-head reveal">
-          <h3 id="skills-heading">Skills</h3>
-          <p>The tools and skills I bring to my work.</p>
+      <section class="foundation-group skill-workbench" aria-labelledby="skills-heading">
+        <div class="skill-heading reveal"><div><span class="label">Skills / The working toolkit</span><h3 id="skills-heading">Different tools.<br><em>One curious mind.</em></h3></div><p>A little logic. A little color.<br>Here’s what I bring to the desk.</p></div>
+        <div class="skill-studio reveal" data-skill-studio>
+          <div class="skill-tabs" aria-label="Explore my skill areas">
+<button type="button" id="skill-tab-build" data-skill-tab="build"><span>01</span>Build<i aria-hidden="true">↗</i></button>
+<button type="button" id="skill-tab-create" data-skill-tab="create"><span>02</span>Create<i aria-hidden="true">↗</i></button>
+<button type="button" id="skill-tab-connect" data-skill-tab="connect"><span>03</span>Connect<i aria-hidden="true">↗</i></button>
+</div><div class="skill-panels">
+<section class="skill-panel skill-panel--build" id="skill-panel-build" data-skill-panel="build" aria-labelledby="skill-tab-build">
+  <div class="skill-art" aria-hidden="true"><span class="skill-art-caption">MY TOOLKIT / 01</span><div class="skill-art-orbit"></div><strong>&lt;/&gt;</strong><div class="skill-art-logos"><span><img src="assets/tool-logos/php.svg" alt="" width="52" height="52" loading="lazy" decoding="async"></span><span><img src="assets/tool-logos/laravel.svg" alt="" width="52" height="52" loading="lazy" decoding="async"></span><span><img src="assets/tool-logos/mysql.svg" alt="" width="52" height="52" loading="lazy" decoding="async"></span></div><span class="skill-art-foot">Logic in motion.</span></div>
+  <div class="skill-panel-copy"><span class="skill-discipline">01 / Build</span><h4>From an idea to something that works.</h4><p>The code, interfaces, and data behind my mobile and web projects.</p><ul class="skill-chips" aria-label="Build tools"><li><img src="assets/tool-logos/php.svg" alt="" width="24" height="24" loading="lazy" decoding="async"><span>PHP</span></li><li><img src="assets/tool-logos/laravel.svg" alt="" width="24" height="24" loading="lazy" decoding="async"><span>Laravel</span></li><li><img src="assets/tool-logos/mysql.svg" alt="" width="24" height="24" loading="lazy" decoding="async"><span>MySQL</span></li><li><img src="assets/tool-logos/javascript.svg" alt="" width="24" height="24" loading="lazy" decoding="async"><span>JavaScript</span></li><li><img src="assets/tool-logos/react.svg" alt="" width="24" height="24" loading="lazy" decoding="async"><span>React Native</span></li><li><span class="skill-letter" aria-hidden="true">.N</span><span>.NET MAUI</span></li><li><img src="assets/tool-logos/csharp.svg" alt="" width="24" height="24" loading="lazy" decoding="async"><span>C#</span></li><li><img src="assets/tool-logos/java.svg" alt="" width="24" height="24" loading="lazy" decoding="async"><span>Java</span></li><li><img src="assets/tool-logos/html5.svg" alt="" width="24" height="24" loading="lazy" decoding="async"><span>HTML &amp; CSS</span></li></ul><a class="skill-work-link" href="it.html">Explore my IT work<span aria-hidden="true">↗</span></a></div>
+</section>
+<section class="skill-panel skill-panel--create" id="skill-panel-create" data-skill-panel="create" aria-labelledby="skill-tab-create">
+  <div class="skill-art" aria-hidden="true"><span class="skill-art-caption">MY TOOLKIT / 02</span><div class="skill-art-orbit"></div><strong>Aa</strong><div class="skill-art-logos"><span><img src="assets/tool-logos/figma.svg" alt="" width="52" height="52" loading="lazy" decoding="async"></span><span><img src="assets/tool-logos/photoshop.svg" alt="" width="52" height="52" loading="lazy" decoding="async"></span><span><img src="assets/tool-logos/Canva.png" alt="" width="52" height="52" loading="lazy" decoding="async"></span></div><span class="skill-art-foot">Ideas, in full color.</span></div>
+  <div class="skill-panel-copy"><span class="skill-discipline">02 / Create</span><h4>Make it feel as good as it works.</h4><p>The design tools behind my publication materials, layouts, and visual stories.</p><ul class="skill-chips" aria-label="Create tools"><li><img src="assets/tool-logos/figma.svg" alt="" width="24" height="24" loading="lazy" decoding="async"><span>Figma</span></li><li><img src="assets/tool-logos/photoshop.svg" alt="" width="24" height="24" loading="lazy" decoding="async"><span>Photoshop</span></li><li><img src="assets/tool-logos/Canva.png" alt="" width="24" height="24" loading="lazy" decoding="async"><span>Canva</span></li><li><img src="assets/tool-logos/Affinity.png" alt="" width="24" height="24" loading="lazy" decoding="async"><span>Affinity</span></li><li><img src="assets/tool-logos/capcut.png" alt="" width="24" height="24" loading="lazy" decoding="async"><span>CapCut</span></li></ul><a class="skill-work-link" href="creative.html">Explore my creative work<span aria-hidden="true">↗</span></a></div>
+</section>
+<section class="skill-panel skill-panel--connect" id="skill-panel-connect" data-skill-panel="connect" aria-labelledby="skill-tab-connect">
+  <div class="skill-art" aria-hidden="true"><span class="skill-art-caption">MY TOOLKIT / 03</span><div class="skill-art-orbit"></div><strong>↗</strong><div class="skill-art-logos"><span><img src="assets/tool-logos/github.svg" alt="" width="52" height="52" loading="lazy" decoding="async"></span><span><img src="assets/optimized/160/tool-logos/Notion.png" alt="" width="52" height="52" loading="lazy" decoding="async"></span><span><img src="assets/optimized/160/tool-logos/Google.png" alt="" width="52" height="52" loading="lazy" decoding="async"></span><span><img src="assets/optimized/160/tool-logos/Microsoft365.png" alt="" width="52" height="52" loading="lazy" decoding="async"></span></div><span class="skill-art-foot">Better, together.</span></div>
+  <div class="skill-panel-copy"><span class="skill-discipline">03 / Connect</span><h4>Bring the people and pieces together.</h4><p>Tools for collaboration, organization, networking, and the systems around the work.</p><ul class="skill-chips" aria-label="Connect tools"><li><img src="assets/tool-logos/github.svg" alt="" width="24" height="24" loading="lazy" decoding="async"><span>GitHub</span></li><li><span class="skill-letter" aria-hidden="true">Wi</span><span>Windows Server</span></li><li><span class="skill-letter" aria-hidden="true">Ne</span><span>Networking</span></li><li><span class="skill-letter" aria-hidden="true">Cl</span><span>ClickUp</span></li><li><img src="assets/optimized/160/tool-logos/Notion.png" alt="" width="24" height="24" loading="lazy" decoding="async"><span>Notion</span></li><li><img src="assets/optimized/160/tool-logos/Google.png" alt="" width="24" height="24" loading="lazy" decoding="async"><span>Google Workspace</span></li><li><img src="assets/optimized/160/tool-logos/Microsoft365.png" alt="" width="24" height="24" loading="lazy" decoding="async"><span>Microsoft 365</span></li></ul><a class="skill-work-link" href="#experience">See where I’ve used them<span aria-hidden="true">↗</span></a></div>
+</section>
+</div></div></section>
+      <section class="credential-section" aria-labelledby="credentials-heading">
+        <div class="skill-heading reveal"><div><span class="label">Learning / Recognition</span><h3 id="credentials-heading">The learning<br><em>doesn’t stop here.</em></h3></div><p>Certifications, milestones, and experiences<br>that have shaped the way I work.</p></div>
+        <h4 class="credential-group-title">Certifications <span>04 providers</span></h4>
+        <div class="credential-grid">
+<article class="credential-card reveal"><div class="credential-card-top"><span class="credential-monogram" aria-hidden="true">Ci</span><span class="credential-index">01 / Learning</span></div><h5>Certiport</h5><ul><li>IC3 Digital Literacy</li><li>IT Specialist in Networking</li></ul></article>
+<article class="credential-card reveal"><div class="credential-card-top"><span class="credential-monogram" aria-hidden="true">Cs</span><span class="credential-index">02 / Learning</span></div><h5>Cisco Networking Academy</h5><ul><li>Using Computer and Mobile Devices</li><li>HTML Essentials</li></ul></article>
+<article class="credential-card reveal"><div class="credential-card-top"><span class="credential-monogram" aria-hidden="true">Ca</span><span class="credential-index">03 / Learning</span></div><h5>Canva</h5><ul><li>Graphic Design Essentials</li><li>Marketing with Canva</li><li>Canva for Work</li></ul></article>
+<article class="credential-card reveal"><div class="credential-card-top"><span class="credential-monogram" aria-hidden="true">G</span><span class="credential-index">04 / Learning</span></div><h5>Google</h5><ul><li>Gemini Certified University Student</li></ul></article>
+</div>
+        <h4 class="credential-group-title recognition-title">Recognition &amp; involvement</h4>
+        <div class="recognition-list">
+          <article class="recognition-item reveal"><span class="recognition-symbol" aria-hidden="true">✦</span><div><h5>Consistent Honor Student</h5><p>Academic recognition</p></div><span class="recognition-year">2019–2026</span></article>
+          <article class="recognition-item reveal"><span class="recognition-symbol" aria-hidden="true">✧</span><div><h5>St. Joseph Marello Awardee</h5><p>JMY Campus Ministry</p></div><span class="recognition-year">2019–2020</span></article>
+          <article class="recognition-item reveal"><span class="recognition-symbol" aria-hidden="true">↗</span><div><h5>Student Government Technical Team</h5><p>Alangilan Senior High School</p></div><span class="recognition-year">2022–2023</span></article>
         </div>
-      <div class="toolkit-grid reveal">
-        <div class="toolkit-card">
-          <div class="num">01</div>
-          <h3>Build.</h3>
-          <p>PHP / Laravel / MySQL / JavaScript / React Native / C# / Java / HTML &amp; CSS</p>
-        </div>
-        <div class="toolkit-card">
-          <div class="num">02</div>
-          <h3>Create.</h3>
-          <p>Figma / Photoshop / Canva / Affinity / CapCut</p>
-        </div>
-        <div class="toolkit-card">
-          <div class="num">03</div>
-          <h3>Connect.</h3>
-          <p>GitHub / Windows Server / Networking / ClickUp / Notion / Google Workspace / Microsoft 365</p>
-        </div>
-      </div>
-
       </section>
-
-      <details class="certs reveal">
-        <summary>Certifications &amp; recognition <span class="plus">+</span></summary>
-        <ul>
-          <li>Certiport — IC3 Digital Literacy; IT Specialist in Networking</li>
-          <li>Cisco Networking Academy — Using Computer and Mobile Devices; HTML Essentials</li>
-          <li>Canva — Graphic Design Essentials; Marketing with Canva; Canva for Work</li>
-          <li>Google — Gemini Certified University Student</li>
-          <li>Consistent Honor Student, 2019–2026</li>
-          <li>JMY Campus Ministry "St. Joseph Marello Awardee," 2019–2020</li>
-          <li>ASHS Student Government Technical Team, 2022–2023</li>
-        </ul>
-      </details>
     </section>
 
     <!-- DOORS -->
@@ -393,6 +339,8 @@
         </div>
       </a>
     </section>
+
+    <aside class="home-growing-note"><span aria-hidden="true">✳</span><p>A portfolio in progress, with plenty more to share.<br><a href="it.html#up-next">See what’s coming next ↗</a></p></aside>
 
     <!-- SOCIALS -->
     <section class="socials section section-alt" id="socials">
@@ -459,12 +407,7 @@
           <span class="social-handle">@johannescls</span>
           <span class="social-arrow" aria-hidden="true">↗</span>
         </a>
-        <div class="social-card">
-          <img class="social-icon" src="assets/optimized/640/contact_icons/WhatsApp.png" alt="" width="640" height="640" loading="lazy" decoding="async">
-          <span class="social-platform">WhatsApp</span>
-          <span class="social-handle">@johannescls</span>
 
-        </div>
       </div>
     </section>
 
@@ -487,19 +430,6 @@
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
-
-  <!-- Temporary welcome notice: remove this dialog when the portfolio launches. -->
-  <dialog id="construction-notice" aria-labelledby="construction-title" aria-describedby="construction-description">
-    <form method="dialog">
-      <button class="construction-close" aria-label="Close construction notice">×</button>
-      <div class="construction-icon" aria-hidden="true">🚧</div>
-      <span class="construction-label">A little dust. A lot of ideas.</span>
-      <h2 id="construction-title">Pardon the pixels.<br>I'm still building!</h2>
-      <p id="construction-description">Welcome to my work in progress. I'm moving things around, polishing the details, and occasionally asking, “why is that 1px off?”</p>
-      <p class="construction-note">Hard hats optional. Curiosity encouraged.</p>
-      <button class="btn btn-primary" autofocus>Let me snoop around <span aria-hidden="true">↗</span></button>
-    </form>
-  </dialog>
 
   <dialog id="lightbox" aria-labelledby="lightbox-title">
     <div class="lb-toolbar">

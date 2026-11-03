@@ -8,3 +8,5 @@ Logo candidates collected for the IT and Creative toolkit cards. Applied to the 
 - React logo represents React Native. HTML and CSS have separate logo files for the combined card.
 
 Exact download URLs are recorded in sources.json.
+
+- Notion, Google (for Google Workspace), and Microsoft 365: user-provided PNGs. The homepage uses transparent 160-pixel display copies from assets/optimized/160/tool-logos/.
