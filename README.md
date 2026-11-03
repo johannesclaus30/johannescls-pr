@@ -92,6 +92,8 @@ The helper uses Windows `System.Drawing` and reads `tools/image-plan.json`. It s
 
 ## IT project concepts
 
+LumiNUs presents seven mobile alumni screens in a fanned phone deck and nine web screens in a floating browser showcase. Both journeys begin with the initial/sign-in screens, with screen selectors, arrow controls, touch swipes, keyboard navigation, and click-to-zoom. Pointer tilt and transitions respect the site’s motion setting and reduced-motion preferences. Selected screens load responsive, higher-quality previews (up to 1,920 pixels on the longest edge); background cards retain small previews, and visited screens reuse cached images. Devices sit straight when idle to keep interface text crisp. Dedicated styling and interactions live in luminus.css and luminus.js.
+
 LumiNUs is a team capstone project in partnership with the NU Lipa Alumni Affairs Office (AAO): a centralized mobile and web-based alumni management system with geolocation mapping, virtual alumni identification, and community engagement for institutional tracer studies. Its section uses NU blue (`#32418c`), gold (`#fbd117`), and Poppins, with dedicated styling in `luminus.css`. The section reserves spaces for the system user manual and GitHub repository; links will be added when supplied.
 
 E-Reklamo is a team-built community complaint management website with its own orange styling in `e-reklamo.css` and an actual supplied homepage preview in `assets/tech/E-Reklamo/screens/`. The section uses a full orange background, Poppins typography, and the supplied white wordmark and app icon from `assets/tech/E-Reklamo/logos/`. Dedicated User Manual and GitHub repository spaces are marked coming soon until the resources are supplied.

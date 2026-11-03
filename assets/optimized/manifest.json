@@ -894,5 +894,389 @@
     "width": 320,
     "height": 320,
     "bytes": 10629
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_HomeScreen.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_HomeScreen.jpg",
+    "width": 313,
+    "height": 640,
+    "bytes": 42430
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_LoginScreen.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_LoginScreen.jpg",
+    "width": 313,
+    "height": 640,
+    "bytes": 38679
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_Explore.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_Explore.jpg",
+    "width": 313,
+    "height": 640,
+    "bytes": 37153
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_UserFeed.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_UserFeed.jpg",
+    "width": 313,
+    "height": 640,
+    "bytes": 47413
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_ChatsScreen.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_ChatsScreen.jpg",
+    "width": 313,
+    "height": 640,
+    "bytes": 18198
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_UserProfile.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_UserProfile.jpg",
+    "width": 313,
+    "height": 640,
+    "bytes": 40781
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_AlumniTracer.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_AlumniTracer.jpg",
+    "width": 313,
+    "height": 640,
+    "bytes": 44969
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AdminDashboard.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AdminDashboard.jpg",
+    "width": 640,
+    "height": 368,
+    "bytes": 33515
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_LandingPage.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_LandingPage.jpg",
+    "width": 640,
+    "height": 368,
+    "bytes": 45265
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_LoginPage.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_LoginPage.jpg",
+    "width": 640,
+    "height": 368,
+    "bytes": 30290
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AlumniDirectory.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AlumniDirectory.jpg",
+    "width": 640,
+    "height": 368,
+    "bytes": 42770
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AlumniTracer.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AlumniTracer.jpg",
+    "width": 640,
+    "height": 368,
+    "bytes": 41912
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Announcements.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Announcements.jpg",
+    "width": 640,
+    "height": 368,
+    "bytes": 44507
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Events.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Events.jpg",
+    "width": 640,
+    "height": 368,
+    "bytes": 36440
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Messages.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Messages.jpg",
+    "width": 640,
+    "height": 368,
+    "bytes": 32354
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_PerksAndDiscounts.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_PerksAndDiscounts.jpg",
+    "width": 640,
+    "height": 368,
+    "bytes": 33340
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_AlumniTracer.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_AlumniTracer.jpg",
+    "width": 627,
+    "height": 1280,
+    "bytes": 108267
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_AlumniTracer.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_AlumniTracer.jpg",
+    "width": 940,
+    "height": 1920,
+    "bytes": 185488
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_ChatsScreen.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_ChatsScreen.jpg",
+    "width": 627,
+    "height": 1280,
+    "bytes": 44139
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_ChatsScreen.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_ChatsScreen.jpg",
+    "width": 940,
+    "height": 1920,
+    "bytes": 78733
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_Explore.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_Explore.jpg",
+    "width": 627,
+    "height": 1280,
+    "bytes": 82616
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_Explore.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_Explore.jpg",
+    "width": 940,
+    "height": 1920,
+    "bytes": 137372
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_HomeScreen.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_HomeScreen.jpg",
+    "width": 627,
+    "height": 1280,
+    "bytes": 99622
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_HomeScreen.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_HomeScreen.jpg",
+    "width": 940,
+    "height": 1920,
+    "bytes": 170669
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_LoginScreen.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_LoginScreen.jpg",
+    "width": 627,
+    "height": 1280,
+    "bytes": 89933
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_LoginScreen.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_LoginScreen.jpg",
+    "width": 940,
+    "height": 1920,
+    "bytes": 154113
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_UserFeed.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_UserFeed.jpg",
+    "width": 627,
+    "height": 1280,
+    "bytes": 113357
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_UserFeed.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_UserFeed.jpg",
+    "width": 940,
+    "height": 1920,
+    "bytes": 194510
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_UserProfile.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_UserProfile.jpg",
+    "width": 627,
+    "height": 1280,
+    "bytes": 97901
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_UserProfile.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Mobile-Alumni/LumiNUs_Mobile_UserProfile.jpg",
+    "width": 940,
+    "height": 1920,
+    "bytes": 166815
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AdminDashboard.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AdminDashboard.jpg",
+    "width": 1280,
+    "height": 737,
+    "bytes": 88429
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AdminDashboard.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AdminDashboard.jpg",
+    "width": 1920,
+    "height": 1105,
+    "bytes": 153978
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AlumniDirectory.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AlumniDirectory.jpg",
+    "width": 1280,
+    "height": 737,
+    "bytes": 112970
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AlumniDirectory.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AlumniDirectory.jpg",
+    "width": 1920,
+    "height": 1105,
+    "bytes": 184012
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AlumniTracer.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AlumniTracer.jpg",
+    "width": 1280,
+    "height": 737,
+    "bytes": 110739
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AlumniTracer.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_AlumniTracer.jpg",
+    "width": 1920,
+    "height": 1105,
+    "bytes": 191216
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Announcements.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Announcements.jpg",
+    "width": 1280,
+    "height": 737,
+    "bytes": 117719
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Announcements.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Announcements.jpg",
+    "width": 1920,
+    "height": 1105,
+    "bytes": 195727
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Events.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Events.jpg",
+    "width": 1280,
+    "height": 737,
+    "bytes": 94321
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Events.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Events.jpg",
+    "width": 1920,
+    "height": 1105,
+    "bytes": 155989
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_LandingPage.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_LandingPage.jpg",
+    "width": 1280,
+    "height": 737,
+    "bytes": 108657
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_LandingPage.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_LandingPage.jpg",
+    "width": 1920,
+    "height": 1105,
+    "bytes": 185323
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_LoginPage.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_LoginPage.jpg",
+    "width": 1280,
+    "height": 737,
+    "bytes": 77603
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_LoginPage.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_LoginPage.jpg",
+    "width": 1920,
+    "height": 1105,
+    "bytes": 141877
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Messages.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Messages.jpg",
+    "width": 1280,
+    "height": 737,
+    "bytes": 87426
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Messages.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_Messages.jpg",
+    "width": 1920,
+    "height": 1105,
+    "bytes": 151122
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_PerksAndDiscounts.jpg",
+    "size": 1280,
+    "output": "assets/optimized/1280/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_PerksAndDiscounts.jpg",
+    "width": 1280,
+    "height": 737,
+    "bytes": 88354
+  },
+  {
+    "source": "assets/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_PerksAndDiscounts.jpg",
+    "size": 1920,
+    "output": "assets/optimized/1920/tech/LumiNUs/LumiNUs_Screenshots/Web-Admin/LumiNUs_Web_PerksAndDiscounts.jpg",
+    "width": 1920,
+    "height": 1105,
+    "bytes": 151175
   }
 ]

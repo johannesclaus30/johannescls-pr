@@ -7,6 +7,9 @@ $quality = New-Object System.Drawing.Imaging.EncoderParameters 1
 $quality.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter ([System.Drawing.Imaging.Encoder]::Quality), ([long]82)
 $results = @()
 foreach ($item in $plan) {
+  $imageQuality = if ($null -ne $item.quality) { [long]$item.quality } else { [long]82 }
+  $quality.Param[0].Dispose()
+  $quality.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter ([System.Drawing.Imaging.Encoder]::Quality), $imageQuality
   $source = [System.Drawing.Image]::FromFile((Join-Path (Get-Location) $item.source))
   $ratio = [Math]::Min([double]1, [double]$item.size / [Math]::Max($source.Width, $source.Height))
   $width = [Math]::Max(1, [int][Math]::Round($source.Width * $ratio))
@@ -15,6 +18,7 @@ foreach ($item in $plan) {
   $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
   $graphics.CompositingQuality = [System.Drawing.Drawing2D.CompositingQuality]::HighQuality
   $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
+  $graphics.PixelOffsetMode = [System.Drawing.Drawing2D.PixelOffsetMode]::HighQuality
   $graphics.DrawImage($source,0,0,$width,$height)
   $output = Join-Path (Get-Location) $item.output
   [System.IO.Directory]::CreateDirectory([System.IO.Path]::GetDirectoryName($output)) | Out-Null
