@@ -15,7 +15,7 @@
 .luminus-eyebrow { display: block; color: var(--luminus-gold); font-size: 10px; font-weight: 600; line-height: 1.8; letter-spacing: .13em; text-transform: uppercase; }
 .luminus-identity { min-width: 0; }
 .luminus-identity h2 { margin: 0 0 30px; }
-.luminus-identity h2 img { width: min(100%, 230px); height: auto; }
+.luminus-identity h2 img { display: block; width: min(100%, 390px); height: auto; }
 .luminus-lead { font-size: clamp(42px, 5.6vw, 80px); font-weight: 700; line-height: 1.04; letter-spacing: -.055em; }
 .luminus-lead span { color: var(--luminus-gold); }
 .luminus-summary { margin-top: 24px; max-width: 46ch; font-size: 13px; line-height: 1.9; color: #edf0ff; }
@@ -179,7 +179,7 @@ html[data-motion='off'] .luminus-device { transform: none !important; }
 @media (max-width: 540px) {
   .luminus-masthead { align-items: flex-start; }
   .luminus-edition { font-size: 9px; gap: 7px; flex-wrap: wrap; justify-content: flex-end; max-width: 150px; }
-  .luminus-identity h2 img { width: 200px; }
+  .luminus-identity h2 img { width: min(100%, 300px); }
   .luminus-hero-actions { gap: 16px; }
   .luminus-hero-composition { height: 360px; }
   .luminus-hero-phone { width: 132px; border-radius: 20px; bottom: 0; }

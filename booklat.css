@@ -1,0 +1,53 @@
+#booklat { --booklat-gold:#edb537; font-family:'Montserrat',Arial,sans-serif; color:#fff; background:radial-gradient(ellipse at 100% 0,#193960,transparent 60%),#061c38; scroll-margin-top:90px; overflow:hidden; }
+.booklat-masthead { display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; padding-bottom:24px; border-bottom:1px solid #ffffff25; font-size:12px; color:#c2cfdf; }
+.booklat-intro { display:grid; grid-template-columns:1.2fr .8fr; gap:clamp(35px,7vw,100px); align-items:center; padding-block:65px; }
+.booklat-logo { display:block; width:200px; height:80px; object-fit:contain; }
+.booklat-intro h2 { font-family:inherit; font-size:clamp(42px,5.5vw,78px); line-height:1.08; letter-spacing:-.055em; margin:24px 0; }.booklat-intro h2 em { font-style:normal; color:var(--booklat-gold); }
+.booklat-intro p { max-width:52ch; font-size:15px; line-height:1.9; color:#cbd6e4; }
+.booklat-cta { display:inline-flex; align-items:center; gap:30px; background:var(--booklat-gold); color:#061c38; padding:16px 20px; border-radius:10px; font-size:13px; font-weight:700; margin-top:20px; }
+.booklat-cover { display:flex; flex-direction:column; padding:30px 25px 30px 38px; border-radius:5px 20px 20px 5px; background:linear-gradient(110deg,#102a4e,#193d68); border-left:10px solid #edb537; box-shadow:8px 5px 0 #e9dfca,15px 10px 0 #153250,22px 24px 40px #0005; transform:rotate(4deg); min-width:0; }
+.booklat-cover-index,.booklat-cover-foot { font-size:9px; line-height:1.8; letter-spacing:.12em; color:#cbd6e4; }.booklat-cover-mark { font-size:130px; font-weight:800; line-height:1.4; color:var(--booklat-gold); letter-spacing:-.1em; }.booklat-cover strong { font-size:23px; line-height:1.4; letter-spacing:-.04em; }
+.booklat-platforms,.booklat-stack { display:flex; flex-wrap:wrap; gap:8px; margin:26px 0; }.booklat-platforms span,.booklat-stack span { padding:8px 10px; border:1px solid #ffffff30; border-radius:6px; font-size:10px; }
+#booklat-showcase { scroll-margin-top:110px; }.booklat-showcase { border-radius:22px; background:#f5f7fa; color:#102743; padding:clamp(18px,3vw,38px); }
+.booklat-showcase-head { display:flex; justify-content:space-between; align-items:end; flex-wrap:wrap; gap:16px; margin-bottom:28px; }.booklat-eyebrow { font-size:10px; letter-spacing:.14em; font-weight:700; color:#665018; }.booklat-showcase h3 { font-family:inherit; font-size:clamp(30px,4vw,48px); margin:10px 0 0; letter-spacing:-.05em; }.booklat-showcase-head p { font-size:12px; line-height:1.8; color:#536579; }
+.booklat-reader { display:grid; grid-template-columns:165px minmax(0,1fr); gap:20px; align-items:start; }.booklat-chapters { display:grid; gap:6px; }.booklat-chapters button { font:inherit; text-align:left; font-size:11px; background:transparent; color:#263e5c; border:1px solid transparent; padding:13px 10px; border-radius:8px; cursor:pointer; }.booklat-chapters button > span { color:#7b889a; margin-right:6px; font-size:9px; }.booklat-chapters button[aria-pressed="true"] { background:#082447; color:#f4c35b; }.booklat-chapters button:hover { border-color:#afbccd; }
+.booklat-browser { min-width:0; border:1px solid #d9e1ea; border-radius:12px; overflow:hidden; background:#fff; box-shadow:0 15px 28px #08244712; }.booklat-browser-bar { display:flex; justify-content:space-between; gap:12px; padding:13px; font-size:9px; background:#e8edf3; color:#54657b; }.booklat-browser-bar > span:first-child { letter-spacing:3px; color:#8394ac; }
+.booklat-screen { display:block; padding:0; width:100%; border:0; background:#fff; cursor:zoom-in; }.booklat-screen[hidden] { display:none; }.booklat-screen img { display:block; width:100%; height:auto; }.booklat-browser-caption { display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; padding:15px; font-size:10px; line-height:1.7; color:#536579; }
+.booklat-story { margin-top:34px; border:1px solid #ffffff30; border-radius:16px; }.booklat-story summary { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:26px; cursor:pointer; font-size:clamp(16px,2.2vw,25px); font-weight:600; list-style:none; }.booklat-story summary::-webkit-details-marker { display:none; }.booklat-story summary small { display:block; font-size:9px; letter-spacing:.15em; color:#edb537; margin-bottom:10px; }.booklat-story-plus { font-size:30px; color:#edb537; }.booklat-story[open] .booklat-story-plus { transform:rotate(45deg); }.booklat-story-content { padding:0 26px 26px; }.booklat-story-lead { max-width:85ch; font-size:14px; line-height:1.9; color:#cbd6e4; }
+.booklat-architecture { text-align:center; margin:30px auto; max-width:720px; display:grid; gap:14px; }.booklat-architecture > div:first-child { border:1px solid #edb537; border-radius:12px; padding:24px; background:#edb53710; }.booklat-architecture strong { display:block; font-size:14px; }.booklat-architecture span { display:block; font-size:11px; line-height:1.8; margin-top:8px; color:#cad6e4; }.booklat-architecture-branches { display:grid; grid-template-columns:1fr 1fr; gap:16px; }.booklat-architecture-branches > div { border:1px solid #ffffff30; border-radius:12px; padding:20px; }
+.booklat-story-grid { display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:40px; }.booklat-story-grid article > span { font-size:10px; color:#edb537; }.booklat-story-grid h4 { font-size:19px; margin:14px 0; }.booklat-story-grid p { font-size:13px; line-height:1.9; color:#cad6e4; }
+#booklat button:focus-visible,#booklat a:focus-visible,#booklat summary:focus-visible { outline:3px solid #edb537; outline-offset:4px; }
+@media(max-width:800px) { .booklat-intro { grid-template-columns:1fr; }.booklat-cover { max-width:340px; width:100%; justify-self:center; margin:5px 12px 25px; }.booklat-reader { grid-template-columns:1fr; }.booklat-chapters { display:flex; overflow-x:auto; padding-bottom:8px; }.booklat-chapters button { flex-shrink:0; }.booklat-story-grid { grid-template-columns:1fr; } }
+@media(max-width:450px) { .booklat-architecture-branches { grid-template-columns:1fr; }.booklat-story summary,.booklat-story-content { padding:20px; }.booklat-browser-caption { font-size:9px; } }
+@media(prefers-reduced-motion:reduce) { .booklat-cover { transform:none; } }
+/* A larger identity, a book jacket, then a full-width reading desk. */
+.booklat-logo { width:clamp(280px,36vw,480px); max-width:100%; height:clamp(100px,12vw,145px); object-fit:cover; object-position:center; }
+.booklat-intro { grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr); padding-block:50px 78px; }
+.booklat-intro-copy { min-width:0; }
+.booklat-intro h2 { margin-top:12px; }
+.booklat-cover { position:relative; margin:20px 16px 20px 0; }
+.booklat-cover::after { content:''; position:absolute; top:0; right:25px; width:22px; height:67px; background:#edb537; clip-path:polygon(0 0,100% 0,100% 100%,50% 80%,0 100%); }
+.booklat-reader { grid-template-columns:1fr; gap:18px; }
+.booklat-chapters { display:flex; flex-wrap:wrap; gap:7px; padding-bottom:18px; border-bottom:1px solid #d9e1ea; }
+.booklat-chapters button { background:#e8edf3; padding:11px 14px; }
+.booklat-browser { width:100%; }
+.booklat-screen { aspect-ratio:1.63; overflow:hidden; }
+.booklat-screen img { width:100%; height:100%; object-fit:contain; background:#edf1f6; }
+@media(hover:hover) and (prefers-reduced-motion:no-preference) {
+  html[data-motion="on"] .booklat-cta { transition:transform .25s ease; }
+  html[data-motion="on"] .booklat-cta:hover { transform:translateY(-3px); }
+  html[data-motion="on"] .booklat-chapters button { transition:background-color .2s ease,color .2s ease,translate .2s ease; }
+  html[data-motion="on"] .booklat-chapters button:hover { translate:0 -3px; }
+}
+@supports(animation-timeline:view()) {
+  @keyframes booklat-book-drift { from { translate:0 18px; rotate:-2deg; } to { translate:0 -18px; rotate:2deg; } }
+  @media(prefers-reduced-motion:no-preference) {
+    html[data-motion="on"] .booklat-cover { animation:booklat-book-drift linear both; animation-timeline:view(); animation-range:entry 0% exit 100%; }
+  }
+}
+@media(max-width:800px) {
+  .booklat-intro { grid-template-columns:1fr; gap:32px; padding-block:35px 50px; }
+  .booklat-cover { max-width:340px; width:calc(100% - 30px); margin:10px 16px 25px; }
+  .booklat-chapters { flex-wrap:nowrap; overflow-x:auto; }
+  .booklat-screen { aspect-ratio:1.45; }
+}

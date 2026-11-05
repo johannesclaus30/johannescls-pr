@@ -13,7 +13,7 @@ Open `index.html` in your browser. Photos, artwork, and tool logos are stored lo
 | Page | Content |
 | --- | --- |
 | `index.html` | Résumé, experience, selected work, and a night/day perspective switch. |
-| `it.html` | Development toolkit, LumiNUs capstone project, E-Reklamo team website, Internship Tracker, and an upcoming-projects section. |
+| `it.html` | Development toolkit, LumiNUs capstone project, E-Reklamo team website, Internship Tracker, Booklat, and an upcoming-projects section. |
 | `creative.html` | Creative toolkit and organization-based collections for NU Lipa, SACE Student Council, The Synergy, and YES-O. |
 | `nu-lipa.html` | Dedicated NU Lipa Marketing Office gallery and interactive tri-fold brochure. |
 | `sace.html` | Dedicated SACE Student Council logo and publication-material gallery. |
@@ -98,9 +98,9 @@ LumiNUs presents seven mobile alumni screens in a fanned phone deck and nine web
 
 LumiNUs is a team capstone project in partnership with the NU Lipa Alumni Affairs Office (AAO): a centralized mobile and web-based alumni management system with geolocation mapping, virtual alumni identification, and community engagement for institutional tracer studies. Its section uses NU blue (`#32418c`), gold (`#fbd117`), and Poppins, with dedicated styling in `luminus.css`. The section reserves spaces for the system user manual and GitHub repository; links will be added when supplied.
 
-E-Reklamo is a team-built community complaint management website with its own orange styling in `e-reklamo.css` and an actual supplied homepage preview in `assets/tech/E-Reklamo/screens/`. The section uses a full orange background, Poppins typography, and the supplied white wordmark and app icon from `assets/tech/E-Reklamo/logos/`. Dedicated User Manual and GitHub repository spaces are marked coming soon until the resources are supplied.
+E-Reklamo is a team-built community complaint management website with its own orange styling in `e-reklamo.css` and an actual supplied homepage preview in `assets/tech/E-Reklamo/screens/`. The section uses a full orange background, Poppins typography, and the supplied white wordmark and app icon from `assets/tech/E-Reklamo/logos/`. The supplied user manual is presented as a 16-page interactive field guide, with print spreads framed into individual pages in reading order, chapter shortcuts, keyboard and swipe navigation, and an enlarged native-dialog reading mode. The GitHub repository space remains pending.
 
-Internship Tracker is a .NET MAUI project with a blue identity and Montserrat typography in tech-projects.css. Its section introduces the actual project while screenshots, feature details, and the project story await supplied content. The former Daybook mock screens are no longer displayed. A separate upcoming-projects section follows it.
+Internship Tracker is a .NET MAUI project with a blue identity and Montserrat typography in tech-projects.css. Its section explains the company-to-student application journey and presents an interactive phone showcase with Student, Company, and Admin perspectives. Supplied sign-in, student dashboard, and company dashboard screenshots support click-to-enlarge navigation; the Admin perspective uses an explicit preview-pending card. Keyboard screen switching and motion preferences are supported by internship.js. The former Daybook mock screens are no longer displayed. A separate upcoming-projects section follows it.
 
 The homepage skills workbench has Build, Create, and Connect tabs with logo chips and links to relevant work. Arrow keys, Home, and End navigate the tabs. All three panels remain visible without JavaScript. Certification provider cards and a separate recognition list preserve the supplied credentials without invented dates, scores, or verification links.
 
@@ -143,3 +143,11 @@ The existing `portfolio-github-pages.zip` may be older than the current source f
 The featured SACE and Synergy logos use 640/1280-pixel responsive PNGs. Synergy guidelines use responsive 640/960/1920-pixel previews, with 1920-pixel pages in the enlarged viewer. Images remain lazy-loaded; the carousel only requests the selected page. Originals are preserved.
 
 Regenerate the sharper copies with `./tools/Optimize-Images.ps1 -PlanPath tools/creative-image-plan.json -ResultsPath tmp/creative-image-results.json`.
+
+### Booklat
+
+Booklat is a multi-vendor bookstore built with .NET MAUI Blazor Hybrid and Blazor Web around a shared Razor Class Library. Its navy, gold, and white Montserrat showcase uses the supplied logo and nine actual screenshots, with keyboard-accessible screen selection, click-to-enlarge viewing, and an expandable architecture overview. Dedicated styling and interactions live in `booklat.css` and `booklat.js`.
+
+The E-Reklamo section pairs a community-signal illustration with three keyboard-accessible project-focus cards and the supplied homepage preview. Scroll entrances use the shared observer; decorative ring movement uses native scroll timelines where supported. `e-reklamo.js` controls the explanatory cards.
+
+E-Reklamo now flows from introduction to a straight-on homepage preview, interactive project-focus cards, and the field guide. The preview is capped at its supplied 723-pixel source width to avoid unnecessary enlargement. Ambient illustration motion uses transforms, runs only while the illustration is visible, and respects reduced-motion and the site motion setting.

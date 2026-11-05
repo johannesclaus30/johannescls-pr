@@ -118,12 +118,12 @@ addEventListener('load', onScroll);
 /* ---------- Scroll choreography: headings sweep, artwork lands, cards cascade. ---------- */
 if ('IntersectionObserver' in window) {
   const activeEntrances = new Set();
-  const cardSelector = '.tool-card, .credit-card, .tile-btn, .exp-row, .luminus-pillars > article';
+  const cardSelector = '.tool-card, .credit-card, .tile-btn, .exp-row, .luminus-pillars > article, .booklat-chapters > button, .booklat-story-grid > article, .internship-map-node, .luminus-resource, .e-reklamo-resource, .e-reklamo-steps > button';
   const targets = [...document.querySelectorAll([
     '.reveal', '.page-hero-inner', '.section-head', cardSelector,
     '.footer > .label', '.footer-cta', '.footer-meta', '.brochure-heading',
     '.luminus-showcase-heading', '.luminus-hero-browser', '.luminus-hero-phone',
-    '.credential-card', '.recognition-item', '.skill-heading', '.internship-monogram', '.home-scene', '.home-intro-strip > a', '.home-growing-note'
+    '[data-entrance]', '.booklat-architecture', '.booklat-stack', '.internship-tour-note', '.credential-card', '.recognition-item', '.skill-heading', '.internship-monogram', '.home-scene', '.home-intro-strip > a', '.home-growing-note'
   ].join(', '))];
   const order = new Map();
   targets.forEach(el => {
@@ -138,9 +138,12 @@ if ('IntersectionObserver' in window) {
       io.unobserve(el);
       if (!motionEnabled() || !el.animate) return;
       const heading = el.matches('.page-hero-inner, .section-head, .org-head, .luminus-showcase-heading, .footer-cta');
-      const artwork = el.matches('.tile-btn, .about-photo, .luminus-hero-browser, .luminus-hero-phone');
+      const artwork = el.matches('.tile-btn, .about-photo, .luminus-hero-browser, .luminus-hero-phone, [data-entrance]');
       const group = el.querySelector(cardSelector) !== null;
-      const frames = group
+      const book = el.dataset.entrance === 'book';
+      const frames = book
+        ? [{ opacity: 0, translate: '35px 40px', rotate: '-7deg', scale: '.94' }, { opacity: 1, translate: '0 0', rotate: '0deg', scale: '1' }]
+        : group
         ? [{ opacity: .6 }, { opacity: 1 }]
         : artwork
           ? [{ opacity: 0, translate: '0 38px', rotate: '-2deg', scale: '.96' }, { opacity: 1, translate: '0 0', rotate: '0deg', scale: '1' }]

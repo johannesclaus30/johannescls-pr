@@ -11,8 +11,12 @@
   <link rel="stylesheet" href="luminus.css">
   <link rel="stylesheet" href="e-reklamo.css">
   <link rel="stylesheet" href="tech-projects.css">
+  <link rel="stylesheet" href="booklat.css">
   <script defer src="script.js"></script>
   <script defer src="luminus.js"></script>
+  <script defer src="internship.js"></script>
+  <script defer src="booklat.js"></script>
+  <script defer src="e-reklamo.js"></script>
 </head>
 <body data-page="it">
   <a class="skip" href="#main">Skip to content</a>
@@ -32,7 +36,7 @@
       <a href="it.html" aria-current="page">IT work</a>
       <a href="creative.html">Creative</a>
       <a class="nav-resume" href="https://drive.google.com/drive/folders/1JQcknsl1tFuh6xLxFcj8FT4Sfz_uFGjm?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View resume on Google Drive (opens in a new tab)">Resume ↗</a>
-      <a class="nav-talk" href="https://www.linkedin.com/in/johannescls" target="_blank" rel="noopener noreferrer" aria-label="Say hi on LinkedIn (opens in a new tab)">Say hi ↗</a>
+      <a class="nav-talk" href="index.html#socials">Contact ↓</a>
     </nav>
   </header>
 
@@ -97,7 +101,8 @@
       <a href="#luminus">01 — LumiNUs</a>
       <a href="#e-reklamo">02 — E-Reklamo</a>
       <a href="#internship-tracker">03 — Internship Tracker</a>
-      <a href="#up-next">04 — Up next</a>
+      <a href="#booklat">04 — Booklat</a>
+      <a href="#up-next">05 — Up next</a>
     </nav>
 
     <section class="case luminus-case" id="luminus" data-section aria-labelledby="luminus-title">
@@ -268,41 +273,70 @@
     <section class="case e-reklamo-case" id="e-reklamo" data-section aria-labelledby="e-reklamo-title">
       <div class="e-reklamo-heading reveal">
         <span class="e-reklamo-eyebrow">02 / Web application · Team project</span>
-        <span class="e-reklamo-category">Community complaint management</span>
+        <nav class="e-reklamo-local-nav" aria-label="Explore E-Reklamo"><a href="#e-reklamo-preview">The website ↗</a><a href="#e-reklamo-journey">How it works ↓</a><a href="#e-reklamo-manual">The field guide ↗</a></nav>
       </div>
-      <div class="e-reklamo-feature reveal">
-        <div class="e-reklamo-copy">
+      <div class="e-reklamo-feature">
+        <div class="e-reklamo-copy reveal">
           <h2 id="e-reklamo-title"><span class="e-reklamo-sr-only">eReklamo</span><img class="e-reklamo-logo" src="assets/tech/E-Reklamo/logos/eReklamo_White.png" alt="" width="2000" height="600" loading="lazy" decoding="async"></h2>
-          <p class="e-reklamo-lead">A voice for concerns.<br><span>A way forward for communities.</span></p>
+          <p class="e-reklamo-lead">Small voices.<br><span>Stronger communities.</span></p>
           <p class="e-reklamo-summary">A community complaint management website we built to help people submit concerns and track their resolution in one place.</p>
-          <div class="e-reklamo-tags" aria-label="Project focus">
-            <span>Submit concerns</span><span>Track complaints</span><span>Community engagement</span>
-          </div>
+          <a class="e-reklamo-cta" href="#e-reklamo-journey">Follow a concern <span aria-hidden="true">↓</span></a>
         </div>
-        <figure class="e-reklamo-preview">
-          <div class="e-reklamo-browser" aria-hidden="true"><img src="assets/tech/E-Reklamo/logos/eReklamo_Icon.png" alt="" width="24" height="24" loading="lazy" decoding="async"><span>eReklamo / Web application</span></div>
+        <div class="e-reklamo-signal reveal" data-reklamo-ambient aria-label="A community concern deserves to be heard">
+          <span class="e-reklamo-signal-label">COMMUNITY / CONNECTED</span>
+          <div class="e-reklamo-signal-rings" aria-hidden="true"><span></span><span></span><span></span></div>
+          <img src="assets/tech/E-Reklamo/logos/eReklamo_Icon.png" alt="" width="200" height="200" loading="lazy" decoding="async">
+          <span class="e-reklamo-message e-reklamo-message--first">“I have a concern.”</span>
+          <span class="e-reklamo-message e-reklamo-message--second">Let’s move it forward. ↗</span>
+          <span class="e-reklamo-signal-foot">A LITTLE COURAGE. A COLLECTIVE VOICE.</span>
+        </div>
+      </div>
+      <div class="e-reklamo-screen-story" id="e-reklamo-preview"><div class="e-reklamo-screen-intro reveal"><span class="e-reklamo-eyebrow">THE WEBSITE / A FIRST LOOK</span><h3>Your voice.<br><em>A place to land.</em></h3><p>The homepage introduces the platform and gives visitors two clear starting points: submit a complaint or track one already raised.</p><a class="e-reklamo-text-link" href="#e-reklamo-manual">Explore the user manual <span aria-hidden="true">↗</span></a></div>
+        <figure class="e-reklamo-preview" data-entrance="screen">
+          <div class="e-reklamo-browser" aria-hidden="true"><span class="e-reklamo-browser-dots">● ● ●</span><img src="assets/tech/E-Reklamo/logos/eReklamo_Icon.png" alt="" width="24" height="24" loading="lazy" decoding="async"><span>eReklamo / The community starts here</span></div>
           <button class="e-reklamo-screen" data-image="assets/tech/E-Reklamo/screens/e-reklamo-home.png" data-group="e-reklamo" data-title="E-Reklamo — Homepage" data-description="Homepage preview of our community complaint management website. Figures shown are part of the supplied interface preview." aria-label="Enlarge the E-Reklamo homepage screenshot">
-            <img src="assets/tech/E-Reklamo/screens/e-reklamo-home.png" alt="E-Reklamo orange homepage with options to submit and track a complaint" width="500" height="284" loading="lazy" decoding="async">
+            <img src="assets/tech/E-Reklamo/screens/e-reklamo-home.png" alt="E-Reklamo orange homepage with options to submit and track a complaint" width="723" height="425" loading="lazy" decoding="async">
             <span class="e-reklamo-enlarge">View screen <span aria-hidden="true">↗</span></span>
           </button>
-          <figcaption>A first look at the website’s homepage.</figcaption>
+          <figcaption>The actual homepage, presented straight on for a closer look.</figcaption>
         </figure>
       </div>
-      <div class="e-reklamo-resources reveal" aria-label="eReklamo project resources">
-        <!-- Replace each pending status with a link when the resource is supplied. -->
-        <article class="e-reklamo-resource">
-          <span class="e-reklamo-eyebrow">01 / Documentation</span>
-          <h3>User manual</h3>
-          <p>A guide to navigating and using the eReklamo system.</p>
-          <span class="e-reklamo-resource-status">Manual coming soon</span>
-        </article>
-        <article class="e-reklamo-resource">
-          <span class="e-reklamo-eyebrow">02 / Source code</span>
-          <h3>GitHub repository</h3>
-          <p>Explore the project’s source code on GitHub.</p>
-          <span class="e-reklamo-resource-status">Repository link coming soon</span>
-        </article>
+      <div class="e-reklamo-journey reveal" id="e-reklamo-journey">
+        <div class="e-reklamo-journey-head"><span class="e-reklamo-eyebrow">THE IDEA / FROM CONCERN TO CONNECTION</span><h3>Speak up.<br><em>Keep the conversation going.</em></h3></div>
+        <div class="e-reklamo-steps" aria-label="Explore the project’s focus">
+          <button type="button" data-reklamo-step="0" aria-pressed="true"><span>01</span><strong>Raise a concern.</strong><small>It starts with a voice.</small><span aria-hidden="true">↗</span></button>
+          <button type="button" data-reklamo-step="1" aria-pressed="false"><span>02</span><strong>Follow its progress.</strong><small>Keep the next step in sight.</small><span aria-hidden="true">↗</span></button>
+          <button type="button" data-reklamo-step="2" aria-pressed="false"><span>03</span><strong>Connect a community.</strong><small>Make participation easier.</small><span aria-hidden="true">↗</span></button>
+        </div>
+        <p class="e-reklamo-step-description" aria-live="polite" aria-atomic="true">A dedicated place to submit community concerns, bringing the first step of the complaint process online.</p>
       </div>
+      <section class="reklamo-manual reveal" id="e-reklamo-manual" aria-labelledby="reklamo-manual-title">
+        <div class="reklamo-manual-heading"><div><span class="e-reklamo-eyebrow">THE FIELD GUIDE / USER MANUAL</span><h3 id="reklamo-manual-title">Good things come<br>with a little guidance.</h3></div><span class="reklamo-manual-sticker">GO ON,<br>TURN A PAGE ↗</span></div>
+        <div class="reklamo-manual-desk">
+          <div class="reklamo-manual-aside"><span class="e-reklamo-eyebrow">PICK A CHAPTER</span><p>From your first complaint to the admin dashboard. A pocket-sized tour of how it all works.</p><div class="reklamo-manual-chapters" aria-label="Manual chapter shortcuts">
+<button type="button" data-manual-jump="0">The cover</button><button type="button" data-manual-jump="3">Meet eReklamo</button><button type="button" data-manual-jump="5">Raise a concern</button><button type="button" data-manual-jump="6">Track a complaint</button><button type="button" data-manual-jump="7">Your account</button><button type="button" data-manual-jump="10">Settings & admin</button><button type="button" data-manual-jump="1">Meet the team</button>
+          </div><span class="reklamo-manual-hint">← → keys or swipe to explore.<br>Tap the page for a larger read.</span><noscript><p>JavaScript is needed to turn pages. <a href="assets/tech/E-Reklamo/manual/Developers-TableofContent.jpg">Open the contents spread ↗</a></p></noscript></div>
+          <div class="reklamo-manual-reader"><div class="reklamo-manual-book" tabindex="0" role="region" aria-label="E-Reklamo user manual. Use left and right arrow keys to turn pages.">
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--right" data-manual-page="0" data-title="Cover" aria-label="Enlarge manual: Cover"><img src="assets/tech/E-Reklamo/manual/FrontPage-Back.jpg" alt="E-Reklamo user manual — Cover" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--left" data-manual-page="1" data-title="The developers" aria-label="Enlarge manual: The developers" hidden><img src="assets/tech/E-Reklamo/manual/Developers-TableofContent.jpg" alt="E-Reklamo user manual — The developers" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--right" data-manual-page="2" data-title="Contents" aria-label="Enlarge manual: Contents" hidden><img src="assets/tech/E-Reklamo/manual/Developers-TableofContent.jpg" alt="E-Reklamo user manual — Contents" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--left" data-manual-page="3" data-title="Welcome" aria-label="Enlarge manual: Welcome" hidden><img src="assets/tech/E-Reklamo/manual/Welcome-Last.jpg" alt="E-Reklamo user manual — Welcome" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--left" data-manual-page="4" data-title="Home page · 2" aria-label="Enlarge manual: Home page · 2" hidden><img src="assets/tech/E-Reklamo/manual/2-11.jpg" alt="E-Reklamo user manual — Home page · 2" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--right" data-manual-page="5" data-title="Submit a complaint · 3" aria-label="Enlarge manual: Submit a complaint · 3" hidden><img src="assets/tech/E-Reklamo/manual/10-3.jpg" alt="E-Reklamo user manual — Submit a complaint · 3" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--left" data-manual-page="6" data-title="Track a complaint · 4" aria-label="Enlarge manual: Track a complaint · 4" hidden><img src="assets/tech/E-Reklamo/manual/LastPage.jpg" alt="E-Reklamo user manual — Track a complaint · 4" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--right" data-manual-page="7" data-title="Create an account · 5" aria-label="Enlarge manual: Create an account · 5" hidden><img src="assets/tech/E-Reklamo/manual/8-5.jpg" alt="E-Reklamo user manual — Create an account · 5" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--left" data-manual-page="8" data-title="Sign in · 6" aria-label="Enlarge manual: Sign in · 6" hidden><img src="assets/tech/E-Reklamo/manual/6-7.jpg" alt="E-Reklamo user manual — Sign in · 6" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--right" data-manual-page="9" data-title="User dashboard · 7" aria-label="Enlarge manual: User dashboard · 7" hidden><img src="assets/tech/E-Reklamo/manual/6-7.jpg" alt="E-Reklamo user manual — User dashboard · 7" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--left" data-manual-page="10" data-title="Settings & admin · 8" aria-label="Enlarge manual: Settings & admin · 8" hidden><img src="assets/tech/E-Reklamo/manual/8-5.jpg" alt="E-Reklamo user manual — Settings & admin · 8" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--right" data-manual-page="11" data-title="Other features · 9" aria-label="Enlarge manual: Other features · 9" hidden><img src="assets/tech/E-Reklamo/manual/LastPage.jpg" alt="E-Reklamo user manual — Other features · 9" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--left" data-manual-page="12" data-title="Photo interlude · 10" aria-label="Enlarge manual: Photo interlude · 10" hidden><img src="assets/tech/E-Reklamo/manual/10-3.jpg" alt="E-Reklamo user manual — Photo interlude · 10" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--right" data-manual-page="13" data-title="The website · 11" aria-label="Enlarge manual: The website · 11" hidden><img src="assets/tech/E-Reklamo/manual/2-11.jpg" alt="E-Reklamo user manual — The website · 11" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--right" data-manual-page="14" data-title="Closing artwork" aria-label="Enlarge manual: Closing artwork" hidden><img src="assets/tech/E-Reklamo/manual/Welcome-Last.jpg" alt="E-Reklamo user manual — Closing artwork" width="2000" height="1415" loading="lazy" decoding="async"></button>
+            <button type="button" class="reklamo-manual-page reklamo-manual-page--left" data-manual-page="15" data-title="Back cover" aria-label="Enlarge manual: Back cover" hidden><img src="assets/tech/E-Reklamo/manual/FrontPage-Back.jpg" alt="E-Reklamo user manual — Back cover" width="2000" height="1415" loading="lazy" decoding="async"></button>
+          </div><div class="reklamo-manual-controls"><button type="button" data-manual-prev aria-label="Previous manual page" disabled>←</button><span data-manual-count aria-live="polite" aria-atomic="true">01 / 16 · Cover</span><button type="button" data-manual-next aria-label="Next manual page">→</button></div><div class="reklamo-manual-progress" aria-hidden="true"><span></span></div></div>
+        </div>
+      </section>
+      <aside class="e-reklamo-source-note reveal"><span class="e-reklamo-eyebrow">BEHIND THE CODE</span><p>Built as a team. The repository link will be shared here when available.</p><span class="e-reklamo-resource-status">Repository coming soon</span></aside>
       <div class="e-reklamo-note reveal"><span>Designed around community voices.</span><span>Built as a team.</span></div>
     </section>
 
@@ -310,26 +344,88 @@
       <div class="internship-masthead reveal"><span>03 / Personal project</span><span>Built with .NET MAUI</span></div>
       <div class="internship-feature">
         <div class="internship-copy reveal">
-          <span class="internship-kicker">From learning to building.</span>
-          <h2 id="internship-title">Internship<br><em>Tracker.</em></h2>
-          <p>An Internship Tracker I built using .NET MAUI. A closer look at the project is coming soon.</p>
-          <div class="internship-tags"><span>.NET MAUI</span><span>App development</span></div>
-          <p class="internship-pending"><span aria-hidden="true">↳</span> Screenshots, features, and the story behind the project will be added here.</p>
+          <span class="internship-kicker">LESS SEARCHING. MORE STARTING.</span>
+          <h2 id="internship-title">Big futures.<br><em>First steps.</em></h2>
+          <p class="internship-project-name">Internship Tracker / .NET MAUI</p>
+          <p>A place for the next chapter to begin. Internship Tracker connects students looking for experience with companies looking for fresh talent.</p>
+          <p>Companies post available internship openings. Students browse those opportunities and apply through the system. Student, Company, and Admin accounts bring the different sides of the platform together.</p>
+          <div class="internship-tags"><span>3 account types</span><span>One connected journey</span></div>
+          <a class="internship-explore" href="#internship-playground">Take a look inside <span aria-hidden="true">↓</span></a>
         </div>
-        <div class="internship-art reveal" aria-hidden="true">
-          <div class="internship-orbit"></div>
-          <span class="internship-art-label">PROJECT / 03</span>
-          <div class="internship-monogram"><span>I</span><span>T</span><i>↗</i></div>
-          <span class="internship-art-foot">Internship Tracker <b>.NET MAUI</b></span>
+        <div class="internship-map reveal" aria-label="Companies post openings; students discover and apply">
+          <span class="internship-sticker">YOUR NEXT<br>CHAPTER ↗</span>
+          <div class="internship-map-node"><span aria-hidden="true">▤</span><strong>A company posts.</strong><small>An opportunity opens up.</small></div>
+          <div class="internship-map-path" aria-hidden="true">↓ <span>the connection happens here</span> ↓</div>
+          <div class="internship-map-node internship-map-node--student"><span aria-hidden="true">✳</span><strong>A student applies.</strong><small>A first step toward experience.</small></div>
+          <span class="internship-map-foot">OPENINGS → POSSIBILITIES</span>
         </div>
       </div>
-      <div class="internship-bottom reveal"><span>The project is built.</span><span>The showcase is on its way. ↗</span></div>
+      <div class="internship-playground" id="internship-playground">
+        <div class="internship-tour-copy reveal">
+          <span class="internship-kicker">THE APP / PICK YOUR PERSPECTIVE</span>
+          <h3>One platform.<br><em>Different seats.</em></h3>
+          <div class="internship-role-tabs" aria-label="Account perspectives">
+            <button type="button" data-intern-role="student" aria-pressed="true">01 Student</button>
+            <button type="button" data-intern-role="company" aria-pressed="false">02 Company</button>
+            <button type="button" data-intern-role="admin" aria-pressed="false">03 Admin</button>
+          </div>
+          <div class="internship-role-copy" aria-live="polite" aria-atomic="true">
+            <h4 data-intern-heading>Find your starting point.</h4>
+            <p data-intern-description>Browse available internship openings, explore companies, and apply to opportunities that interest you. The student dashboard brings openings and application status into view.</p>
+          </div>
+          <div class="internship-tour-note"><span aria-hidden="true">↳</span> Actual app screens. Pick a view, then tap the phone to zoom in.</div>
+        </div>
+        <div class="internship-device-stage" data-entrance="screen">
+          <span class="internship-stage-word" aria-hidden="true">NEXT.</span>
+          <span class="internship-device-badge" data-intern-badge>THE STUDENT VIEW</span>
+          <div class="internship-phone">
+            <div class="internship-phone-speaker" aria-hidden="true"></div>
+            <button type="button" class="internship-screen" data-intern-screen="login" data-image="assets/tech/InternshipTracker/Screenshots/Login_InternshipTracker.jpg" data-group="internship-tracker" data-title="Internship Tracker — Sign in" data-description="Student and Company Host sign-in options." aria-label="Enlarge sign in screenshot" hidden>
+              <img src="assets/tech/InternshipTracker/Screenshots/Login_InternshipTracker.jpg" alt="Student and Company Host sign-in options." width="537" height="1119" loading="lazy" decoding="async">
+            </button>
+            <button type="button" class="internship-screen" data-intern-screen="student" data-image="assets/tech/InternshipTracker/Screenshots/StudentDashboard_InternshipTracker.jpg" data-group="internship-tracker" data-title="Internship Tracker — Student dashboard" data-description="Available internships, work arrangement filters, and application status." aria-label="Enlarge student dashboard screenshot">
+              <img src="assets/tech/InternshipTracker/Screenshots/StudentDashboard_InternshipTracker.jpg" alt="Available internships, work arrangement filters, and application status." width="537" height="1119" loading="lazy" decoding="async">
+            </button>
+            <button type="button" class="internship-screen" data-intern-screen="company" data-image="assets/tech/InternshipTracker/Screenshots/CompanySideDashboard_InternshipTracker.jpg" data-group="internship-tracker" data-title="Internship Tracker — Company dashboard" data-description="Posted internship vacancies and recruiter controls." aria-label="Enlarge company dashboard screenshot" hidden>
+              <img src="assets/tech/InternshipTracker/Screenshots/CompanySideDashboard_InternshipTracker.jpg" alt="Posted internship vacancies and recruiter controls." width="537" height="1119" loading="lazy" decoding="async">
+            </button>
+            <div class="internship-admin-note" data-intern-screen="admin" hidden><span aria-hidden="true">⚙</span><strong>The Admin account.</strong><p>The third account type in Internship Tracker.</p><small>Admin screen preview to follow.</small></div>
+          </div>
+          <div class="internship-screen-controls" aria-label="App screen previews">
+            <button type="button" data-intern-view="login" aria-pressed="false">Sign in</button>
+            <button type="button" data-intern-view="student" aria-pressed="true">Student</button>
+            <button type="button" data-intern-view="company" aria-pressed="false">Company</button>
+          </div>
+          <span class="internship-screen-caption" data-intern-caption>01 / Discover an opening. Take your first step.</span>
+        </div>
+      </div>
+      <div class="internship-bottom reveal"><span>Built with .NET MAUI. Designed around opportunity.</span><span>Post it. Find it. Go for it. ↗</span></div>
+    </section>
+
+    <section class="case booklat-case" id="booklat" data-section aria-labelledby="booklat-title">
+      <div class="booklat-masthead reveal"><span>04 / Cross-platform bookstore</span><span>Many sellers. A shared foundation.</span></div>
+      <div class="booklat-intro"><div class="booklat-intro-copy reveal">
+        <img class="booklat-logo" src="assets/tech/Booklat/Logo/booklat_logo.png" alt="Booklat" width="4000" height="1600" loading="lazy" decoding="async">
+        <h2 id="booklat-title">A new chapter.<br><em>On every screen.</em></h2>
+        <p>Booklat is a cross-platform, multi-vendor bookstore built with .NET MAUI Blazor Hybrid and Blazor Web. Customers discover books and shop across independent sellers, while vendors manage their own digital storefronts and orders.</p>
+        <a class="booklat-cta" href="#booklat-showcase">Browse the experience <span aria-hidden="true">↗</span></a>
+      </div><div class="booklat-cover" data-entrance="book"><span class="booklat-cover-index">THE BOOKLAT BUILD / VOL. 01</span><span class="booklat-cover-mark" aria-hidden="true">B.</span><strong>One foundation.<br>Many ways to open it.</strong><div class="booklat-platforms"><span>Android</span><span>iOS</span><span>Windows</span><span>Web</span></div><span class="booklat-cover-foot">A SHARED RAZOR CLASS LIBRARY AT ITS HEART</span></div></div>
+      <div class="booklat-showcase" id="booklat-showcase">
+        <div class="booklat-showcase-head reveal"><div><span class="booklat-eyebrow">INSIDE THE BOOKSTORE</span><h3>Turn the page.</h3></div><p>From the first browse to the seller’s desk.<br>Choose a chapter to explore.</p></div>
+        <div class="booklat-reader"><div class="booklat-chapters" aria-label="Booklat screen selector"><button type="button" data-booklat-view="0" aria-pressed="true"><span>01</span> Storefront</button><button type="button" data-booklat-view="1" aria-pressed="false"><span>02</span> Book details</button><button type="button" data-booklat-view="2" aria-pressed="false"><span>03</span> Shopping cart</button><button type="button" data-booklat-view="3" aria-pressed="false"><span>04</span> Your orders</button><button type="button" data-booklat-view="4" aria-pressed="false"><span>05</span> Track an order</button><button type="button" data-booklat-view="5" aria-pressed="false"><span>06</span> Seller desk</button><button type="button" data-booklat-view="6" aria-pressed="false"><span>07</span> Admin dashboard</button><button type="button" data-booklat-view="7" aria-pressed="false"><span>08</span> Sign in</button><button type="button" data-booklat-view="8" aria-pressed="false"><span>09</span> Create an account</button></div><div class="booklat-browser" data-entrance="screen"><div class="booklat-browser-bar"><span aria-hidden="true">● ● ●</span><span data-booklat-label>Booklat / Storefront</span><span aria-hidden="true">↗</span></div><button type="button" class="booklat-screen" data-booklat-screen="0" data-image="assets/tech/Booklat/Screenshots/HomePage_Booklat.jpg" data-group="booklat" data-title="Booklat — Storefront" data-description="Browse books and discover independent sellers." aria-label="Enlarge Booklat storefront screenshot"><img src="assets/tech/Booklat/Screenshots/HomePage_Booklat.jpg" alt="Booklat — Browse books and discover independent sellers." loading="lazy" decoding="async"></button><button type="button" class="booklat-screen" data-booklat-screen="1" data-image="assets/tech/Booklat/Screenshots/ViewProduct_Booklat.jpg" data-group="booklat" data-title="Booklat — Book details" data-description="Take a closer look at a book listing." aria-label="Enlarge Booklat book details screenshot" hidden><img src="assets/tech/Booklat/Screenshots/ViewProduct_Booklat.jpg" alt="Booklat — Take a closer look at a book listing." loading="lazy" decoding="async"></button><button type="button" class="booklat-screen" data-booklat-screen="2" data-image="assets/tech/Booklat/Screenshots/Cart_Booklat.jpg" data-group="booklat" data-title="Booklat — Shopping cart" data-description="Review selected items before placing an order." aria-label="Enlarge Booklat shopping cart screenshot" hidden><img src="assets/tech/Booklat/Screenshots/Cart_Booklat.jpg" alt="Booklat — Review selected items before placing an order." loading="lazy" decoding="async"></button><button type="button" class="booklat-screen" data-booklat-screen="3" data-image="assets/tech/Booklat/Screenshots/ViewOrders_Booklat.jpg" data-group="booklat" data-title="Booklat — Your orders" data-description="View purchases and order details." aria-label="Enlarge Booklat your orders screenshot" hidden><img src="assets/tech/Booklat/Screenshots/ViewOrders_Booklat.jpg" alt="Booklat — View purchases and order details." loading="lazy" decoding="async"></button><button type="button" class="booklat-screen" data-booklat-screen="4" data-image="assets/tech/Booklat/Screenshots/TrackOrder_Booklat.jpg" data-group="booklat" data-title="Booklat — Track an order" data-description="Follow an order through its journey." aria-label="Enlarge Booklat track an order screenshot" hidden><img src="assets/tech/Booklat/Screenshots/TrackOrder_Booklat.jpg" alt="Booklat — Follow an order through its journey." loading="lazy" decoding="async"></button><button type="button" class="booklat-screen" data-booklat-screen="5" data-image="assets/tech/Booklat/Screenshots/SellerDashboard_Booklat.jpg" data-group="booklat" data-title="Booklat — Seller desk" data-description="Manage a digital storefront, catalog, and orders." aria-label="Enlarge Booklat seller desk screenshot" hidden><img src="assets/tech/Booklat/Screenshots/SellerDashboard_Booklat.jpg" alt="Booklat — Manage a digital storefront, catalog, and orders." loading="lazy" decoding="async"></button><button type="button" class="booklat-screen" data-booklat-screen="6" data-image="assets/tech/Booklat/Screenshots/AdminDashboard_Booklat.jpg" data-group="booklat" data-title="Booklat — Admin dashboard" data-description="Explore the platform administration interface." aria-label="Enlarge Booklat admin dashboard screenshot" hidden><img src="assets/tech/Booklat/Screenshots/AdminDashboard_Booklat.jpg" alt="Booklat — Explore the platform administration interface." loading="lazy" decoding="async"></button><button type="button" class="booklat-screen" data-booklat-screen="7" data-image="assets/tech/Booklat/Screenshots/SignIn_Booklat.jpg" data-group="booklat" data-title="Booklat — Sign in" data-description="Account sign-in for the Booklat platform." aria-label="Enlarge Booklat sign in screenshot" hidden><img src="assets/tech/Booklat/Screenshots/SignIn_Booklat.jpg" alt="Booklat — Account sign-in for the Booklat platform." loading="lazy" decoding="async"></button><button type="button" class="booklat-screen" data-booklat-screen="8" data-image="assets/tech/Booklat/Screenshots/SignUp_Booklat.jpg" data-group="booklat" data-title="Booklat — Create an account" data-description="Registration for the Booklat platform." aria-label="Enlarge Booklat create an account screenshot" hidden><img src="assets/tech/Booklat/Screenshots/SignUp_Booklat.jpg" alt="Booklat — Registration for the Booklat platform." loading="lazy" decoding="async"></button><div class="booklat-browser-caption" aria-live="polite" aria-atomic="true"><span data-booklat-caption>Browse books and discover independent sellers.</span><span>Click screen to enlarge ↗</span></div></div></div>
+      </div>
+      <details class="booklat-story reveal"><summary><span><small>BEHIND THE BUILD</small>Different platforms. Shared thinking.</span><span class="booklat-story-plus" aria-hidden="true">+</span></summary><div class="booklat-story-content">
+        <p class="booklat-story-lead">A shared Razor Class Library (RCL) keeps reusable UI components, services, and core business logic together. Mobile, desktop, and web interfaces build on this centralized foundation, reducing code duplication and keeping shopping and vendor management consistent across platforms.</p>
+        <div class="booklat-architecture"><div><strong>Shared Razor Class Library</strong><span>UI components · Services · Business logic</span></div><span aria-hidden="true">↓</span><div class="booklat-architecture-branches"><div><strong>.NET MAUI Blazor Hybrid</strong><span>Android · iOS · Windows</span></div><div><strong>Blazor Web</strong><span>Web browsers</span></div></div></div>
+        <div class="booklat-story-grid"><article><span>01 / The ecosystem</span><h4>A place to shop. A place to sell.</h4><p>Dedicated customer and independent vendor roles support catalog discovery, shopping carts, digital storefront management, and order processing.</p></article><article><span>02 / The interface</span><h4>Native shell. Familiar experience.</h4><p>Native shell containers host Blazor interfaces, while reusable components and scoped CSS carry a responsive design from desktop to mobile.</p></article></div>
+        <div class="booklat-stack" aria-label="Booklat technology stack"><span>C#</span><span>.NET MAUI Blazor Hybrid</span><span>Blazor Web</span><span>Razor Class Library (RCL)</span><span>HTML / CSS</span></div>
+      </div></details>
     </section>
 
     <section class="section projects-coming" id="up-next" data-section aria-labelledby="projects-coming-title">
       <div class="projects-coming-mark reveal" aria-hidden="true">✳</div>
       <div class="reveal">
-        <span class="label">04 / More to come</span>
+        <span class="label">05 / More to come</span>
         <h2 id="projects-coming-title">There’s more<br><em>in the making.</em></h2>
         <p>More projects will be showcased here soon.<br>New ideas, more experiments, and the stories behind the builds.</p>
         <span class="projects-coming-note">The collection keeps growing. <span aria-hidden="true">↗</span></span>
@@ -360,6 +456,7 @@
     </div>
   </footer>
 
+  <dialog id="reklamo-manual-dialog" aria-labelledby="manual-dialog-title"><div class="reklamo-manual-dialog-bar"><h2 id="manual-dialog-title">E-Reklamo user manual</h2><button type="button" data-manual-close autofocus>Close ×</button></div><div class="reklamo-manual-expanded"></div><div class="reklamo-manual-zoom-controls"><button type="button" data-manual-zoom-prev aria-label="Previous manual page">← Previous</button><span data-manual-zoom-count aria-live="polite"></span><button type="button" data-manual-zoom-next aria-label="Next manual page">Next →</button></div></dialog>
   <dialog id="lightbox" aria-labelledby="lightbox-title">
     <div class="lb-toolbar">
       <span id="lightbox-count"></span>
