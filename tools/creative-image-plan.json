@@ -1,0 +1,142 @@
+[
+  {
+    "source": "assets/logos/SACE.png",
+    "size": 640,
+    "output": "assets/optimized/640/logos/SACE.png"
+  },
+  {
+    "source": "assets/logos/SACE.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/logos/SACE.png"
+  },
+  {
+    "source": "assets/logos/TheSynergy.png",
+    "size": 640,
+    "output": "assets/optimized/640/logos/TheSynergy.png"
+  },
+  {
+    "source": "assets/logos/TheSynergy.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/logos/TheSynergy.png"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page1.jpg",
+    "size": 960,
+    "quality": 92,
+    "output": "assets/optimized/960/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page1.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page1.jpg",
+    "size": 1920,
+    "quality": 92,
+    "output": "assets/optimized/1920/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page1.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page2.jpg",
+    "size": 960,
+    "quality": 92,
+    "output": "assets/optimized/960/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page2.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page2.jpg",
+    "size": 1920,
+    "quality": 92,
+    "output": "assets/optimized/1920/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page2.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page3.jpg",
+    "size": 960,
+    "quality": 92,
+    "output": "assets/optimized/960/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page3.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page3.jpg",
+    "size": 1920,
+    "quality": 92,
+    "output": "assets/optimized/1920/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page3.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page4.jpg",
+    "size": 960,
+    "quality": 92,
+    "output": "assets/optimized/960/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page4.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page4.jpg",
+    "size": 1920,
+    "quality": 92,
+    "output": "assets/optimized/1920/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page4.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page5.jpg",
+    "size": 960,
+    "quality": 92,
+    "output": "assets/optimized/960/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page5.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page5.jpg",
+    "size": 1920,
+    "quality": 92,
+    "output": "assets/optimized/1920/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page5.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page6.jpg",
+    "size": 960,
+    "quality": 92,
+    "output": "assets/optimized/960/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page6.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page6.jpg",
+    "size": 1920,
+    "quality": 92,
+    "output": "assets/optimized/1920/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page6.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page7.jpg",
+    "size": 960,
+    "quality": 92,
+    "output": "assets/optimized/960/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page7.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page7.jpg",
+    "size": 1920,
+    "quality": 92,
+    "output": "assets/optimized/1920/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page7.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page8.jpg",
+    "size": 960,
+    "quality": 92,
+    "output": "assets/optimized/960/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page8.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page8.jpg",
+    "size": 1920,
+    "quality": 92,
+    "output": "assets/optimized/1920/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page8.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page9.jpg",
+    "size": 960,
+    "quality": 92,
+    "output": "assets/optimized/960/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page9.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page9.jpg",
+    "size": 1920,
+    "quality": 92,
+    "output": "assets/optimized/1920/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page9.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page10.jpg",
+    "size": 960,
+    "quality": 92,
+    "output": "assets/optimized/960/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page10.jpg"
+  },
+  {
+    "source": "assets/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page10.jpg",
+    "size": 1920,
+    "quality": 92,
+    "output": "assets/optimized/1920/creative/TheSynergy/BrandGuidelines/TheSynergy_BG_Page10.jpg"
+  }
+]

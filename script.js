@@ -275,7 +275,10 @@ if (lb) {
     const target = current;
     const version = ++request;
     const preload = new Image();
-    preload.src = pages[target].dataset.image;
+    const preview = pages[target].querySelector('img');
+    preload.sizes = image.sizes;
+    preload.srcset = preview.srcset;
+    preload.src = preview.src;
     try { await preload.decode(); } catch { return; }
     if (version !== request) return;
     animations.forEach(animation => animation.cancel());
@@ -284,7 +287,8 @@ if (lb) {
     outgoing.className = 'synergy-slide-outgoing';
     outgoing.alt = '';
     outgoing.setAttribute('aria-hidden', 'true');
-    image.src = pages[target].dataset.image;
+    image.srcset = preview.srcset;
+    image.src = preview.src;
     image.alt = pages[current].querySelector('img').alt;
     slide.setAttribute('aria-label', `Enlarge brand guidelines page ${current + 1}`);
     count.textContent = `${String(current + 1).padStart(2, '0')} / ${pages.length}`;

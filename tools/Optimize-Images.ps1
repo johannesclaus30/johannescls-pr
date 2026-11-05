@@ -1,5 +1,8 @@
 # Generate display copies without changing original artwork.
-param([string]$PlanPath = 'tools/image-plan.json')
+param(
+  [string]$PlanPath = 'tools/image-plan.json',
+  [string]$ResultsPath = 'assets/optimized/manifest.json'
+)
 Add-Type -AssemblyName System.Drawing
 $plan = Get-Content -LiteralPath $PlanPath -Raw | ConvertFrom-Json
 $encoder = [System.Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() | Where-Object MimeType -eq 'image/jpeg'
@@ -28,6 +31,6 @@ foreach ($item in $plan) {
   $graphics.Dispose(); $bitmap.Dispose(); $source.Dispose()
 }
 $quality.Dispose()
-$results | ConvertTo-Json | Set-Content -LiteralPath 'assets/optimized/manifest.json' -Encoding utf8
+$results | ConvertTo-Json | Set-Content -LiteralPath $ResultsPath -Encoding utf8
 Write-Output "Created $($results.Count) optimized display copies."
 

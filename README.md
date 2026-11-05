@@ -137,3 +137,9 @@ Publish the current site files from the repository root:
 Use the repository’s GitHub Pages configuration to publish the root folder from the deployment branch. No build command is needed. Relative page links and asset paths support a repository subpath.
 
 The existing `portfolio-github-pages.zip` may be older than the current source files. Refresh it before using it for a new upload; updating the site does not automatically rebuild the archive.
+
+### Creative image clarity
+
+The featured SACE and Synergy logos use 640/1280-pixel responsive PNGs. Synergy guidelines use responsive 640/960/1920-pixel previews, with 1920-pixel pages in the enlarged viewer. Images remain lazy-loaded; the carousel only requests the selected page. Originals are preserved.
+
+Regenerate the sharper copies with `./tools/Optimize-Images.ps1 -PlanPath tools/creative-image-plan.json -ResultsPath tmp/creative-image-results.json`.
