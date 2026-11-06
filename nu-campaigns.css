@@ -1,0 +1,58 @@
+/* Three editorial rooms, sharing the NU palette and existing lightbox. */
+.nu-matchday { padding:clamp(24px,4vw,54px); background:#111d42; border-radius:20px; position:relative; overflow:hidden; }
+.nu-matchday::before { content:''; position:absolute; width:260px; height:260px; border:1px solid #fbd11725; border-radius:50%; top:-150px; right:-70px; pointer-events:none; }
+.nu-matchday-top { display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; font-size:10px; letter-spacing:.12em; color:#e1e6ff; padding-bottom:22px; border-bottom:1px solid #ffffff30; }
+.nu-matchday-top strong { color:#fbd117; }
+.nu-matchday-layout { display:grid; grid-template-columns:minmax(0,.7fr) minmax(0,1.6fr); align-items:center; gap:36px; padding-top:32px; }
+.nu-rally { font-size:clamp(60px,8vw,120px); font-weight:900; letter-spacing:-.08em; line-height:.9; margin-bottom:24px; }
+.nu-rally span { color:#fbd117; }
+.nu-matchday-copy > p { font-size:12px; line-height:1.9; color:#cbd5f0; max-width:34ch; }
+.nu-match-controls { display:grid; gap:8px; margin-top:26px; }
+.nu-match-controls button { text-align:left; padding:14px 16px; border:1px solid #ffffff30; border-radius:8px; color:#e1e6ff; background:transparent; cursor:pointer; font-size:12px; }
+.nu-match-controls button > span { color:#aab8dc; font-size:9px; margin-right:10px; }
+.nu-match-controls button[aria-pressed="true"] { background:#fbd117; border-color:#fbd117; color:#111d42; font-weight:700; }
+.nu-match-controls button[aria-pressed="true"] > span { color:#253468; }
+.nu-match-panel { margin:0; }
+.nu-match-panel > button { width:100%; height:440px; padding:20px; background:linear-gradient(135deg,#263869,#1a2854); border:1px solid #ffffff20; border-radius:12px; display:flex; justify-content:center; align-items:center; cursor:zoom-in; }
+.nu-match-panel img { display:block; max-width:100%; max-height:100%; width:auto; height:auto; box-shadow:0 12px 24px #0003; }
+.nu-match-panel figcaption { display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; padding-top:16px; font-size:12px; line-height:1.7; }
+.nu-match-panel figcaption > span { font-size:10px; color:#bcc9eb; }
+.nu-match-status { font-size:10px; color:#bcc9eb; margin-top:20px; letter-spacing:.04em; }
+.nu-installation { display:grid; grid-template-columns:1fr 1fr; align-items:start; gap:clamp(20px,5vw,70px); background:#e9e7de; border-radius:18px; padding:44px 36px 26px; color:#26366c; position:relative; overflow:hidden; }
+.nu-installation::before { content:'THE CAMPUS DISPLAY / PRESENTATION STUDY'; grid-column:1/-1; font-size:9px; letter-spacing:.15em; color:#59637a; }
+.nu-print-object { margin:0; min-width:0; }
+.nu-print-object > button { display:block; position:relative; margin:0 auto; padding:0; border:0; background:transparent; cursor:zoom-in; }
+.nu-print-object img { display:block; height:380px; width:auto; max-width:100%; object-fit:contain; }
+.nu-print-object--poster > button { padding:10px; background:#faf9f5; box-shadow:0 12px 20px #26366c25; transform:rotate(-3deg); }
+.nu-print-object--standee > button { padding:5px 0; border-block:6px solid #a6a9b0; box-shadow:0 8px 15px #26366c15; }
+.nu-print-object--standee > button::after { content:''; position:absolute; width:120%; height:8px; left:-10%; bottom:-18px; border-radius:50%; background:#8b919b; }
+.nu-print-object figcaption { margin-top:34px; padding-top:14px; border-top:1px solid #26366c30; font-size:13px; line-height:1.6; }
+.nu-print-object figcaption span { display:block; font-size:11px; color:#59637a; margin-top:5px; }
+.nu-print-note { font-size:11px; line-height:1.8; margin-top:16px; color:#e1e6ff; }
+.is-artwork-view .nu-print-object > button { padding:0; border:0; box-shadow:none; transform:none; background:transparent; }
+.is-artwork-view .nu-print-object--standee > button::after { display:none; }
+.nu-campaign-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; max-width:1200px; margin:auto; }
+.nu-campaign-card { padding:clamp(18px,3vw,32px); border-radius:14px; background:#f5f2e9; color:#26366c; min-width:0; }
+.nu-campaign-card:nth-child(2) { margin-top:48px; background:#fbd117; }
+.nu-campaign-index { display:flex; justify-content:space-between; gap:12px; font-size:9px; letter-spacing:.12em; font-weight:700; margin-bottom:22px; }
+.nu-campaign-card > button { display:block; padding:0; border:0; width:100%; background:transparent; cursor:zoom-in; }
+.nu-campaign-card img { display:block; width:100%; max-height:440px; object-fit:contain; }
+#nu .nu-campaign-card h4 { font-size:clamp(22px,2.5vw,32px); line-height:1.2; letter-spacing:-.04em; margin:24px 0 12px; }
+.nu-campaign-card p { font-size:12px; line-height:1.85; color:#344578; }
+.nu-campaign-open { display:inline-block; margin-top:18px; border-bottom:1px solid #26366c70; padding-bottom:5px; font-size:11px; }
+@media(hover:hover) and (prefers-reduced-motion:no-preference) {
+  html[data-motion="on"] .nu-campaign-card img,html[data-motion="on"] .nu-print-object > button { transition:transform .3s ease; }
+  html[data-motion="on"] .nu-campaign-card > button:hover img { transform:translateY(-5px) rotate(-1deg); }
+  html[data-motion="on"] .nu-print-object > button:hover { transform:translateY(-5px); }
+}
+@media(max-width:850px) { .nu-matchday-layout { grid-template-columns:1fr; gap:24px; }.nu-rally { font-size:72px; }.nu-matchday-copy > p { max-width:60ch; }.nu-match-controls { grid-template-columns:repeat(3,minmax(0,1fr)); }.nu-match-controls button { padding:12px 9px; font-size:11px; }.nu-match-controls button > span { display:block; margin-bottom:6px; }.nu-match-panel > button { height:380px; }.nu-print-object img { height:310px; } }
+@media(max-width:600px) { .nu-installation { padding:28px 24px; grid-template-columns:1fr; gap:36px; }.nu-print-object img { height:auto; max-height:420px; }.nu-print-object--standee img { max-height:400px; }.nu-campaign-grid { grid-template-columns:1fr; gap:20px; }.nu-campaign-card:nth-child(2) { margin-top:0; }.nu-match-panel > button { height:320px; padding:12px; }.nu-matchday { padding:24px 18px; } }
+
+.nu-edition [data-print-toggle]:not([hidden]) { display:inline-block; }
+.nu-match-switch { display:block; margin-top:16px; background:#fbd117; color:#111d42; border-radius:30px; padding:12px 18px; cursor:pointer; font-size:12px!important; font-weight:700!important; }
+.nu-matchday .nu-match-panel > button { height:360px; }
+.nu-match-controls { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.nu-match-controls button > span { display:block; margin-bottom:6px; }
+.nu-campaign-card:nth-child(3) { background:#dce7f3; }
+@media(min-width:601px) and (max-width:1000px) { .nu-campaign-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }.nu-campaign-card:last-child { grid-column:1/-1; max-width:480px; justify-self:center; }.nu-campaign-card:nth-child(2) { margin-top:0; } }
+@media(max-width:600px) { .nu-match-controls { grid-template-columns:repeat(2,minmax(0,1fr)); }.nu-matchday .nu-match-panel > button { height:auto; aspect-ratio:2; }.nu-rally br { display:none; }.nu-rally { font-size:60px; }.nu-rally span { margin-left:12px; }.nu-matchday-copy > p { font-size:11px; }.nu-campaign-grid { grid-template-columns:1fr; } }

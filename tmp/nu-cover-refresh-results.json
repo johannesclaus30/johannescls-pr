@@ -1,0 +1,18 @@
+[
+  {
+    "source": "assets/creative/NULipaMarketing/CoverPhotos/2026_FBCover_NULipa.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/CoverPhotos/2026_FBCover_NULipa.jpg",
+    "width": 640,
+    "height": 258,
+    "bytes": 64028
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/CoverPhotos/2026_FBCover_NULipa.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/CoverPhotos/2026_FBCover_NULipa.jpg",
+    "width": 1560,
+    "height": 630,
+    "bytes": 245464
+  }
+]

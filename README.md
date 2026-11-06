@@ -21,7 +21,7 @@ Open `index.html` in your browser. Photos, artwork, and tool logos are stored lo
 
 ## Creative collections
 
-- **NU Lipa Marketing Office:** ten publication materials with content-based captions, plus a six-panel interactive brochure.
+- **NU Lipa Marketing Office:** ten publication materials with content-based captions, two UAAP artworks in a matchup switcher, an admissions poster and standee in an illustrative display study, three campaign spotlights, including the Go for the Gold finals rally, two 2026 flyers on an interactive print desk, three 2025–2026 social media covers in a manual timeline viewer, plus a six-panel interactive brochure. The flyer and cover collections are linked from the creative overview and featured on `nu-lipa.html`; optimized images and `nu-showcase.js` / `nu-showcase.css` keep browsing lightweight, keyboard accessible, and compatible with reduced motion.
 - **SACE Student Council:** organizational logo and five publication materials. A dedicated space is reserved for the brand guidelines currently in progress.
 - **The Synergy:** organizational logo and ten brand-guideline pages, presented in a carousel with a “View all” gallery modal.
 - **YES-O:** a temporary collection-in-progress section while the work is being compiled.

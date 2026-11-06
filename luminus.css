@@ -32,6 +32,11 @@
 .luminus-resource h3 { margin: 18px 0 12px; font-size: 22px; font-weight: 600; }
 .luminus-resource p { color: #edf0ff; font-size: 13px; line-height: 1.8; }
 .luminus-resource-status { display: inline-block; margin-top: 24px; padding: 8px 12px; border: 1px dashed #ffffff55; border-radius: 4px; color: #dce2ff; font-size: 11px; }
+.luminus-repository-links { display:grid; gap:12px; margin-top:24px; }
+.luminus-repository-links a { display:block; padding:14px 16px; border:1px solid #ffffff55; border-radius:6px; color:#fff; font-size:14px; font-weight:600; }
+.luminus-repository-links a span { display:block; margin-top:6px; color:#dce2ff; font-size:12px; font-weight:400; }
+.luminus-repository-links a:hover { background:#ffffff12; border-color:var(--luminus-gold); }
+.luminus-repository-links a:focus-visible { outline:3px solid var(--luminus-gold); outline-offset:4px; }
 @media (max-width: 700px) { .luminus-resources { grid-template-columns: 1fr; } .luminus-partnership { gap: 12px; } .luminus-partnership img { width: 90px; } }
 /* A small product theatre, with a fanned phone deck and a floating browser. */
 .luminus-showcase { margin-top: clamp(64px, 9vw, 120px); min-width: 0; }
