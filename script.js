@@ -101,6 +101,25 @@ document.querySelectorAll('.motion-toggle').forEach(btn =>
 reduceMotion.addEventListener('change', applyMotion);
 applyMotion();
 
+/* Small ambient accents run only while visible, and pause in background tabs. */
+if ('IntersectionObserver' in window) {
+  const accents = [...document.querySelectorAll('.booklat-cover-mark, .internship-monogram, .projects-coming-mark, .luminus-hero-spark, .section > .label, .footer > .label')];
+  const visible = new Set();
+  const syncAccents = () => accents.forEach(el => {
+    el.classList.toggle('ambient-active', visible.has(el) && !document.hidden && motionEnabled());
+  });
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) visible.add(entry.target);
+      else visible.delete(entry.target);
+    });
+    syncAccents();
+  });
+  accents.forEach(el => { el.classList.add('ambient-accent'); observer.observe(el); });
+  document.addEventListener('visibilitychange', syncAccents);
+  document.addEventListener('portfolio-motion-change', syncAccents);
+}
+
 /* ---------- Scroll progress ---------- */
 let frame = false;
 const clamp = (v, min = 0, max = 1) => Math.min(max, Math.max(min, v));

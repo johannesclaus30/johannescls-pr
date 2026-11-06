@@ -20,7 +20,7 @@
 @media(max-width:800px) { .booklat-intro { grid-template-columns:1fr; }.booklat-cover { max-width:340px; width:100%; justify-self:center; margin:5px 12px 25px; }.booklat-reader { grid-template-columns:1fr; }.booklat-chapters { display:flex; overflow-x:auto; padding-bottom:8px; }.booklat-chapters button { flex-shrink:0; }.booklat-story-grid { grid-template-columns:1fr; } }
 @media(max-width:450px) { .booklat-architecture-branches { grid-template-columns:1fr; }.booklat-story summary,.booklat-story-content { padding:20px; }.booklat-browser-caption { font-size:9px; } }
 @media(prefers-reduced-motion:reduce) { .booklat-cover { transform:none; } }
-/* A larger identity, a book jacket, then a full-width reading desk. */
+/* A larger identity and a book jacket introduce the reading desk. */
 .booklat-logo { width:clamp(280px,36vw,480px); max-width:100%; height:clamp(100px,12vw,145px); object-fit:cover; object-position:center; }
 .booklat-intro { grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr); padding-block:50px 78px; }
 .booklat-intro-copy { min-width:0; }
@@ -51,3 +51,23 @@
   .booklat-chapters { flex-wrap:nowrap; overflow-x:auto; }
   .booklat-screen { aspect-ratio:1.45; }
 }
+/* Compact pages; full-resolution screenshots remain one click away. */
+.booklat-showcase { max-width:960px; margin-inline:auto; }
+.booklat-reader { max-width:760px; margin-inline:auto; }
+.booklat-browser { position:relative; max-width:720px; justify-self:center; }
+.booklat-browser::after { content:''; display:block; height:3px; background:#c38b16; transform:scaleX(var(--chapter-progress, .111)); transform-origin:left; }
+.booklat-screen { aspect-ratio:1.72; }
+.booklat-chapters { justify-content:center; }
+.booklat-chapters button[aria-pressed="true"] > span { color:#f4c35b; }
+.booklat-pagination { display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%; max-width:720px; margin-inline:auto; }
+.booklat-pagination button { font:inherit; font-size:11px; font-weight:600; border:1px solid #cbd5e1; border-radius:30px; padding:12px 16px; background:#fff; color:#102743; cursor:pointer; }
+.booklat-pagination button:hover { background:#102743; color:#f4c35b; }
+.booklat-pagination > span { font-size:11px; font-variant-numeric:tabular-nums; color:#536579; white-space:nowrap; }
+.booklat-browser:focus-visible { outline:3px solid #edb537; outline-offset:5px; }
+@media(prefers-reduced-motion:no-preference) {
+  html[data-motion="on"] .booklat-browser::after { transition:transform .3s ease; }
+  html[data-motion="on"] .booklat-pagination button { transition:translate .2s ease,background-color .2s ease,color .2s ease; }
+  html[data-motion="on"] .booklat-pagination button:hover { translate:0 -2px; }
+}
+@media(max-width:800px) { .booklat-chapters { justify-content:flex-start; } }
+@media(max-width:450px) { .booklat-pagination { gap:6px; }.booklat-pagination button { font-size:10px; padding:10px; }.booklat-screen { aspect-ratio:1.45; } }

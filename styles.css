@@ -1824,6 +1824,18 @@ html:has(#construction-notice[open]) { overflow: hidden; }
 }
 @keyframes scroll-turn { from { rotate: -30deg; } to { rotate: 85deg; } }
 @keyframes scroll-halo { from { scale: .86; opacity: .5; } to { scale: 1.08; opacity: 1; } }
+/* Slow, small accents; no animated filters, shadows, or layout properties. */
+@keyframes ambient-breathe { 0%, 100% { translate:0 0; } 50% { translate:0 -5px; } }
+@media (prefers-reduced-motion: no-preference) {
+  html[data-motion="on"] .ambient-accent { animation:ambient-breathe 6s ease-in-out infinite; animation-play-state:paused; }
+  html[data-motion="on"] .ambient-accent.ambient-active { animation-play-state:running; }
+  html[data-motion="on"] .ambient-accent:nth-child(even) { animation-delay:-3s; }
+  html[data-motion="on"] .nav-links a { transition:translate .2s ease, background-color .2s ease; }
+  html[data-motion="on"] .nav-links a:hover { translate:0 -2px; }
+  html[data-motion="on"] .btn .arrow, html[data-motion="on"] .work-cta > span { display:inline-block; transition:translate .25s ease; }
+  html[data-motion="on"] .btn:hover .arrow, html[data-motion="on"] .work-feature:hover .work-cta > span { translate:3px -3px; }
+}
+.section > .label.ambient-accent, .footer > .label.ambient-accent { display:inline-block; }
 @media (prefers-reduced-motion: reduce) {
   .luminus-hero-spark, .projects-coming-mark, .internship-orbit, .luminus-hero-halo { animation: none !important; }
 }
