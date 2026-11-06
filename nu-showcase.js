@@ -1,50 +1,63 @@
 /* Manual browsing only: no autoplay, timers, or pointer-tracking loops. */
 (() => {
   document.querySelectorAll('[data-nu-matchday]').forEach(gallery => {
-    const choices = [...gallery.querySelectorAll('[data-match-select]')];
     const panels = [...gallery.querySelectorAll('[data-match-panel]')];
     const status = gallery.querySelector('[data-match-status]');
+    const switcher = gallery.querySelector('[data-match-next]');
     const reduced = matchMedia('(prefers-reduced-motion: reduce)');
     let current = 0;
-    let animation;
-    function show(index) {
-      current = (index + choices.length) % choices.length;
-      index = current;
-      animation?.cancel();
-      choices.forEach((button, i) => button.setAttribute('aria-pressed', String(i === index)));
-      panels.forEach((panel, i) => { panel.hidden = i !== index; });
-      status.textContent = `${String(index + 1).padStart(2, '0')} / ${String(choices.length).padStart(2, '0')} — ${choices[index].dataset.matchLabel}`;
-      if (!reduced.matches && document.documentElement.dataset.motion !== 'off') {
-        animation = panels[index].animate([{ opacity: .3, translate: '16px 0' }, { opacity: 1, translate: '0 0' }], { duration: 300, easing: 'ease-out' });
+    let animations = [];
+    const cancel = () => { animations.forEach(animation => animation.cancel()); animations = []; };
+    function show(index, animate = false) {
+      const previous = panels[current];
+      const next = (index + panels.length) % panels.length;
+      const moving = animate && !reduced.matches && document.documentElement.dataset.motion !== 'off';
+      // Retarget from the visible poses so fast clicks never snap the cards back.
+      const outgoingPose = moving ? getComputedStyle(previous).transform : 'none';
+      const incomingPose = moving ? getComputedStyle(panels[next]).transform : 'none';
+      const icon = switcher.querySelector('svg');
+      const iconPose = moving ? getComputedStyle(icon).transform : 'none';
+      cancel();
+      current = next;
+      panels.forEach((panel, i) => {
+        const front = i === current;
+        panel.classList.toggle('is-front', front);
+        panel.setAttribute('aria-hidden', String(!front));
+        panel.inert = !front;
+      });
+      const title = panels[current].querySelector('[data-title]').dataset.title;
+      status.textContent = `${String(current + 1).padStart(2, '0')} / ${String(panels.length).padStart(2, '0')} — ${title}`;
+      if (moving) {
+        const timing = { duration: 760, easing: 'linear' };
+        animations = [
+          previous.animate([
+            { transform: outgoingPose, zIndex: 3, easing: 'cubic-bezier(.4,0,.2,1)' },
+            { transform: 'translate(14%, -34px) rotate(10deg) rotateY(-9deg) scale(.94)', zIndex: 3, offset: .42 },
+            { transform: 'translate(14%, -34px) rotate(10deg) rotateY(-9deg) scale(.94)', zIndex: 1, offset: .43, easing: 'cubic-bezier(.16,1,.3,1)' },
+            { transform: 'translate(12px, -12px) rotate(4deg) scale(.96)', zIndex: 1 }
+          ], timing),
+          panels[current].animate([
+            { transform: incomingPose, easing: 'cubic-bezier(.4,0,.2,1)' },
+            { transform: 'translate(-5%, -20px) rotate(-4deg) rotateY(5deg) scale(1.015)', offset: .43, easing: 'cubic-bezier(.16,1,.3,1)' },
+            { transform: 'translate(0, 3px) rotate(.5deg) scale(1)', offset: .82, easing: 'ease-out' },
+            { transform: 'translate(0, 0) rotate(0deg) scale(1)' }
+          ], timing),
+          icon.animate([{ transform: iconPose }, { transform: 'rotate(180deg)' }], { duration: 760, easing: 'cubic-bezier(.22,1,.36,1)' })
+        ];
       }
     }
-    gallery.querySelector('[data-match-controls]').hidden = false;
-    const switcher = gallery.querySelector('[data-match-next]');
+    gallery.querySelector('.nu-match-cards').classList.add('is-ready');
     switcher.hidden = false;
-    switcher.addEventListener('click', () => show(current + 1));
-    choices.forEach((button, i) => button.addEventListener('click', () => show(i)));
-    gallery.querySelector('[data-match-controls]').addEventListener('keydown', event => {
-      const index = choices.indexOf(document.activeElement);
-      if (index < 0 || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
-      event.preventDefault();
-      const next = event.key === 'Home' ? 0 : event.key === 'End' ? choices.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : -1) + choices.length) % choices.length;
-      choices[next].focus(); show(next);
+    switcher.addEventListener('click', () => show(current + 1, true));
+    switcher.addEventListener('keydown', event => {
+      if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+      event.preventDefault(); show(current + 1, true);
     });
     document.addEventListener('portfolio-motion-change', () => {
-      if (document.documentElement.dataset.motion === 'off') animation?.cancel();
+      if (document.documentElement.dataset.motion === 'off') cancel();
     });
     show(0);
   });
-  const printGallery = document.querySelector('[data-nu-print-gallery]');
-  if (printGallery) {
-    const toggle = printGallery.querySelector('[data-print-toggle]');
-    toggle.hidden = false;
-    toggle.addEventListener('click', () => {
-      const artwork = printGallery.classList.toggle('is-artwork-view');
-      toggle.setAttribute('aria-pressed', String(artwork));
-      toggle.textContent = artwork ? 'Show display frames ↗' : 'View artwork only ↗';
-    });
-  }
   const desk = document.querySelector('[data-nu-desk]');
   if (desk) {
     const toggle = desk.querySelector('[data-desk-toggle]');
@@ -61,8 +74,32 @@
   const panels = [...archive.querySelectorAll('[data-cover-panel]')];
   const status = archive.querySelector('[data-cover-status]');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const studio = archive.querySelector('.nu-cover-studio');
+  const deviceChoices = [...archive.querySelectorAll('[data-device-view]')];
+  const deviceControls = archive.querySelector('[data-device-controls]');
+  function setDevice(view) {
+    animation?.cancel();
+    studio.dataset.deviceMode = view;
+    deviceChoices.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.deviceView === view)));
+    archive.querySelectorAll('.nu-device-desktop').forEach(device => { device.hidden = view === 'phone'; });
+    archive.querySelectorAll('.nu-device-phone').forEach(device => { device.hidden = view === 'desktop'; });
+  }
+  deviceChoices.forEach(button => button.addEventListener('click', () => setDevice(button.dataset.deviceView)));
+  deviceControls.hidden = false;
+  archive.querySelectorAll('[data-phone-cover]').forEach(button => button.addEventListener('click', () => {
+    button.closest('[data-cover-panel]').querySelector('[data-image]').click();
+  }));
+  let following = false;
+  archive.querySelectorAll('[data-preview-follow]').forEach(button => button.addEventListener('click', () => {
+    following = !following;
+    archive.querySelectorAll('[data-preview-follow]').forEach(control => {
+      control.setAttribute('aria-pressed', String(following));
+      control.textContent = following ? '✓ Following' : '+ Follow';
+    });
+  }));
   let current = 0;
   let animation;
+  setDevice(matchMedia('(max-width: 600px)').matches ? 'phone' : 'both');
   function show(next) {
     current = (next + panels.length) % panels.length;
     animation?.cancel();

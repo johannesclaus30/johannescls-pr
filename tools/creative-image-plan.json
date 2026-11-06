@@ -282,5 +282,29 @@
     "size": 1600,
     "output": "assets/optimized/1600/creative/NULipaMarketing/Other Pubmats/UAAP_Finals_Pubmat.jpg",
     "quality": 88
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/Printed/Be a Nationalian.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/Printed/Be a Nationalian.jpg",
+    "quality": 92
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/Printed/Be a Nationalian.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/Printed/Be a Nationalian.jpg",
+    "quality": 92
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/Printed/Bulldogs are Here.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/Printed/Bulldogs are Here.jpg",
+    "quality": 92
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/Printed/Bulldogs are Here.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/Printed/Bulldogs are Here.jpg",
+    "quality": 92
   }
 ]

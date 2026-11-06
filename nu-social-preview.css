@@ -1,0 +1,74 @@
+/* A social-page cover studio: two devices, shared campaign selection. */
+#nu-covers .nu-cover-studio { max-width:920px; border:0; border-radius:0; overflow:visible; background:transparent; color:#fff; }
+.nu-device-toolbar { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:18px; margin-bottom:20px; }
+.nu-device-toolbar > span { color:#fbd117; letter-spacing:.14em; font-size:10px; }
+.nu-device-toolbar > div { display:flex; gap:4px; padding:5px; border:1px solid #ffffff40; border-radius:30px; }
+.nu-device-toolbar button { padding:10px 16px; border:0; border-radius:24px; color:#e1e7ff; font-size:11px; cursor:pointer; }
+.nu-device-toolbar button[aria-pressed="true"] { background:#fbd117; color:#172549; font-weight:700; }
+#nu-covers .nu-cover-chrome { padding:18px 24px; background:#142348; border:1px solid #ffffff20; border-bottom:0; border-radius:18px 18px 0 0; color:#d9e3fb; font-size:9px; }
+.nu-social-stage { position:relative; padding:44px 46px 60px; min-height:560px; display:flex; align-items:center; background:radial-gradient(ellipse at 40% 30%,#425a91,#243666 60%,#16274d); border:1px solid #ffffff20; border-top:0; border-radius:0 0 18px 18px; overflow:hidden; }
+.nu-device-desktop { width:calc(100% - 150px); border:7px solid #14203a; border-radius:14px; box-shadow:0 18px 40px #07112755; background:#fff; color:#1d2d49; position:relative; }
+.nu-browser-bar { display:flex; align-items:center; gap:5px; height:28px; padding:0 12px; background:#e5e9f1; border-radius:5px 5px 0 0; font-size:8px; color:#62728b; }
+.nu-browser-bar i { width:5px; height:5px; border-radius:50%; background:#a5b1c4; }.nu-browser-bar span { text-align:center; flex:1; }.nu-browser-bar b { font-size:12px; }
+.nu-social-sitebar { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 18px; border-bottom:1px solid #e2e7f0; font-size:9px; }
+.nu-social-sitebar > b { font-size:20px; letter-spacing:-.07em; color:#32418d; }.nu-social-sitebar > span { padding:7px 14px; border-radius:20px; background:#edf0f5; color:#6b7890; flex:1; max-width:240px; }.nu-social-sitebar em { color:#7686a3; font-size:8px; }
+.nu-social-cover { display:block; width:100%; padding:0; border:0; background:#e9edf4; cursor:zoom-in; }
+#nu-covers .nu-social-cover img { display:block; width:100%; height:auto; max-height:none; object-fit:contain; }
+.nu-social-page { padding:0 24px 16px; background:#fff; color:#21304b; }
+.nu-social-identity { display:flex; align-items:center; gap:12px; position:relative; padding-top:12px; }
+#nu-covers img.nu-social-avatar { width:62px; height:62px; padding:8px; object-fit:contain; border:3px solid #fff; border-radius:50%; background:#f1f3f8; margin-top:-26px; flex-shrink:0; }
+.nu-social-identity strong { display:block; font-size:21px; line-height:1.3; letter-spacing:-.04em; }.nu-social-identity span { display:block; font-size:9px; color:#6c7890; margin-top:4px; }
+.nu-social-actions { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:14px; }.nu-social-actions > span { font-size:10px; color:#6c7890; }
+.nu-social-actions button { border:0; background:#32418d; color:#fff; padding:8px 16px; border-radius:6px; font-size:10px; cursor:pointer; }
+.nu-social-actions button[aria-pressed="true"] { background:#e5eaf4; color:#32418d; }
+.nu-social-tabs { display:flex; gap:24px; margin-top:18px; padding:12px 0 0; border-top:1px solid #e4e8ef; font-size:9px; color:#6c7890; }.nu-social-tabs b { color:#32418d; border-bottom:2px solid #32418d; padding-bottom:10px; }
+.nu-social-feed { display:grid; grid-template-columns:1fr 1fr; gap:14px; padding-top:12px; }.nu-social-feed > div { padding:14px; border:1px solid #e4e8ef; border-radius:8px; }.nu-social-feed b { display:block; font-size:11px; }.nu-social-feed span { display:block; margin-top:6px; font-size:9px; color:#6c7890; }.nu-feed-lines i,.nu-phone-post i { display:block; height:5px; border-radius:6px; background:#e6eaf1; margin:7px 0; }.nu-feed-lines i:nth-child(2) { width:75%; }
+.nu-monitor-foot { position:absolute; bottom:-33px; height:26px; left:42%; width:16%; background:linear-gradient(90deg,#8694ad,#ccd4df,#7c8aa3); clip-path:polygon(20% 0,80% 0,100% 100%,0 100%); }.nu-monitor-foot::after { content:''; position:absolute; bottom:0; width:100%; height:4px; background:#d0d7e3; }
+.nu-device-phone { position:absolute; z-index:2; width:244px; right:32px; bottom:26px; border:7px solid #14203a; border-radius:32px; background:#fff; color:#21304b; box-shadow:0 20px 40px #07112766; overflow:hidden; transform:rotate(4deg); }
+.nu-phone-status { display:flex; justify-content:space-between; align-items:center; height:32px; padding:0 14px; font-size:8px; font-weight:700; }.nu-phone-status b { width:62px; height:16px; background:#14203a; border-radius:14px; }.nu-phone-nav { display:flex; justify-content:space-between; padding:10px 14px; font-size:12px; border-bottom:1px solid #e5e9f0; }.nu-phone-nav strong { font-size:10px; }
+.nu-device-phone .nu-social-cover { min-height:112px; display:grid; align-items:center; }
+.nu-device-phone .nu-social-page { padding:0 12px 14px; }.nu-device-phone .nu-social-identity { gap:8px; }
+#nu-covers .nu-device-phone img.nu-social-avatar { width:44px; height:44px; margin-top:-16px; padding:5px; }
+.nu-device-phone .nu-social-identity strong { font-size:17px; }.nu-device-phone .nu-social-identity span { font-size:7px; }
+.nu-device-phone .nu-social-actions { flex-direction:column; align-items:stretch; gap:8px; }.nu-device-phone .nu-social-actions > span { font-size:8px; }.nu-device-phone .nu-social-actions button { font-size:9px; }
+.nu-device-phone .nu-social-tabs { gap:24px; margin-top:12px; font-size:8px; padding-top:10px; }
+.nu-phone-post { margin-top:14px; padding:14px; background:linear-gradient(130deg,#edf1f9,#fff8d6); border-radius:9px; }.nu-phone-post > span { display:block; font-size:6px; letter-spacing:.1em; color:#66769a; }.nu-phone-post > strong { display:block; font-size:15px; line-height:1.3; letter-spacing:-.04em; margin:8px 0 14px; }.nu-phone-home { width:76px; height:4px; border-radius:4px; background:#14203a; margin:0 auto 8px; }
+#nu-covers .nu-cover-panel figcaption { color:#fff; padding:20px 4px; }#nu-covers .nu-cover-panel figcaption span { color:#dce4fa; }
+#nu-covers .nu-cover-controls { padding:16px 20px; margin:0; background:#f7f6ef; color:#23316e; border-radius:14px; }
+#nu-covers .nu-cover-years { padding-top:0; border-top:0; }
+.nu-social-disclaimer { font-size:10px; line-height:1.8; color:#dbe3fc; margin-top:18px; }
+[data-device-mode="desktop"] .nu-device-desktop { width:100%; max-width:900px; margin:auto; }
+[data-device-mode="phone"] .nu-social-stage { justify-content:center; min-height:620px; }
+[data-device-mode="phone"] .nu-device-phone { position:relative; right:auto; bottom:auto; width:280px; transform:none; }
+@media(prefers-reduced-motion:no-preference) { html[data-motion="on"] .nu-social-actions button { transition:background-color .2s ease; } }
+@media(max-width:850px) { .nu-social-stage { padding:30px 24px 54px; }.nu-device-desktop { width:calc(100% - 75px); }.nu-device-phone { width:210px; right:20px; }.nu-social-page { padding:0 16px 12px; }.nu-social-feed { grid-template-columns:1fr; }.nu-feed-lines { display:none; } }
+@media(max-width:600px) { .nu-device-toolbar > div { width:100%; }.nu-device-toolbar button { flex:1; padding:10px 8px; font-size:10px; }.nu-social-stage { padding:28px 16px 40px; min-height:0; flex-direction:column; gap:46px; }.nu-device-desktop { width:100%; border-width:4px; }.nu-device-phone { position:relative; right:auto; bottom:auto; width:240px; transform:rotate(2deg); }.nu-browser-bar { height:22px; font-size:6px; }.nu-social-sitebar { padding:8px; }.nu-social-sitebar > b { font-size:16px; }.nu-social-sitebar > span { font-size:7px; }.nu-social-sitebar em { display:none; }.nu-social-identity strong { font-size:17px; }#nu-covers .nu-social-avatar { width:44px; height:44px; }.nu-social-tabs { gap:16px; }.nu-social-feed { display:none; }[data-device-mode="phone"] .nu-social-stage { min-height:0; }[data-device-mode="phone"] .nu-device-phone { width:min(280px,100%); }#nu-covers .nu-cover-chrome { padding:14px; font-size:8px; } }
+
+/* Compact previews keep the artwork and its switching controls close together. */
+.nu-device-phone { display:flex; flex-direction:column; aspect-ratio:9/19; }
+.nu-device-phone .nu-phone-status,.nu-device-phone .nu-phone-nav,.nu-device-phone .nu-social-cover,.nu-device-phone .nu-phone-home { flex-shrink:0; }
+.nu-device-phone .nu-social-page { flex:1; min-height:0; overflow-y:auto; scrollbar-width:none; }
+.nu-device-desktop { display:flex; flex-direction:column; aspect-ratio:16/10; }
+.nu-device-desktop .nu-browser-bar,.nu-device-desktop .nu-social-sitebar,.nu-device-desktop .nu-social-cover { flex-shrink:0; }
+.nu-device-desktop .nu-social-page { flex:1; min-height:0; overflow-y:auto; scrollbar-width:thin; }
+.nu-social-stage { min-height:460px; padding:28px 28px 48px; }
+.nu-device-desktop { width:calc(100% - 100px); }
+.nu-device-phone { width:200px; right:22px; bottom:22px; }
+.nu-device-desktop .nu-social-cover { aspect-ratio:2.6; display:grid; place-items:center; }
+#nu-covers .nu-device-desktop .nu-social-cover img { width:100%; height:100%; object-fit:contain; }
+.nu-social-feed { display:none; }
+[data-device-mode="desktop"] .nu-device-desktop { max-width:740px; }
+[data-device-mode="phone"] .nu-social-stage { min-height:0; padding:28px; }
+[data-device-mode="phone"] .nu-device-phone { width:240px; }
+#nu-covers .nu-cover-panel figcaption { padding-block:14px; }
+#nu-covers .nu-cover-years button { padding:11px 14px; }
+#nu-covers .nu-cover-years button strong { font-size:18px; }
+#nu-covers .nu-cover-paging { margin-top:12px; }
+@media(max-width:600px) {
+  .nu-social-stage { min-height:0; padding:24px 16px 36px; }
+  .nu-device-desktop { width:100%; }
+  .nu-device-phone { width:220px; right:auto; bottom:auto; }
+  [data-device-mode="phone"] .nu-device-phone { width:min(240px,100%); }
+  #nu-covers .nu-cover-controls { padding:14px; }
+  #nu-covers .nu-cover-years button { padding:10px 8px; }
+}

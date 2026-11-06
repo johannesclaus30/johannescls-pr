@@ -1494,5 +1494,37 @@
     "width": 1280,
     "height": 1600,
     "bytes": 512089
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/Printed/Be a Nationalian.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/Printed/Be a Nationalian.jpg",
+    "width": 320,
+    "height": 640,
+    "bytes": 66847
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/Printed/Be a Nationalian.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/Printed/Be a Nationalian.jpg",
+    "width": 800,
+    "height": 1600,
+    "bytes": 268054
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/Printed/Bulldogs are Here.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/NULipaMarketing/Printed/Bulldogs are Here.jpg",
+    "width": 320,
+    "height": 640,
+    "bytes": 74314
+  },
+  {
+    "source": "assets/creative/NULipaMarketing/Printed/Bulldogs are Here.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/NULipaMarketing/Printed/Bulldogs are Here.jpg",
+    "width": 800,
+    "height": 1600,
+    "bytes": 260709
   }
 ]
