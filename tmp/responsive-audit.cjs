@@ -14,7 +14,7 @@ const fs = require('node:fs');
     await send('Page.navigate',{url:'file:///D:/National%20University/johannescls-pr/'+page+'.html'});
     await new Promise(r=>setTimeout(r,900));
     await evaluate(`Promise.all([...document.images].map(i=>{i.loading='eager';return i.decode().catch(()=>{});})).then(()=>document.fonts.ready).then(()=>true)`);
-    for (const width of [320,390,540,768,1024,1440]) {
+    for (const width of [320,360,390,414,540,768,820,1024,1440]) {
       await send('Emulation.setDeviceMetricsOverride',{width,height:844,deviceScaleFactor:1,mobile:true});
       await new Promise(r=>setTimeout(r,100));
       const data=await evaluate(`(() => {const bad=[...document.querySelectorAll('body *')].filter(e=>{const s=getComputedStyle(e),r=e.getBoundingClientRect(); if(!r.width||s.position==='absolute'||s.position==='fixed')return false; for(let p=e.parentElement;p&&p!==document.body;p=p.parentElement){if(['hidden','auto','scroll','clip'].includes(getComputedStyle(p).overflowX))return false;} return r.left < -2||r.right>innerWidth+2;}).map(e=>({tag:e.tagName,cls:e.className,text:e.textContent.trim().slice(0,45),left:Math.round(e.getBoundingClientRect().left),right:Math.round(e.getBoundingClientRect().right)})); return {overflow:document.documentElement.scrollWidth>innerWidth,bad};})()`);

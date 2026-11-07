@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 /* LumiNUs identity is confined to this capstone section. */
+.luminus-team { margin-top: 32px; padding-top: 28px; border-top: 1px solid #ffffff30; }
+.luminus-team-heading h3 { margin: 8px 0 24px; font: 600 20px/1.4 'Poppins', Arial, sans-serif; }
+.luminus-team-heading h3 span { color: #dce2ff; font-weight: 400; }
+.luminus-team-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; padding: 0; margin: 0; list-style: none; }
+.luminus-team-list li { min-width: 0; }
+.luminus-team-list img { width: 72px; height: 72px; object-fit: cover; border-radius: 50%; border: 2px solid #fbd11780; margin-bottom: 14px; background: #fff; }
+.luminus-team-list h4 { font-size: 14px; line-height: 1.6; font-weight: 600; margin: 0 0 6px; }
+.luminus-team-list p { font-size: 12px; line-height: 1.75; color: #dce2ff; }
+.luminus-team-responsibilities { margin-top: 22px; border-top: 1px solid #ffffff20; font-size: 13px; }
+.luminus-team-responsibilities summary { cursor: pointer; width: fit-content; padding: 14px 0; color: var(--luminus-gold); }
+.luminus-team-responsibilities dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 32px; margin: 4px 0 0; }
+.luminus-team-responsibilities dt { font-weight: 600; margin-bottom: 6px; }
+.luminus-team-responsibilities dd { margin: 0; color: #dce2ff; line-height: 1.8; }
+@media (max-width: 1000px) { .luminus-team-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  .luminus-team-list, .luminus-team-responsibilities dl { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .luminus-team-list li { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 14px; align-items: start; }
+  .luminus-team-list img { width: 56px; height: 56px; margin: 0; }
+}
+
 #luminus {
   --luminus-blue: #32418c;
   --luminus-gold: #fbd117;

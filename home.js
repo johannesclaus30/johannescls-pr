@@ -8,10 +8,10 @@
       switchLabel: 'Let the light in',
       invitation: 'Step into the daylight',
       destination: 'day', icon: '☀',
-      label: 'On the workbench / Team capstone',
-      title: 'LumiNUs',
-      description: 'A community, connected through code.',
-      href: 'it.html#luminus'
+      label: 'Explore my work / Development',
+      title: 'View IT Portfolio',
+      description: 'Systems, websites, and mobile applications.',
+      href: 'it.html'
     },
     creative: {
       period: 'DAYLIGHT / THE DESIGNER',
@@ -19,10 +19,10 @@
       switchLabel: 'See the after-hours side',
       invitation: 'Stay up for the night shift',
       destination: 'night', icon: '☾',
-      label: 'On the studio desk / Visual communication',
-      title: 'NU Lipa, in color.',
-      description: 'Campus stories, made to be seen.',
-      href: 'nu-lipa.html'
+      label: 'Explore my work / Visual design',
+      title: 'View Creative Portfolio',
+      description: 'Visual identities, publication materials, and more.',
+      href: 'creative.html'
     }
   };
   const setText = (selector, text) => {

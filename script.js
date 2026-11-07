@@ -55,8 +55,6 @@ function setMode(next, persist = false) {
     const eyebrow = document.querySelector('[data-hero-eyebrow]');
     const title = document.querySelector('[data-hero-title]');
     const lead = document.querySelector('[data-hero-lead]');
-    const cta = document.querySelector('[data-hero-cta]');
-    const ctaLabel = document.querySelector('[data-hero-cta-label]');
 
     if (eyebrow) eyebrow.textContent = isDay ? 'The daylight studio' : 'The after-hours workspace';
     if (title) title.innerHTML = isDay
@@ -65,8 +63,6 @@ function setMode(next, persist = false) {
     if (lead) lead.textContent = isDay
       ? 'Visual identities, campus campaigns, and stories worth sharing. Made with a developer’s attention to detail.'
       : 'Mobile and web applications, thoughtful interfaces, and the logic that brings them to life. Made with a designer’s eye.';
-    if (ctaLabel) ctaLabel.textContent = isDay ? 'Explore creative work' : 'Explore IT work';
-    if (cta) cta.href = isDay ? 'creative.html' : 'it.html';
   }
 
   if (persist) {
@@ -118,7 +114,7 @@ applyMotion();
 
 /* Small ambient accents run only while visible, and pause in background tabs. */
 if ('IntersectionObserver' in window) {
-  const accents = [...document.querySelectorAll('.booklat-cover-mark, .internship-monogram, .projects-coming-mark, .luminus-hero-spark, .section > .label, .footer > .label')];
+  const accents = [...document.querySelectorAll('.booklat-cover-mark, .internship-monogram, .projects-coming-mark, .luminus-hero-spark, .section > .label, .footer > .label, .playground-motion, .nu-gallery-link .btn')];
   const visible = new Set();
   const syncAccents = () => accents.forEach(el => {
     el.classList.toggle('ambient-active', visible.has(el) && !document.hidden && motionEnabled());

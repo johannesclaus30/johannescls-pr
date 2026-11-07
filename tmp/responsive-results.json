@@ -7,7 +7,19 @@
   },
   {
     "page": "index",
+    "width": 360,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "index",
     "width": 390,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "index",
+    "width": 414,
     "overflow": false,
     "bad": []
   },
@@ -20,6 +32,12 @@
   {
     "page": "index",
     "width": 768,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "index",
+    "width": 820,
     "overflow": false,
     "bad": []
   },
@@ -43,7 +61,19 @@
   },
   {
     "page": "it",
+    "width": 360,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "it",
     "width": 390,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "it",
+    "width": 414,
     "overflow": false,
     "bad": []
   },
@@ -56,6 +86,12 @@
   {
     "page": "it",
     "width": 768,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "it",
+    "width": 820,
     "overflow": false,
     "bad": []
   },
@@ -79,7 +115,19 @@
   },
   {
     "page": "creative",
+    "width": 360,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "creative",
     "width": 390,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "creative",
+    "width": 414,
     "overflow": false,
     "bad": []
   },
@@ -92,6 +140,12 @@
   {
     "page": "creative",
     "width": 768,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "creative",
+    "width": 820,
     "overflow": false,
     "bad": []
   },
@@ -115,7 +169,19 @@
   },
   {
     "page": "nu-lipa",
+    "width": 360,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "nu-lipa",
     "width": 390,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "nu-lipa",
+    "width": 414,
     "overflow": false,
     "bad": []
   },
@@ -128,6 +194,12 @@
   {
     "page": "nu-lipa",
     "width": 768,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "nu-lipa",
+    "width": 820,
     "overflow": false,
     "bad": []
   },
@@ -151,7 +223,19 @@
   },
   {
     "page": "sace",
+    "width": 360,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "sace",
     "width": 390,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "sace",
+    "width": 414,
     "overflow": false,
     "bad": []
   },
@@ -164,6 +248,12 @@
   {
     "page": "sace",
     "width": 768,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "sace",
+    "width": 820,
     "overflow": false,
     "bad": []
   },
@@ -187,7 +277,19 @@
   },
   {
     "page": "credits",
+    "width": 360,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "credits",
     "width": 390,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "credits",
+    "width": 414,
     "overflow": false,
     "bad": []
   },
@@ -200,6 +302,12 @@
   {
     "page": "credits",
     "width": 768,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "credits",
+    "width": 820,
     "overflow": false,
     "bad": []
   },

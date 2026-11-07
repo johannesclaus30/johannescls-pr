@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 320" fill="none">
+  <defs>
+    <linearGradient id="fabric" x1="65" y1="100" x2="244" y2="140" gradientUnits="userSpaceOnUse"><stop stop-color="#e4e5e7"/><stop offset=".16" stop-color="#fff"/><stop offset=".5" stop-color="#fafafa"/><stop offset=".85" stop-color="#fff"/><stop offset="1" stop-color="#dedfe2"/></linearGradient>
+  </defs>
+  <path d="M103 20 72 33 10 103 50 139 77 111 69 302Q150 314 231 302L223 111 250 139 290 103 228 33 197 20Q150 43 103 20Z" fill="url(#fabric)" stroke="#d5d7db" stroke-width="2"/>
+  <path d="M108 21Q150 76 192 21" fill="#e8e9eb" stroke="#d4d5d8" stroke-width="2"/>
+  <path d="M114 24Q150 62 186 24" fill="#fff" stroke="#d8dade"/>
+  <path d="m75 43 9 67M225 43l-9 67M19 101l33 29M281 101l-33 29M77 294q73 9 146 0" stroke="#d6d8db" stroke-width="1.5" opacity=".7"/>
+  <path d="m83 119 5 148m129-148-5 148" stroke="#e5e6e8" stroke-width="2"/>
+</svg>

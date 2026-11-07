@@ -1,0 +1,71 @@
+/* A tidy cabinet of creative side quests. */
+#more-work.playground { background: #e9e4f2; color: #302846; overflow: hidden; background-image: radial-gradient(#6e5a8a16 .8px, transparent .8px); background-size: 12px 12px; }
+.playground-heading { display: flex; justify-content: space-between; align-items: center; gap: 32px; margin-bottom: 36px; }
+.playground-heading .org-index { color: #74539a; }
+.playground-heading h2 { font: 800 clamp(48px, 7vw, 100px)/.96 var(--f-serif); letter-spacing: -.05em; margin: 20px 0 24px; }
+.playground-heading h2 em { color: #795090; font-weight: 400; }
+.playground-heading p { max-width: 55ch; font-size: 15px; line-height: 1.8; color: #635571; }
+.playground-seal { flex-shrink: 0; width: 160px; text-align: center; color: #795090; }
+.playground-seal > span { display: block; font-size: 100px; line-height: 1; }
+.playground-seal small { display: block; font: 10px/1.7 var(--f-mono); letter-spacing: .12em; margin-top: 16px; }
+.playground-ribbon { overflow: hidden; padding: 12px 0; border-block: 1px solid #79509040; margin-bottom: 40px; }
+.playground-ribbon > div { width: max-content; font: 11px/1.6 var(--f-mono); letter-spacing: .16em; color: #795090; }
+.playground-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; max-width: 1150px; margin: auto; }
+.playground-project { min-width: 0; padding: clamp(20px, 2.5vw, 32px); border: 1px solid #30284620; border-radius: 14px; background: #f8f5ed; }
+.playground-project--city { background: #d7e6ed; }
+.playground-project--magazine { background: #efdad0; }
+.playground-project--batangas { background: #f2e9c5; }
+.playground-project--shirt { background: #dce3d8; }
+.playground-project-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; color: #5f5566; margin-bottom: 20px; }
+.playground-project-top > span:first-child { font: 9px/1.6 var(--f-mono); letter-spacing: .08em; }
+.playground-project-top > span:last-child { font: 19px/1.3 var(--f-hand); }
+.playground-mount { position: relative; display: grid; place-items: center; min-height: 330px; padding: 12px 32px; }
+.playground-art { position: relative; display: block; width: 100%; max-width: 245px; cursor: zoom-in; border-radius: 2px; }
+.playground-art img { display: block; width: 100%; height: 330px; object-fit: contain; filter: drop-shadow(0 12px 14px #30284628); }
+.playground-project--city .playground-art { rotate: -3deg; }
+.playground-project--magazine .playground-art { rotate: 3deg; }
+.playground-zoom { display: grid; place-items: center; position: absolute; bottom: 8px; right: -8px; width: 34px; height: 34px; border-radius: 50%; background: #fffaf0; color: #302846; box-shadow: 0 3px 10px #30284620; }
+.playground-art:focus-visible { outline: 3px solid #795090; outline-offset: 8px; }
+.playground-caption { margin-top: 24px; padding-top: 18px; border-top: 1px solid #30284620; }
+.playground-caption h3 { font: 600 clamp(25px, 3vw, 34px)/1.2 var(--f-serif); letter-spacing: -.035em; }
+.playground-caption p { font-size: 13px; color: #635571; margin-top: 8px; }
+.playground-sticker { position: absolute; right: -8px; bottom: 32px; display: grid; place-content: center; width: 88px; height: 88px; background: #f7d67e; color: #695023; border-radius: 50%; rotate: 12deg; text-align: center; font: 23px/1.1 var(--f-hand); pointer-events: none; }
+.playground-mini-star { position: absolute; bottom: 24px; left: 0; color: #9b503b; font: 90px/1 var(--f-serif); pointer-events: none; }
+.playground-project--batangas .playground-art { max-width: 100%; }
+.playground-project--batangas .playground-art img { height: 280px; filter: none; }
+.playground-project--batangas { grid-column: 1 / -1; }
+.playground-project--batangas .playground-mount { min-height: 0; padding: 16px 0; }
+.playground-project--batangas .playground-art { width: min(100%, 800px); aspect-ratio: 1.8; overflow: hidden; }
+.playground-project--batangas .playground-art img { position: absolute; width: 100%; height: auto; top: -30%; left: 0; }
+.playground-project--shirt { grid-column: 1 / -1; }
+.playground-shirt-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: 16px; min-height: 304px; }
+.playground-shirt-pair > div { min-width: 0; text-align: center; }
+.playground-shirt-pair .playground-art { padding: 8px; background: #f6f5ef; border-radius: 5px; }
+.playground-shirt-pair img { height: 210px; filter: none; }
+.playground-shirt-pair > div > span { display: block; font: 9px/1.5 var(--f-mono); color: #5f5566; margin-top: 16px; letter-spacing: .1em; }
+.playground-shirt-pair { max-width: 780px; margin-inline: auto; gap: 32px; }
+.playground-shirt-pair .playground-art { max-width: 350px; aspect-ratio: 300 / 320; padding: 0; background: url('assets/work/white-shirt.svg') center / contain no-repeat; filter: drop-shadow(0 14px 12px #263b3020); }
+.playground-shirt-pair .playground-art img { position: absolute; width: 48%; height: 60%; left: 26%; top: 23%; object-fit: contain; }
+.playground-shirt-pair .playground-zoom { right: 10%; bottom: 3%; }
+.playground-footnote { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; max-width: 1150px; margin: 28px auto 0; color: #635571; font: 11px/1.8 var(--f-mono); }
+@media (prefers-reduced-motion: no-preference) {
+  html[data-motion='on'] .playground-motion { animation: playground-bob 5s ease-in-out infinite; animation-play-state: paused; }
+  html[data-motion='on'] .playground-ribbon > .playground-motion { animation-name: playground-ribbon; animation-duration: 32s; animation-timing-function: linear; }
+  html[data-motion='on'] .playground-mini-star.playground-motion { animation-name: playground-turn; animation-duration: 24s; animation-timing-function: linear; }
+  html[data-motion='on'] .playground-motion.ambient-active { animation-play-state: running; }
+  .playground-art { transition: translate .25s ease; }
+}
+@media (max-width: 450px) {
+  .playground-shirt-pair { grid-template-columns: minmax(0, 1fr); gap: 26px; max-width: 270px; }
+  .playground-shirt-pair .playground-art { margin-inline: auto; }
+  .playground-project--batangas .playground-art img { height: auto; }
+}
+@media (hover: hover) and (pointer: fine) { html[data-motion='on'] .playground-art:hover { translate: 0 -6px; } }
+@keyframes playground-bob { 0%, 100% { translate: 0 0; } 50% { translate: 0 -8px; } }
+@keyframes playground-turn { to { transform: rotate(360deg); } }
+@keyframes playground-ribbon { to { transform: translateX(-50%); } }
+@media (max-width: 900px) { .playground-grid { gap: 20px; }.playground-mount { padding-inline: 12px; }.playground-sticker { right: -10px; width: 70px; height: 70px; font-size: 20px; }.playground-shirt-pair { gap: 10px; }.playground-shirt-pair img { height: 170px; } }
+@media (max-width: 650px) {
+  .playground-heading { align-items: flex-start; gap: 12px; }.playground-heading h2 { font-size: clamp(45px, 11vw, 66px); }.playground-seal { width: 65px; margin-top: 34px; }.playground-seal > span { font-size: 55px; }.playground-seal small { font-size: 7px; letter-spacing: .02em; }
+  .playground-grid { grid-template-columns: minmax(0, 1fr); max-width: 460px; }.playground-project { padding: 20px; }.playground-mount { min-height: 310px; }.playground-art img { height: 310px; }.playground-shirt-pair { min-height: 220px; }.playground-shirt-pair img { height: 180px; }.playground-footnote { font-size: 10px; }
+}

@@ -173,3 +173,17 @@
 .sace-guidelines-preview p { margin: 0; }
 .sace-guidelines-preview strong { font-size: 22px; }
 @media (max-width: 700px) { .sace-brand-guidelines { grid-template-columns: 1fr; } }
+
+/* A compact, optional reading key directly beneath the council logo. */
+.sace-logo-elements { width: min(100%, 560px); margin: 0 auto 24px; border-block: 1px solid #dce5f1; color: #10264d; text-align: left; }
+.sace-logo-elements summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 48px; padding: 12px 8px; cursor: pointer; list-style: none; font-size: 12px; font-weight: 600; }
+.sace-logo-elements summary::-webkit-details-marker { display: none; }
+.sace-elements-toggle { font-size: 20px; line-height: 1; font-weight: 400; }
+.sace-logo-elements[open] .sace-elements-toggle { transform: rotate(45deg); }
+.sace-logo-elements summary:focus-visible { outline: 2px solid #345a8a; outline-offset: 3px; }
+.sace-elements-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 22px; margin: 0; padding: 8px 8px 20px; list-style: none; }
+.sace-elements-list li { display: flex; gap: 10px; align-items: flex-start; min-width: 0; }
+.sace-elements-list img { flex: 0 0 30px; width: 30px; height: 30px; object-fit: contain; }
+.sace-elements-list strong { display: block; font-size: 11px; line-height: 1.5; margin-bottom: 3px; }
+.sace-elements-list li div > span { display: block; color: #526780; font-size: 11px; line-height: 1.65; }
+@media (max-width: 540px) { .sace-elements-list { grid-template-columns: minmax(0, 1fr); gap: 14px; } }

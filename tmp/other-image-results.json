@@ -1,0 +1,82 @@
+[
+  {
+    "source": "assets/creative/Other/CLAUS-Kulturang Batangas, Magiting Kailanman.png",
+    "size": 640,
+    "output": "assets/optimized/640/creative/Other/CLAUS-Kulturang Batangas, Magiting Kailanman.png",
+    "width": 640,
+    "height": 640,
+    "bytes": 98852
+  },
+  {
+    "source": "assets/creative/Other/CLAUS-Kulturang Batangas, Magiting Kailanman.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/Other/CLAUS-Kulturang Batangas, Magiting Kailanman.png",
+    "width": 1600,
+    "height": 1600,
+    "bytes": 358385
+  },
+  {
+    "source": "assets/creative/Other/Claus_Poster_Activity.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/Other/Claus_Poster_Activity.jpg",
+    "width": 495,
+    "height": 640,
+    "bytes": 86194
+  },
+  {
+    "source": "assets/creative/Other/Claus_Poster_Activity.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/Other/Claus_Poster_Activity.jpg",
+    "width": 1236,
+    "height": 1600,
+    "bytes": 426708
+  },
+  {
+    "source": "assets/creative/Other/Mock_Magazine.png",
+    "size": 640,
+    "output": "assets/optimized/640/creative/Other/Mock_Magazine.png",
+    "width": 418,
+    "height": 640,
+    "bytes": 617615
+  },
+  {
+    "source": "assets/creative/Other/Mock_Magazine.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/Other/Mock_Magazine.png",
+    "width": 1046,
+    "height": 1600,
+    "bytes": 3540186
+  },
+  {
+    "source": "assets/creative/Other/ClassShirt_Design/BACK DESIGN.png",
+    "size": 640,
+    "output": "assets/optimized/640/creative/Other/ClassShirt_Design/BACK DESIGN.png",
+    "width": 640,
+    "height": 640,
+    "bytes": 192660
+  },
+  {
+    "source": "assets/creative/Other/ClassShirt_Design/BACK DESIGN.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/Other/ClassShirt_Design/BACK DESIGN.png",
+    "width": 1600,
+    "height": 1600,
+    "bytes": 822965
+  },
+  {
+    "source": "assets/creative/Other/ClassShirt_Design/FRONT DESIGN.png",
+    "size": 640,
+    "output": "assets/optimized/640/creative/Other/ClassShirt_Design/FRONT DESIGN.png",
+    "width": 640,
+    "height": 640,
+    "bytes": 77278
+  },
+  {
+    "source": "assets/creative/Other/ClassShirt_Design/FRONT DESIGN.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/Other/ClassShirt_Design/FRONT DESIGN.png",
+    "width": 1600,
+    "height": 1600,
+    "bytes": 222370
+  }
+]

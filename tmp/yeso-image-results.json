@@ -1,0 +1,50 @@
+[
+  {
+    "source": "assets/creative/YESO/YES-O_EarthHour.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/YESO/YES-O_EarthHour.jpg",
+    "width": 640,
+    "height": 640,
+    "bytes": 94511
+  },
+  {
+    "source": "assets/creative/YESO/YES-O_EarthHour.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/YESO/YES-O_EarthHour.jpg",
+    "width": 960,
+    "height": 960,
+    "bytes": 146285
+  },
+  {
+    "source": "assets/creative/YESO/Juanformation.jpg",
+    "size": 640,
+    "output": "assets/optimized/640/creative/YESO/Juanformation.jpg",
+    "width": 513,
+    "height": 640,
+    "bytes": 116163
+  },
+  {
+    "source": "assets/creative/YESO/Juanformation.jpg",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/YESO/Juanformation.jpg",
+    "width": 1283,
+    "height": 1600,
+    "bytes": 444679
+  },
+  {
+    "source": "assets/creative/YESO/HappyEarthDay.png",
+    "size": 640,
+    "output": "assets/optimized/640/creative/YESO/HappyEarthDay.jpg",
+    "width": 517,
+    "height": 640,
+    "bytes": 102334
+  },
+  {
+    "source": "assets/creative/YESO/HappyEarthDay.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/YESO/HappyEarthDay.jpg",
+    "width": 1292,
+    "height": 1600,
+    "bytes": 356759
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "source": "assets/creative/Other/CLAUS-Kulturang Batangas, Magiting Kailanman.png",
+    "size": 640,
+    "quality": 90,
+    "output": "assets/optimized/640/creative/Other/CLAUS-Kulturang Batangas, Magiting Kailanman.png"
+  },
+  {
+    "source": "assets/creative/Other/CLAUS-Kulturang Batangas, Magiting Kailanman.png",
+    "size": 1600,
+    "quality": 90,
+    "output": "assets/optimized/1600/creative/Other/CLAUS-Kulturang Batangas, Magiting Kailanman.png"
+  },
+  {
+    "source": "assets/creative/Other/Claus_Poster_Activity.jpg",
+    "size": 640,
+    "quality": 90,
+    "output": "assets/optimized/640/creative/Other/Claus_Poster_Activity.jpg"
+  },
+  {
+    "source": "assets/creative/Other/Claus_Poster_Activity.jpg",
+    "size": 1600,
+    "quality": 90,
+    "output": "assets/optimized/1600/creative/Other/Claus_Poster_Activity.jpg"
+  },
+  {
+    "source": "assets/creative/Other/Mock_Magazine.png",
+    "size": 640,
+    "quality": 90,
+    "output": "assets/optimized/640/creative/Other/Mock_Magazine.png"
+  },
+  {
+    "source": "assets/creative/Other/Mock_Magazine.png",
+    "size": 1600,
+    "quality": 90,
+    "output": "assets/optimized/1600/creative/Other/Mock_Magazine.png"
+  },
+  {
+    "source": "assets/creative/Other/ClassShirt_Design/BACK DESIGN.png",
+    "size": 640,
+    "quality": 90,
+    "output": "assets/optimized/640/creative/Other/ClassShirt_Design/BACK DESIGN.png"
+  },
+  {
+    "source": "assets/creative/Other/ClassShirt_Design/BACK DESIGN.png",
+    "size": 1600,
+    "quality": 90,
+    "output": "assets/optimized/1600/creative/Other/ClassShirt_Design/BACK DESIGN.png"
+  },
+  {
+    "source": "assets/creative/Other/ClassShirt_Design/FRONT DESIGN.png",
+    "size": 640,
+    "quality": 90,
+    "output": "assets/optimized/640/creative/Other/ClassShirt_Design/FRONT DESIGN.png"
+  },
+  {
+    "source": "assets/creative/Other/ClassShirt_Design/FRONT DESIGN.png",
+    "size": 1600,
+    "quality": 90,
+    "output": "assets/optimized/1600/creative/Other/ClassShirt_Design/FRONT DESIGN.png"
+  }
+]

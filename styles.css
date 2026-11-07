@@ -443,6 +443,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 }
 .btn-primary .arrow {
   display: grid; place-items: center;
+  flex-shrink: 0;
+  line-height: 1;
   width: 22px; height: 22px;
   border-radius: 50%;
   background: var(--bg);
@@ -1302,6 +1304,10 @@ img.social-icon { object-fit: contain; }
   scrollbar-width: none;
 }
 .tab-bar::-webkit-scrollbar { display: none; }
+/* Collection pages begin with a back link instead of a padded hero. */
+main > .nu-page-nav, main > .sace-page-nav {
+  padding-top: calc(var(--nav-height) + 24px);
+}
 .tab-bar a {
   font-family: var(--f-mono);
   font-size: 11px;
@@ -1841,7 +1847,8 @@ html:has(#construction-notice[open]) { overflow: hidden; }
   html[data-motion="on"] .ambient-accent:nth-child(even) { animation-delay:-3s; }
   html[data-motion="on"] .nav-links a { transition:translate .2s ease, background-color .2s ease; }
   html[data-motion="on"] .nav-links a:hover { translate:0 -2px; }
-  html[data-motion="on"] .btn .arrow, html[data-motion="on"] .work-cta > span { display:inline-block; transition:translate .25s ease; }
+  html[data-motion="on"] .btn .arrow, html[data-motion="on"] .work-cta > span { transition:translate .25s ease; }
+  html[data-motion="on"] .work-cta > span { display:inline-block; }
   html[data-motion="on"] .btn:hover .arrow, html[data-motion="on"] .work-feature:hover .work-cta > span { translate:3px -3px; }
 }
 .section > .label.ambient-accent, .footer > .label.ambient-accent { display:inline-block; }

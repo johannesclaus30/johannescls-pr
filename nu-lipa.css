@@ -39,15 +39,43 @@
   margin-bottom: 32px;
 }
 #nu .nu-gallery-link .btn {
+  position: relative;
+  max-width: 100%;
+  box-shadow: 0 8px 24px #14205235;
   background: var(--nu-gold);
   color: var(--nu-blue);
   border-color: var(--nu-gold);
 }
+/* A moving glint follows the pill outline, leaving the label still. */
+@property --nu-border-angle { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+#nu .nu-gallery-link .btn { animation: none; }
+#nu .nu-gallery-link .btn::after {
+  content: ''; position: absolute; inset: -3px; padding: 3px;
+  border-radius: inherit; pointer-events: none;
+  background: conic-gradient(from var(--nu-border-angle), #fbd11725 0% 58%, #ffe790 68%, #fffef0 76%, #ffe790 82%, #fbd11725 92% 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  filter: drop-shadow(0 0 4px #fff2a966);
+}
+#nu .nu-gallery-link .btn .arrow { flex-shrink: 0; background: #fff4b888; color: var(--nu-blue); }
+#nu .nu-gallery-link .btn:focus-visible { outline: 3px solid #fff4b8; outline-offset: 8px; }
+@media (prefers-reduced-motion: no-preference) {
+  html[data-motion='on'] #nu .nu-gallery-link .btn::after { animation: nu-border-shine 3.5s linear infinite; animation-play-state: paused; }
+  html[data-motion='on'] #nu .nu-gallery-link .btn.ambient-active::after { animation-play-state: running; }
+}
+@keyframes nu-border-shine { to { --nu-border-angle: 360deg; } }
 #nu {
   --nu-blue: #32418d;
   --nu-gold: #fbd117;
   font-family: 'ClanPro', Arial, sans-serif;
-  background: var(--nu-blue);
+  background-color: var(--nu-blue);
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath filter='url(%23n)' opacity='.055' d='M0 0h160v160H0z' fill='%23fff'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 0% 0%, #6d83ce35, transparent 60%),
+    repeating-linear-gradient(135deg, transparent 0 79px, #ffffff05 79px 80px);
+  background-size: 160px 160px, 100% 100%, 100% 100%;
   color: #fff;
   border-top: 8px solid var(--nu-gold);
   border-bottom: 0;
@@ -97,7 +125,7 @@
 }
 #nu .polaroid-wall {
   gap: clamp(16px, 2.5vw, 30px);
-  align-items: start;
+  align-items: stretch;
 }
 /* Cap desktop rows at five outputs; retain the responsive grid below. */
 @media (min-width: 1200px) {
@@ -109,26 +137,35 @@
   min-width: 0;
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 10px;
   font-family: inherit;
-  background: transparent;
-  border-radius: 0;
-  border: 0;
+  background: #233472;
+  border-radius: 8px;
+  border: 1px solid #c1cfff35;
   transform: none;
-  box-shadow: none;
+  box-shadow: 0 8px 18px #11205224;
+  overflow: hidden;
 }
 #nu .tile-btn:hover {
-  transform: translateY(-6px);
+  transform: none;
+  border-color: #fbd11799;
+}
+#nu .nu-publication-frame {
+  position: relative; display: block; width: 100%; aspect-ratio: 1; flex-shrink: 0;
+  padding: 0; background: transparent; border-radius: 3px;
+}
+#nu .tile-btn .nu-publication-frame img {
+  box-sizing: border-box;
+  position: absolute; inset: 0;
+  width: 100%;
+  height: 100%; min-height: 0; min-width: 0;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
   box-shadow: none;
 }
-#nu .tile-btn img {
-  box-sizing: border-box;
-  width: 100%;
-  height: auto;
-  border: clamp(5px, 0.6vw, 8px) solid #fff;
-  border-radius: 1px;
-  box-shadow: 0 8px 24px rgb(0 0 0 / 14%);
-}
+#nu .nu-publication-meta { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 14px 3px 9px; color: #fbd117; font-size: 8px; letter-spacing: .09em; text-align: left; }
+#nu .nu-publication-meta > span:last-child { font-size: 17px; line-height: 1; }
 #nu .tile-btn:focus-visible {
   outline: 3px solid var(--nu-gold);
   outline-offset: 5px;
@@ -137,15 +174,20 @@
   position: static;
   display: block;
   width: 100%;
-  margin-top: 12px;
-  padding: 0 0 4px;
+  margin-top: 0;
+  padding: 0 3px 10px;
   font-family: inherit;
   font-size: clamp(11px, 1.1vw, 13px);
   font-weight: 500;
   line-height: 1.5;
   color: #fff;
   text-align: left;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
+  text-transform: none;
+  letter-spacing: 0;
 }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  html[data-motion='on'] #nu .polaroid-wall > .tile-btn { transition: translate .25s ease, border-color .25s ease; }
+  html[data-motion='on'] #nu .polaroid-wall > .tile-btn:hover { translate: 0 -5px; }
+}
+@media (max-width: 540px) { #nu .polaroid-wall { gap: 14px; } #nu .polaroid-wall > .tile-btn { padding: 7px; } #nu .nu-publication-meta { font-size: 7px; letter-spacing: .03em; } }
 

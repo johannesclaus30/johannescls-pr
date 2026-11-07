@@ -1,0 +1,82 @@
+[
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/ARCHITECTURE.png",
+    "size": 320,
+    "output": "assets/optimized/320/creative/SACE_SC/logo_elements/ARCHITECTURE.png",
+    "width": 320,
+    "height": 320,
+    "bytes": 20305
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/ARCHITECTURE.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/creative/SACE_SC/logo_elements/ARCHITECTURE.png",
+    "width": 1280,
+    "height": 1280,
+    "bytes": 102942
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/COMPUTING.png",
+    "size": 320,
+    "output": "assets/optimized/320/creative/SACE_SC/logo_elements/COMPUTING.png",
+    "width": 320,
+    "height": 320,
+    "bytes": 12372
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/COMPUTING.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/creative/SACE_SC/logo_elements/COMPUTING.png",
+    "width": 1280,
+    "height": 1280,
+    "bytes": 63285
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/ENGINEERING.png",
+    "size": 320,
+    "output": "assets/optimized/320/creative/SACE_SC/logo_elements/ENGINEERING.png",
+    "width": 320,
+    "height": 320,
+    "bytes": 16843
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/ENGINEERING.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/creative/SACE_SC/logo_elements/ENGINEERING.png",
+    "width": 1280,
+    "height": 1280,
+    "bytes": 81828
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/MULTIMEDIA.png",
+    "size": 320,
+    "output": "assets/optimized/320/creative/SACE_SC/logo_elements/MULTIMEDIA.png",
+    "width": 320,
+    "height": 320,
+    "bytes": 10632
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/MULTIMEDIA.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/creative/SACE_SC/logo_elements/MULTIMEDIA.png",
+    "width": 1280,
+    "height": 1280,
+    "bytes": 53238
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/TECH.png",
+    "size": 320,
+    "output": "assets/optimized/320/creative/SACE_SC/logo_elements/TECH.png",
+    "width": 320,
+    "height": 320,
+    "bytes": 11733
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/TECH.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/creative/SACE_SC/logo_elements/TECH.png",
+    "width": 1280,
+    "height": 1280,
+    "bytes": 57801
+  }
+]

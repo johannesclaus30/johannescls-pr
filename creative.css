@@ -1,22 +1,4 @@
 /* Creative page galleries. NU branding overrides live in nu-lipa.css. */
-#more-work { background: var(--bg-alt); }
-.more-work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
-.more-work-preview {
-  aspect-ratio: 1;
-  padding: clamp(20px, 3vw, 36px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: var(--accent-bg);
-  border: 1px dashed var(--line-hard);
-  color: var(--fg);
-}
-.more-work-preview span:first-child { font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
-.more-work-preview span:last-child { font-family: var(--f-serif); font-size: clamp(24px, 3vw, 42px); line-height: 1.15; opacity: .65; }
-.more-work-card h3 { font-family: var(--f-serif); font-size: 26px; margin: 20px 0 10px; }
-.more-work-card p { color: var(--fg-mute); font-size: 14px; line-height: 1.7; }
-@media (max-width: 700px) { .more-work-grid { grid-template-columns: 1fr; } }
-
 .gallery-org {
   padding: clamp(50px, 7vw, 100px) clamp(16px, 5vw, 72px);
   border-bottom: 1px solid var(--line);
@@ -148,18 +130,31 @@ body[data-page="creative"] .tile-btn .cap {
   .org-identity { align-items: flex-start; }
 }
 
-/* An honest holding space while the YES-O collection is being compiled. */
-#yeso { background: #eaf0df; color: #244b38; }
-#yeso .org-index, #yeso .org-head h2 em { color: #386b4b; }
-#yeso .org-sub, #yeso .count { color: #40604a; }
-#yeso .count { border-color: #52734c66; }
-.yeso-coming-soon { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: clamp(24px, 6vw, 88px); padding: clamp(24px, 4vw, 56px); border: 1px solid #52734c40; border-radius: 8px; background: #f6f8ef; }
-.yeso-growth { position: relative; display: grid; place-items: center; max-width: 280px; width: 100%; margin: auto; aspect-ratio: 1; color: #527b45; }
-.yeso-growth svg { width: 78%; }
-.yeso-orbit { position: absolute; inset: 8%; border: 1px dashed #52734c55; border-radius: 50%; }
-.yeso-growth-label { position: absolute; bottom: 3%; padding: 6px 12px; background: #f6f8ef; font: 10px var(--f-mono); text-transform: uppercase; letter-spacing: .15em; }
-.yeso-status { display: inline-block; font: 10px var(--f-mono); text-transform: uppercase; letter-spacing: .12em; padding: 8px 12px; border: 1px solid #52734c55; border-radius: 100px; }
-.yeso-coming-soon h3 { font-family: var(--f-serif); font-size: clamp(30px, 4vw, 56px); line-height: 1.1; letter-spacing: -.035em; margin: 22px 0 18px; }
-.yeso-coming-soon p { max-width: 52ch; font-size: 14px; line-height: 1.8; color: #40604a; }
-.yeso-note { display: block; margin-top: 24px; font: 10px var(--f-mono); text-transform: uppercase; letter-spacing: .1em; color: #52734c; }
-@media (max-width: 700px) { .yeso-coming-soon { grid-template-columns: 1fr; } .yeso-growth { max-width: 180px; } }
+/* A forest-green field journal: small prints, matching paper mounts. */
+#yeso {
+  position: relative; isolation: isolate; color: #f1f0da;
+  background-color: #103b2c;
+  background-image: radial-gradient(ellipse at 15% 0%, #80a56d20, transparent 65%), repeating-linear-gradient(0deg, #e0e9b604 0 1px, transparent 1px 4px), repeating-linear-gradient(90deg, #0000000b 0 1px, transparent 1px 5px);
+}
+#yeso::before { content: ''; position: absolute; z-index: -1; inset: 0; pointer-events: none; opacity: .22; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' filter='url(%23grain)' opacity='.35' d='M0 0h180v180H0z'/%3E%3C/svg%3E"); }
+#yeso .org-index, #yeso .org-head h2 em { color: #c3db8e; }
+#yeso .org-sub, #yeso .count { color: #c3d2b9; }
+#yeso .count { border-color: #c3db8e55; }
+.yeso-intro { max-width: 65ch; color: #c3d2b9; font-size: 15px; line-height: 1.8; margin-bottom: 34px; }
+.yeso-display-label { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; max-width: 1100px; margin: 0 auto 26px; padding-top: 18px; border-top: 1px solid #c3db8e30; color: #b7c99c; font: 10px/1.6 var(--f-mono); letter-spacing: .1em; }
+.yeso-display-label > span:last-child { font: 20px/1.2 var(--f-hand); letter-spacing: 0; }
+.yeso-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: clamp(20px, 3vw, 40px); max-width: 1100px; margin: auto; padding: 12px 8px 0; }
+#yeso .tile-btn { --print-angle: -3deg; transform: rotate(var(--print-angle)); transition: transform .25s ease; }
+#yeso .tile-btn:nth-child(2) { --print-angle: 2deg; }
+#yeso .tile-btn:nth-child(3) { --print-angle: -1.5deg; }
+.yeso-print-frame { position: relative; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 12px; width: 100%; height: 370px; padding: 20px 16px 16px; border-radius: 2px; background: #e9e5d5; color: #385441; box-shadow: 3px 6px 0 #061c1833, 0 15px 28px #041b1840; }
+.yeso-print-frame::before { content: ''; position: absolute; top: -10px; left: calc(50% - 27px); width: 54px; height: 21px; background: #cbd4a8b3; border-inline: 1px dashed #e9edca90; transform: rotate(-5deg); }
+.yeso-print-number { text-align: left; font: 8px/1.5 var(--f-mono); letter-spacing: .12em; color: #61705b; }
+body[data-page="creative"] #yeso .tile-btn img { width: 100%; height: 100%; min-height: 0; object-fit: contain; border: 0; border-radius: 0; box-shadow: none; }
+.yeso-print-note { font: 19px/1.3 var(--f-hand); text-align: center; }
+body[data-page="creative"] .yeso-gallery .cap { display: flex; justify-content: space-between; gap: 12px; color: #e0e8cc; font-size: 11px; margin-top: 18px; text-transform: none; }
+#yeso .tile-btn:focus-visible { outline: 3px solid #c3db8e; outline-offset: 8px; transform: rotate(0deg) translateY(-5px); }
+@media (hover: hover) and (pointer: fine) { html:not([data-motion="off"]) #yeso .tile-btn:hover { transform: rotate(0deg) translateY(-6px); } }
+@media (max-width: 1000px) and (min-width: 701px) { .yeso-print-frame { height: 300px; padding-inline: 12px; }.yeso-print-note { font-size: 17px; } }
+@media (max-width: 700px) { .yeso-gallery { grid-template-columns: minmax(0, 1fr); gap: 40px; width: calc(100% - 20px); max-width: 340px; }.yeso-print-frame { height: 350px; }.yeso-display-label { max-width: 360px; } }
+@media (prefers-reduced-motion: reduce) { #yeso .tile-btn { transition: none; } }

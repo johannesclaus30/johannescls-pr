@@ -1,0 +1,52 @@
+[
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/ARCHITECTURE.png",
+    "size": 320,
+    "output": "assets/optimized/320/creative/SACE_SC/logo_elements/ARCHITECTURE.png"
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/ARCHITECTURE.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/creative/SACE_SC/logo_elements/ARCHITECTURE.png"
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/COMPUTING.png",
+    "size": 320,
+    "output": "assets/optimized/320/creative/SACE_SC/logo_elements/COMPUTING.png"
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/COMPUTING.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/creative/SACE_SC/logo_elements/COMPUTING.png"
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/ENGINEERING.png",
+    "size": 320,
+    "output": "assets/optimized/320/creative/SACE_SC/logo_elements/ENGINEERING.png"
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/ENGINEERING.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/creative/SACE_SC/logo_elements/ENGINEERING.png"
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/MULTIMEDIA.png",
+    "size": 320,
+    "output": "assets/optimized/320/creative/SACE_SC/logo_elements/MULTIMEDIA.png"
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/MULTIMEDIA.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/creative/SACE_SC/logo_elements/MULTIMEDIA.png"
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/TECH.png",
+    "size": 320,
+    "output": "assets/optimized/320/creative/SACE_SC/logo_elements/TECH.png"
+  },
+  {
+    "source": "assets/creative/SACE_SC/logo_elements/TECH.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/creative/SACE_SC/logo_elements/TECH.png"
+  }
+]
