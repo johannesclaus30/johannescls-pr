@@ -1,0 +1,218 @@
+[
+  {
+    "page": "index",
+    "width": 320,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "index",
+    "width": 390,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "index",
+    "width": 540,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "index",
+    "width": 768,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "index",
+    "width": 1024,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "index",
+    "width": 1440,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "it",
+    "width": 320,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "it",
+    "width": 390,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "it",
+    "width": 540,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "it",
+    "width": 768,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "it",
+    "width": 1024,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "it",
+    "width": 1440,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "creative",
+    "width": 320,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "creative",
+    "width": 390,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "creative",
+    "width": 540,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "creative",
+    "width": 768,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "creative",
+    "width": 1024,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "creative",
+    "width": 1440,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "nu-lipa",
+    "width": 320,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "nu-lipa",
+    "width": 390,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "nu-lipa",
+    "width": 540,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "nu-lipa",
+    "width": 768,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "nu-lipa",
+    "width": 1024,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "nu-lipa",
+    "width": 1440,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "sace",
+    "width": 320,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "sace",
+    "width": 390,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "sace",
+    "width": 540,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "sace",
+    "width": 768,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "sace",
+    "width": 1024,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "sace",
+    "width": 1440,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "credits",
+    "width": 320,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "credits",
+    "width": 390,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "credits",
+    "width": 540,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "credits",
+    "width": 768,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "credits",
+    "width": 1024,
+    "overflow": false,
+    "bad": []
+  },
+  {
+    "page": "credits",
+    "width": 1440,
+    "overflow": false,
+    "bad": []
+  }
+]

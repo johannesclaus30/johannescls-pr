@@ -168,7 +168,7 @@ html[data-motion='off'] .luminus-device { transform: none !important; }
 @media (max-width: 800px) {
   .luminus-intro { grid-template-columns: 1fr; padding-top: 34px; gap: 30px; }
   .luminus-identity h2 { margin-bottom: 24px; }
-  .luminus-lead { font-size: clamp(48px, 9vw, 72px); }
+  .luminus-lead { font-size: clamp(32px, 8.2vw, 65px); overflow-wrap: anywhere; }
   .luminus-lead span br { display: none; }
   .luminus-summary { max-width: 56ch; }
   .luminus-hero-visual { width: min(100%, 580px); justify-self: center; }

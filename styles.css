@@ -140,8 +140,10 @@ html[data-mode="creative"] .door h2 em {
 * { box-sizing: border-box; }
 
 html {
+  --nav-height: 64px;
+  --section-tabs-height: 0px;
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: calc(var(--nav-height) + var(--section-tabs-height) + 16px);
 }
 
 body {
@@ -1287,7 +1289,7 @@ img.social-icon { object-fit: contain; }
 /* Tab bar for archive sections */
 .tab-bar {
   position: sticky;
-  top: 62px;
+  top: var(--nav-height);
   z-index: 100;
   display: flex;
   gap: 8px;
@@ -1638,14 +1640,17 @@ html[data-motion="off"] *::after {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .nav { padding: 10px 16px; gap: 10px; flex-wrap: wrap; }
-  .nav-links { gap: 2px; flex-basis: 100%; justify-content: flex-end; }
-  .nav-links a { font-size: 12.5px; padding: 6px 10px; }
-  .nav-links a:not(.nav-talk):not(.nav-resume):not([aria-current="page"]) { display: none; }
+  .nav-links { gap: 2px; flex-basis: 100%; min-width: 0; justify-content: flex-start; overflow-x: auto; }
+  .nav-links a { flex-shrink: 0; font-size: 12.5px; padding: 10px; white-space: nowrap; }
   .mode-toggle button { padding: 5px 9px; font-size: 9px; }
   .nav-brand { font-size: 18px; }
   .nav-brand .mark { width: 26px; height: 26px; font-size: 17px; }
+  .page-hero { padding-top: max(140px, calc(var(--nav-height) + 32px)); }
+}
+
+@media (max-width: 700px) {
 
   .hero h1 { font-size: clamp(42px, 11vw, 72px); }
   .hero-polaroids { height: 360px; }
@@ -1665,8 +1670,12 @@ html[data-motion="off"] *::after {
   .tile-btn { padding: 8px 8px 36px; }
   .tile-btn .cap { font-size: 14px; bottom: 10px; }
 
-  .lb-stage { grid-template-columns: 32px 1fr 32px; gap: 4px; padding: 12px; height: 60vh; }
-  .lb-stage button { width: 32px; height: 32px; font-size: 14px; }
+  .lb-stage { grid-template-columns: 44px minmax(0, 1fr) 44px; gap: 4px; padding: 8px; height: 60vh; height: 60dvh; }
+  .lb-stage button { width: 44px; height: 44px; font-size: 14px; }
+  .lb-stage img { min-width: 0; min-height: 0; }
+  .lb-toolbar { gap: 12px; padding: 12px; letter-spacing: .04em; }
+  .lb-toolbar button { flex-shrink: 0; min-height: 44px; }
+  dialog { max-height: 92dvh; }
 
   .footer-meta { flex-direction: column; align-items: flex-start; }
 }

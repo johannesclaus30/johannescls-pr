@@ -4,6 +4,21 @@
 
 const root = document.documentElement;
 const page = document.body.dataset.page || 'home';
+// Keep sticky tabs and anchor destinations below the actual header at every size.
+const navigation = document.querySelector('.nav');
+const sectionTabs = document.querySelector('.tab-bar');
+function updateNavigationSize() {
+  if (navigation) root.style.setProperty('--nav-height', `${navigation.getBoundingClientRect().height}px`);
+  root.style.setProperty('--section-tabs-height', `${sectionTabs?.getBoundingClientRect().height || 0}px`);
+}
+updateNavigationSize();
+if ('ResizeObserver' in window) {
+  const navigationObserver = new ResizeObserver(updateNavigationSize);
+  if (navigation) navigationObserver.observe(navigation);
+  if (sectionTabs) navigationObserver.observe(sectionTabs);
+} else {
+  addEventListener('resize', updateNavigationSize);
+}
 // Temporary home-page welcome; dismiss once per tab session.
 const constructionNotice = document.querySelector('#construction-notice');
 if (constructionNotice) {

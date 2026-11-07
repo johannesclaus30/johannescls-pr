@@ -90,7 +90,7 @@ html[data-mode='creative'] .home-scene-window { border-color: #c8ad7480; }
   .home-spotlight-thumb { flex-basis: 72px; height: 72px; }
 }
 @media (max-width: 800px) {
-  body[data-page='home'] .home-hero { grid-template-columns: 1fr; padding-top: 130px; padding-bottom: 90px; gap: 40px; }
+  body[data-page='home'] .home-hero { grid-template-columns: 1fr; padding-top: max(150px, calc(var(--nav-height) + 32px)); padding-bottom: 90px; gap: 40px; }
   .home-hero h1 { min-height: 0; font-size: clamp(58px, 11vw, 88px); }
   .home-scene { width: min(100%, 580px); justify-self: center; }
   .home-scene-window { height: 530px; min-height: 0; }
