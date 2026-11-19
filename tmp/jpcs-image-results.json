@@ -1,0 +1,114 @@
+﻿[
+    {
+        "source":  "assets/creative/JPCS/JPCS_ConceptLogo_Transparent.png",
+        "size":  640,
+        "output":  "assets/optimized/640/creative/JPCS/JPCS_ConceptLogo_Transparent.png",
+        "width":  640,
+        "height":  640,
+        "bytes":  109289
+    },
+    {
+        "source":  "assets/creative/JPCS/JPCS_ConceptLogo_Transparent.png",
+        "size":  1600,
+        "output":  "assets/optimized/1600/creative/JPCS/JPCS_ConceptLogo_Transparent.png",
+        "width":  1600,
+        "height":  1600,
+        "bytes":  395476
+    },
+    {
+        "source":  "assets/creative/JPCS/JPCS_NULP_VertWordmark_Blue.png",
+        "size":  640,
+        "output":  "assets/optimized/640/creative/JPCS/JPCS_NULP_VertWordmark_Blue.png",
+        "width":  640,
+        "height":  640,
+        "bytes":  108646
+    },
+    {
+        "source":  "assets/creative/JPCS/JPCS_NULP_VertWordmark_Blue.png",
+        "size":  1600,
+        "output":  "assets/optimized/1600/creative/JPCS/JPCS_NULP_VertWordmark_Blue.png",
+        "width":  1600,
+        "height":  1600,
+        "bytes":  372325
+    },
+    {
+        "source":  "assets/creative/JPCS/JPCS_NULP_VertWordmark_White.png",
+        "size":  640,
+        "output":  "assets/optimized/640/creative/JPCS/JPCS_NULP_VertWordmark_White.png",
+        "width":  640,
+        "height":  640,
+        "bytes":  100536
+    },
+    {
+        "source":  "assets/creative/JPCS/JPCS_NULP_VertWordmark_White.png",
+        "size":  1600,
+        "output":  "assets/optimized/1600/creative/JPCS/JPCS_NULP_VertWordmark_White.png",
+        "width":  1600,
+        "height":  1600,
+        "bytes":  349876
+    },
+    {
+        "source":  "assets/creative/JPCS/JPCS_NULP_Wordmark_Blue.png",
+        "size":  640,
+        "output":  "assets/optimized/640/creative/JPCS/JPCS_NULP_Wordmark_Blue.png",
+        "width":  640,
+        "height":  256,
+        "bytes":  54254
+    },
+    {
+        "source":  "assets/creative/JPCS/JPCS_NULP_Wordmark_Blue.png",
+        "size":  1600,
+        "output":  "assets/optimized/1600/creative/JPCS/JPCS_NULP_Wordmark_Blue.png",
+        "width":  1600,
+        "height":  640,
+        "bytes":  179870
+    },
+    {
+        "source":  "assets/creative/JPCS/Logo Elements/1.png",
+        "size":  320,
+        "output":  "assets/optimized/320/creative/JPCS/Logo Elements/1.png",
+        "width":  320,
+        "height":  320,
+        "bytes":  14288
+    },
+    {
+        "source":  "assets/creative/JPCS/Logo Elements/1.png",
+        "size":  1280,
+        "output":  "assets/optimized/1280/creative/JPCS/Logo Elements/1.png",
+        "width":  1280,
+        "height":  1280,
+        "bytes":  75086
+    },
+    {
+        "source":  "assets/creative/JPCS/Logo Elements/2.png",
+        "size":  320,
+        "output":  "assets/optimized/320/creative/JPCS/Logo Elements/2.png",
+        "width":  320,
+        "height":  320,
+        "bytes":  48977
+    },
+    {
+        "source":  "assets/creative/JPCS/Logo Elements/2.png",
+        "size":  1280,
+        "output":  "assets/optimized/1280/creative/JPCS/Logo Elements/2.png",
+        "width":  1280,
+        "height":  1280,
+        "bytes":  287847
+    },
+    {
+        "source":  "assets/creative/JPCS/Logo Elements/3.png",
+        "size":  320,
+        "output":  "assets/optimized/320/creative/JPCS/Logo Elements/3.png",
+        "width":  320,
+        "height":  320,
+        "bytes":  11014
+    },
+    {
+        "source":  "assets/creative/JPCS/Logo Elements/3.png",
+        "size":  1280,
+        "output":  "assets/optimized/1280/creative/JPCS/Logo Elements/3.png",
+        "width":  1280,
+        "height":  1280,
+        "bytes":  82120
+    }
+]

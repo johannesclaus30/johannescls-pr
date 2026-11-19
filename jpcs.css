@@ -1,0 +1,207 @@
+/* JPCS — a computing-society identity on a midnight blueprint. */
+#jpcs {
+  --jpcs-deep: #000a3c;
+  --jpcs-navy: #001167;
+  --jpcs-yellow: #fbd117;
+  --jpcs-teal: #3fb6b9;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: #eef1ff;
+  background-color: var(--jpcs-deep);
+  background-image:
+    radial-gradient(ellipse 70% 60% at 84% 6%, #3fb6b926, transparent 70%),
+    radial-gradient(ellipse 60% 55% at 6% 94%, #32418c3d, transparent 72%);
+  border-top: 1px solid #fbd11733;
+  border-bottom: 1px solid #fbd11733;
+}
+#jpcs::before {
+  content: '';
+  position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background-image:
+    linear-gradient(#ffffff09 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff09 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 30%, #000 15%, transparent 78%);
+  mask-image: radial-gradient(ellipse at 50% 30%, #000 15%, transparent 78%);
+}
+#jpcs .org-head { border-bottom: 1px solid #ffffff1f; padding-bottom: 26px; }
+#jpcs .org-head .org-index {
+  font-family: var(--f-mono); font-size: 11px; font-weight: 500;
+  letter-spacing: .16em; text-transform: uppercase;
+  transform: none; color: var(--jpcs-teal);
+}
+#jpcs .org-head h2 { color: #f4f6ff; font-size: clamp(38px, 5.4vw, 74px); }
+#jpcs .org-head h2 em { color: var(--jpcs-yellow); }
+#jpcs .org-sub { color: #b9c2ea; }
+#jpcs .count { color: var(--jpcs-yellow); border-color: #fbd11755; background: #fbd11712; }
+
+.jpcs-kicker {
+  display: inline-block;
+  font: 10px/1.6 var(--f-mono);
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--jpcs-teal);
+}
+
+/* The featured concept logo */
+.jpcs-feature {
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 72px);
+  max-width: 1150px;
+  margin: 0 auto clamp(38px, 5vw, 56px);
+}
+.jpcs-feature-copy h3 {
+  font: 800 clamp(30px, 3.6vw, 52px)/1.04 var(--f-serif);
+  letter-spacing: -.045em;
+  margin: 16px 0 18px;
+  color: #f7f8ff;
+}
+.jpcs-feature-copy h3 span { color: var(--jpcs-yellow); }
+.jpcs-feature-copy > p { max-width: 46ch; font-size: 15px; line-height: 1.85; color: #bcc5ec; }
+.jpcs-facts { list-style: none; display: grid; margin: 30px 0 0; border-top: 1px solid #ffffff1c; }
+.jpcs-facts li {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 16px;
+  padding: 13px 0;
+  border-bottom: 1px solid #ffffff1c;
+}
+.jpcs-facts span {
+  font: 10px/1.9 var(--f-mono);
+  letter-spacing: .12em; text-transform: uppercase;
+  color: #8894c4;
+}
+.jpcs-facts strong { font-weight: 500; font-size: 13.5px; line-height: 1.7; color: #e7eaff; }
+
+.jpcs-hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: clamp(20px, 4vw, 44px);
+  border: 1px solid #fbd11747;
+  border-radius: 4px;
+  cursor: zoom-in;
+  overflow: hidden;
+  background: linear-gradient(160deg, #f8f9ff, #e7ebff 68%, #d7dff8);
+  box-shadow: 0 30px 60px -30px #000a3c, inset 0 0 0 10px #ffffffb0;
+  transition: translate .3s ease, box-shadow .3s ease;
+}
+.jpcs-hero::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .55;
+  background-image:
+    linear-gradient(#00116714 1px, transparent 1px),
+    linear-gradient(90deg, #00116714 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+.jpcs-hero img { position: relative; display: block; width: 100%; max-width: 460px; height: auto; }
+.jpcs-hero-tag {
+  position: absolute; left: 18px; bottom: 16px;
+  padding: 5px 9px; border-radius: 100px;
+  background: var(--jpcs-yellow); color: #001167;
+  font: 9px/1.5 var(--f-mono); letter-spacing: .14em; text-transform: uppercase;
+}
+.jpcs-hero:focus-visible { outline: 3px solid var(--jpcs-yellow); outline-offset: 6px; }
+
+/* Lockups */
+.jpcs-lockups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 24px);
+  max-width: 1150px;
+  margin: 0 auto clamp(38px, 5vw, 56px);
+}
+.jpcs-lockup {
+  display: flex; flex-direction: column; gap: 14px;
+  margin: 0; padding: 18px;
+  border: 1px solid #ffffff1f; border-radius: 6px;
+  background: #ffffff08;
+}
+.jpcs-lockup--wide { grid-column: 1 / -1; }
+.jpcs-lockup-label {
+  font: 9px/1.6 var(--f-mono);
+  letter-spacing: .14em; text-transform: uppercase;
+  color: #97a2cf;
+}
+.jpcs-lockup-art {
+  display: grid; place-items: center;
+  padding: clamp(16px, 3vw, 34px);
+  border-radius: 3px;
+  cursor: zoom-in;
+  background: #f4f6ff;
+}
+.jpcs-lockup--dark .jpcs-lockup-art { background: #000a3c; box-shadow: inset 0 0 0 1px #ffffff26; }
+.jpcs-lockup-art img { display: block; width: 100%; max-width: 300px; height: auto; }
+.jpcs-lockup--wide .jpcs-lockup-art img { max-width: 640px; }
+.jpcs-lockup-art:focus-visible { outline: 3px solid var(--jpcs-yellow); outline-offset: 5px; }
+.jpcs-lockup p { font-size: 12.5px; line-height: 1.7; color: #aab4dd; }
+
+/* Elements */
+.jpcs-elements { max-width: 1150px; margin: 0 auto; padding-top: 34px; border-top: 1px solid #ffffff1f; }
+.jpcs-elements-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  flex-wrap: wrap; gap: 12px; margin-bottom: 22px;
+}
+.jpcs-elements-head p { max-width: 48ch; font-size: 13px; line-height: 1.7; color: #aab4dd; }
+.jpcs-element-list { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 2vw, 22px); }
+.jpcs-element {
+  display: flex; flex-direction: column; gap: 16px;
+  padding: 16px;
+  border: 1px solid #ffffff1c; border-radius: 8px;
+  background: linear-gradient(180deg, #0011673d, #ffffff05);
+}
+.jpcs-element-art {
+  display: grid; place-items: center;
+  width: 100%; aspect-ratio: 1;
+  padding: 16%;
+  border-radius: 4px;
+  cursor: zoom-in;
+  background: #001162;
+  box-shadow: inset 0 0 0 1px #3fb6b93d;
+}
+.jpcs-element-art img { display: block; width: 100%; height: auto; }
+.jpcs-element-art:focus-visible { outline: 3px solid var(--jpcs-yellow); outline-offset: 5px; }
+.jpcs-element strong { display: block; font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--jpcs-yellow); }
+.jpcs-element span { display: block; margin-top: 8px; font-size: 12.5px; line-height: 1.65; color: #aab4dd; }
+
+/* Palette and credit */
+.jpcs-palette { display: flex; flex-wrap: wrap; gap: 10px; max-width: 1150px; margin: 28px auto 0; }
+.jpcs-swatch {
+  display: flex; align-items: center; gap: 10px;
+  padding: 7px 14px 7px 7px;
+  border: 1px solid #ffffff1c; border-radius: 100px;
+  font: 9px/1.5 var(--f-mono); letter-spacing: .1em; text-transform: uppercase;
+  color: #b9c2ea;
+}
+.jpcs-swatch i { width: 18px; height: 18px; border-radius: 50%; box-shadow: inset 0 0 0 1px #ffffff30; }
+.jpcs-credit {
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  max-width: 1150px; margin: 28px auto 0; padding-top: 16px;
+  border-top: 1px solid #ffffff1f;
+  font: 10px/1.6 var(--f-mono); letter-spacing: .12em; text-transform: uppercase;
+  color: #8894c4;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .jpcs-hero:hover { translate: 0 -6px; box-shadow: 0 40px 70px -34px #000a3c, inset 0 0 0 10px #fff; }
+  .jpcs-element-art { transition: translate .25s ease, box-shadow .25s ease; }
+  html[data-motion='on'] .jpcs-element-art:hover { translate: 0 -4px; box-shadow: inset 0 0 0 1px #fbd11766; }
+}
+
+@media (max-width: 880px) {
+  .jpcs-feature { grid-template-columns: minmax(0, 1fr); }
+  .jpcs-hero img { max-width: 380px; }
+  .jpcs-hero { order: -1; }
+}
+@media (max-width: 700px) {
+  .jpcs-lockups, .jpcs-element-list { grid-template-columns: minmax(0, 1fr); }
+  .jpcs-element { flex-direction: row; align-items: center; gap: 14px; }
+  .jpcs-element-art { flex: 0 0 88px; width: 88px; padding: 11px; }
+  .jpcs-facts li { grid-template-columns: 78px minmax(0, 1fr); gap: 12px; }
+  .jpcs-lockup--wide .jpcs-lockup-art img { max-width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .jpcs-hero, .jpcs-element-art { transition: none; }
+}

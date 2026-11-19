@@ -1,0 +1,72 @@
+[
+  {
+    "source": "assets/creative/JPCS/JPCS_ConceptLogo_Transparent.png",
+    "size": 640,
+    "output": "assets/optimized/640/creative/JPCS/JPCS_ConceptLogo_Transparent.png"
+  },
+  {
+    "source": "assets/creative/JPCS/JPCS_ConceptLogo_Transparent.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/JPCS/JPCS_ConceptLogo_Transparent.png"
+  },
+  {
+    "source": "assets/creative/JPCS/JPCS_NULP_VertWordmark_Blue.png",
+    "size": 640,
+    "output": "assets/optimized/640/creative/JPCS/JPCS_NULP_VertWordmark_Blue.png"
+  },
+  {
+    "source": "assets/creative/JPCS/JPCS_NULP_VertWordmark_Blue.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/JPCS/JPCS_NULP_VertWordmark_Blue.png"
+  },
+  {
+    "source": "assets/creative/JPCS/JPCS_NULP_VertWordmark_White.png",
+    "size": 640,
+    "output": "assets/optimized/640/creative/JPCS/JPCS_NULP_VertWordmark_White.png"
+  },
+  {
+    "source": "assets/creative/JPCS/JPCS_NULP_VertWordmark_White.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/JPCS/JPCS_NULP_VertWordmark_White.png"
+  },
+  {
+    "source": "assets/creative/JPCS/JPCS_NULP_Wordmark_Blue.png",
+    "size": 640,
+    "output": "assets/optimized/640/creative/JPCS/JPCS_NULP_Wordmark_Blue.png"
+  },
+  {
+    "source": "assets/creative/JPCS/JPCS_NULP_Wordmark_Blue.png",
+    "size": 1600,
+    "output": "assets/optimized/1600/creative/JPCS/JPCS_NULP_Wordmark_Blue.png"
+  },
+  {
+    "source": "assets/creative/JPCS/Logo Elements/1.png",
+    "size": 320,
+    "output": "assets/optimized/320/creative/JPCS/Logo Elements/1.png"
+  },
+  {
+    "source": "assets/creative/JPCS/Logo Elements/1.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/creative/JPCS/Logo Elements/1.png"
+  },
+  {
+    "source": "assets/creative/JPCS/Logo Elements/2.png",
+    "size": 320,
+    "output": "assets/optimized/320/creative/JPCS/Logo Elements/2.png"
+  },
+  {
+    "source": "assets/creative/JPCS/Logo Elements/2.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/creative/JPCS/Logo Elements/2.png"
+  },
+  {
+    "source": "assets/creative/JPCS/Logo Elements/3.png",
+    "size": 320,
+    "output": "assets/optimized/320/creative/JPCS/Logo Elements/3.png"
+  },
+  {
+    "source": "assets/creative/JPCS/Logo Elements/3.png",
+    "size": 1280,
+    "output": "assets/optimized/1280/creative/JPCS/Logo Elements/3.png"
+  }
+]

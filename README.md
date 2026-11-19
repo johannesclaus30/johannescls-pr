@@ -22,10 +22,11 @@ Open `index.html` in your browser. Photos, artwork, and tool logos are stored lo
 ## Creative collections
 
 - **NU Lipa Marketing Office:** ten publication materials with content-based captions, two UAAP artworks in a stacked-card viewer with an icon-only swap control, four printed materials (an admissions poster, standee, Be a Nationalian, and Bulldogs Are Here) in a midnight-blue print room with a shared brass shelf, numbered labels, borderless artwork, lightweight hover lifts, and horizontal browsing on smaller screens, three campaign spotlights, including the Go for the Gold finals rally, two 2026 flyers on an interactive print desk, three 2025–2026 social media covers in synchronized desktop and phone social-page mockups, with device selection, a manual campaign switcher, and a local Follow preview, plus a six-panel interactive brochure. The flyer and cover collections are linked from the creative overview and featured on `nu-lipa.html`; optimized images and `nu-showcase.js` / `nu-showcase.css` keep browsing lightweight, keyboard accessible, and compatible with reduced motion.
+- **JPCS:** organizational identity concept for the Junior Philippine Computer Society, NU Lipa Chapter. The concept logo opens the set, followed by three lockups (vertical in blue, vertical reversed, and horizontal) and the three supporting logo elements — the atom, the binary field, and the circuit tree — each openable in the shared image viewer. The section samples the mark’s own palette and lives in `jpcs.css`; its wording describes it as a concept identity.
 - **SACE Student Council:** organizational logo and five publication materials. A dedicated space is reserved for the brand guidelines currently in progress.
 - **The Synergy:** organizational logo and ten brand-guideline pages, presented in a carousel with a “View all” gallery modal.
 - **YES-O:** three publication materials for the Alangilan Senior High School Chapter: Earth Hour 2023, Happy Earth Day 2022, and Juanformation for All. Uncropped artwork includes optimized previews and a shared enlarged viewer.
-- **More work:** a pastel side-project gallery featuring a New York poster, SQUARE mock magazine cover, Batangas cultural illustration, and paired Class of 2023 shirt graphics. Five optimized artworks open in the shared image viewer. The scrolling ribbon, turning star, and floating stickers pause offscreen and respect motion preferences. Styling lives in `other-work.css`; regenerate display copies with `tools/other-image-plan.json`.
+- **More work:** a pastel side-project gallery featuring a New York poster, SQUARE mock magazine cover, Batangas cultural illustration, paired Class of 2023 shirt graphics, and a fan-made Zara Larsson “Midnight Sun” album cover study composed in Affinity. Six optimized artworks open in the shared image viewer. The scrolling ribbon, turning star, and floating stickers pause offscreen and respect motion preferences. Styling lives in `other-work.css`; regenerate display copies with `tools/other-image-plan.json`.
 
 The NU Lipa brochure uses CSS 3D transforms to represent three two-sided panels. Viewers can drag to rotate between front and back, click to unfold or refold, and use a separate button to browse larger page images. Buttons also provide opening, folding, turning, and resetting controls. The viewer keeps a consistent size across fold states.
 
@@ -143,6 +144,8 @@ The existing `portfolio-github-pages.zip` may be older than the current source f
 The featured SACE and Synergy logos use 640/1280-pixel responsive PNGs. Synergy guidelines use responsive 640/960/1920-pixel previews, with 1920-pixel pages in the enlarged viewer. Images remain lazy-loaded; the carousel only requests the selected page. Originals are preserved.
 
 Regenerate the sharper copies with `./tools/Optimize-Images.ps1 -PlanPath tools/creative-image-plan.json -ResultsPath tmp/creative-image-results.json`.
+
+The JPCS logo system uses its own plan: `./tools/Optimize-Images.ps1 -PlanPath tools/jpcs-image-plan.json -ResultsPath tmp/jpcs-image-results.json`. Logo elements are 1,280-pixel PNGs in the viewer with 320-pixel chips in the grid.
 
 ### Booklat
 

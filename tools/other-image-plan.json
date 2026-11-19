@@ -58,5 +58,17 @@
     "size": 1600,
     "quality": 90,
     "output": "assets/optimized/1600/creative/Other/ClassShirt_Design/FRONT DESIGN.png"
+  },
+  {
+    "source": "assets/creative/Other/ZARA LARSSON MIDNIGHT SUN.jpg",
+    "size": 640,
+    "quality": 88,
+    "output": "assets/optimized/640/creative/Other/ZARA LARSSON MIDNIGHT SUN.jpg"
+  },
+  {
+    "source": "assets/creative/Other/ZARA LARSSON MIDNIGHT SUN.jpg",
+    "size": 1080,
+    "quality": 88,
+    "output": "assets/optimized/1080/creative/Other/ZARA LARSSON MIDNIGHT SUN.jpg"
   }
 ]

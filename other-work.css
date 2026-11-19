@@ -65,6 +65,20 @@
 @keyframes playground-turn { to { transform: rotate(360deg); } }
 @keyframes playground-ribbon { to { transform: translateX(-50%); } }
 @media (max-width: 900px) { .playground-grid { gap: 20px; }.playground-mount { padding-inline: 12px; }.playground-sticker { right: -10px; width: 70px; height: 70px; font-size: 20px; }.playground-shirt-pair { gap: 10px; }.playground-shirt-pair img { height: 170px; } }
+/* A fan-made sleeve, set in sunlight. */
+.playground-project--zara { grid-column: 1 / -1; background: linear-gradient(135deg, #dfe9d4, #f2e5c9 48%, #f3d6ba); }
+.playground-sleeve { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); align-items: center; gap: clamp(22px, 4vw, 56px); }
+.playground-sleeve .playground-art { width: 100%; max-width: 300px; justify-self: center; rotate: -2deg; }
+.playground-sleeve .playground-art img { width: 100%; height: auto; aspect-ratio: 4 / 5; filter: drop-shadow(0 22px 24px #30284638); }
+.playground-sleeve-copy h3 { font: 800 clamp(28px, 3.4vw, 44px)/1.02 var(--f-serif); letter-spacing: -.04em; color: #2c3f2f; }
+.playground-sleeve-copy h3 em { font-style: italic; font-weight: 400; color: #9b503b; }
+.playground-sleeve-copy p { max-width: 44ch; margin-top: 16px; font-size: 13px; line-height: 1.8; color: #4e5a4a; }
+.playground-sleeve-eyebrow { display: inline-block; margin-bottom: 16px; font: 9px/1.6 var(--f-mono); letter-spacing: .16em; text-transform: uppercase; color: #7a5a2e; }
+.playground-sleeve-meta { display: inline-block; margin-top: 22px; padding: 6px 12px; border: 1px solid #2c3f2f33; border-radius: 100px; font: 9px/1.4 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: #4e5a4a; }
+@media (max-width: 760px) {
+  .playground-sleeve { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .playground-sleeve .playground-art { max-width: 260px; }
+}
 @media (max-width: 650px) {
   .playground-heading { align-items: flex-start; gap: 12px; }.playground-heading h2 { font-size: clamp(45px, 11vw, 66px); }.playground-seal { width: 65px; margin-top: 34px; }.playground-seal > span { font-size: 55px; }.playground-seal small { font-size: 7px; letter-spacing: .02em; }
   .playground-grid { grid-template-columns: minmax(0, 1fr); max-width: 460px; }.playground-project { padding: 20px; }.playground-mount { min-height: 310px; }.playground-art img { height: 310px; }.playground-shirt-pair { min-height: 220px; }.playground-shirt-pair img { height: 180px; }.playground-footnote { font-size: 10px; }
